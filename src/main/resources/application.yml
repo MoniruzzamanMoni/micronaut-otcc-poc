@@ -1,0 +1,7 @@
+micronaut:
+  application:
+    name: micronautOtccPoc
+netty:
+  default:
+    allocator:
+      max-order: 3
