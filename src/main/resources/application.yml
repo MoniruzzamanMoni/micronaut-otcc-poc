@@ -5,3 +5,11 @@ netty:
   default:
     allocator:
       max-order: 3
+app-config:
+  session-cookie-name: DEV_IBFD_SESSION
+  publication-base-path: D:\Workshop\java-project\otcc\.idea\publications
+  limaserver-base-url: https://dev-research.ibfd.org/linkresolver
+  linkresolver-base-url: https://dev-research.ibfd.org/linkresolver
+  linkresolver-use-post: true
+  regional-pdf-xsl-url: jar:https://nexus3.ibfd.org/repository/ibfd-releases/org/ibfd/common-fop-pdf/1.0.54/common-fop-pdf-1.0.54.jar!/otcc-pdf-converter.xsl
+
