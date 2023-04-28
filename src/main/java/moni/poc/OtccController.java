@@ -5,10 +5,12 @@ import io.micronaut.http.annotation.*;
 @Controller("/otcc")
 public class OtccController {
 
-    private final AppConfig appConfig;
+    private OtccHandler otccHandler;
+    private RendererData rendererData;
 
-    public OtccController(AppConfig appConfig) {
-        this.appConfig = appConfig;
+    public OtccController(OtccHandler otccHandler, RendererData rendererData) {
+        this.otccHandler = otccHandler;
+        this.rendererData = rendererData;
     }
 
     @Get(uri="/{urlPart1}/{collection}/{format}/{fileName}.{ext}", produces="text/plain")
@@ -20,6 +22,8 @@ public class OtccController {
             @PathVariable("fileName") String fileName,
             @PathVariable("ext") String ext
     ) {
+        rendererData.initialize(authKey, urlPart1, collection, format, fileName, ext);
+        otccHandler.generate(rendererData);
         return """
                 Example Response
                 =======================
@@ -29,25 +33,12 @@ public class OtccController {
                 format: %s
                 fileName: %s
                 ext: %s
-                =======================
-                LimaserverBaseUrl: %s
-                LinkresolverBaseUrl: %s
-                LinkresolverUsePost: %s
-                PublicationBasePath: %s
-                RegionalPdfXslUrl: %s
-                SessionCookieName: %s
                 """.formatted(authKey,
                                 urlPart1,
                                 collection,
                                 format,
                                 fileName,
-                                ext,
-                                appConfig.getLimaserverBaseUrl(),
-                                appConfig.getLinkresolverBaseUrl(),
-                                appConfig.getLinkresolverUsePost(),
-                                appConfig.getPublicationBasePath(),
-                                appConfig.getRegionalPdfXslUrl(),
-                                appConfig.getSessionCookieName()
+                                ext
                 );
     }
 }
