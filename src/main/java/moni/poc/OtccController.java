@@ -2,6 +2,8 @@ package moni.poc;
 
 import io.micronaut.http.annotation.*;
 
+import javax.validation.Valid;
+
 @Controller("/otcc")
 public class OtccController {
 
@@ -11,15 +13,8 @@ public class OtccController {
         this.appConfig = appConfig;
     }
 
-    @Get(uri="/{urlPart1}/{collection}/{format}/{fileName}.{ext}", produces="text/plain")
-    public String index(
-            @CookieValue("DEV_IBFD_SESSION") String authKey,
-            @PathVariable("urlPart1") String urlPart1,
-            @PathVariable("collection") String collection,
-            @PathVariable("format") String format,
-            @PathVariable("fileName") String fileName,
-            @PathVariable("ext") String ext
-    ) {
+    @Get(uri="/{urlType}/{collection}/{format}/{fileName}.{ext}", produces="text/plain")
+    public String index(@Valid @RequestBean RenderRequestBean request) {
         return """
                 Example Response
                 =======================
@@ -36,12 +31,12 @@ public class OtccController {
                 PublicationBasePath: %s
                 RegionalPdfXslUrl: %s
                 SessionCookieName: %s
-                """.formatted(authKey,
-                                urlPart1,
-                                collection,
-                                format,
-                                fileName,
-                                ext,
+                """.formatted(request.getAuthKey(),
+                                request.getUrlType(),
+                                request.getCollection(),
+                                request.getFormat(),
+                                request.getFileName(),
+                                request.getExt(),
                                 appConfig.getLimaserverBaseUrl(),
                                 appConfig.getLinkresolverBaseUrl(),
                                 appConfig.getLinkresolverUsePost(),
