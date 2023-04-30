@@ -8,15 +8,14 @@ import javax.validation.Valid;
 public class OtccController {
 
     private OtccHandler otccHandler;
-    private RendererData rendererData;
 
-    public OtccController(OtccHandler otccHandler, RendererData rendererData) {
+    public OtccController(OtccHandler otccHandler) {
         this.otccHandler = otccHandler;
-        this.rendererData = rendererData;
     }
 
     @Get(uri="/{urlType}/{collection}/{format}/{fileName}.{ext}", produces="text/plain")
     public String index(@Valid @RequestBean RenderRequestBean request) {
+        otccHandler.handle(request);
         return """
                 Example Response
                 =======================
