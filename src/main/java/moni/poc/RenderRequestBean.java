@@ -30,13 +30,13 @@ public class RenderRequestBean {
     private String ext;
 
     public RenderRequestBean(String authKey,
-                             String urlPart1,
+                             String urlType,
                              String collection,
                              String format,
                              String fileName,
                              String ext) {
         this.authKey = authKey;
-        this.urlType = urlPart1;
+        this.urlType = urlType;
         this.collection = collection;
         this.format = format;
         this.fileName = fileName;
