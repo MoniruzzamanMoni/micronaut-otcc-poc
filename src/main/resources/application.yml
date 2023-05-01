@@ -1,6 +1,22 @@
 micronaut:
   application:
     name: micronautOtccPoc
+  http:
+    client:
+      logger-name: externalGatewayLogger
+    services:
+      testClient:
+        logger-name: sessionMangerClientLogger
+        url: ${app-config.test-url}
+      sessionManagerClient:
+        logger-name: sessionMangerClientLogger
+        url: ${app-config.session-manager-url}
+      limaServerClient:
+        logger-name: limaServerClientLogger
+        url: ${app-config.limaserver-base-url}
+      linkResolverClient:
+        logger-name: linkResolverClientLogger
+        url: ${app-config.linkresolver-base-url}
 netty:
   default:
     allocator:
@@ -8,6 +24,8 @@ netty:
 app-config:
   session-cookie-name: DEV_IBFD_SESSION
   publication-base-path: D:\Workshop\java-project\otcc\.idea\publications
+  test-url: https://dog.ceo
+  session-manager-url: http://development7.ibfd.org:9000/sm.fpl
   limaserver-base-url: https://dev-research.ibfd.org/linkresolver
   linkresolver-base-url: https://dev-research.ibfd.org/linkresolver
   linkresolver-use-post: true

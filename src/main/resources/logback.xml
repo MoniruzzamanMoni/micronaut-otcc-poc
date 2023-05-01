@@ -12,4 +12,9 @@
     <root level="info">
         <appender-ref ref="STDOUT" />
     </root>
+
+    <logger name="externalGatewayLogger" level="DEBUG"/>
+    <logger name="sessionMangerClientLogger" level="DEBUG"/>
+    <logger name="limaServerClientLogger" level="DEBUG"/>
+    <logger name="linkResolverClientLogger" level="DEBUG"/>
 </configuration>
