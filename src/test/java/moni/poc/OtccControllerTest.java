@@ -37,7 +37,6 @@ public class OtccControllerTest {
         items.put("app-config.limaserver-base-url", "http://development7.test.org:9080");
         items.put("app-config.linkresolver-base-url", "https://dev-research.test.org/linkresolver");
         items.put("app-config.linkresolver-use-pos", "true");
-        items.put("app-config.regional-pdf-xsl-url", "jar:https://test.test.org/repository/test-releases/org/test/common-fop-pdf/1.0.54/common-fop-pdf-1.0.54.jar!/otcc-pdf-converter.xsl");
 
         ApplicationContext ctx = ApplicationContext.run(items);
         AppConfig appConfig = ctx.getBean(AppConfig.class);

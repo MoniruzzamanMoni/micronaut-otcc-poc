@@ -6,16 +6,19 @@ import io.micronaut.http.annotation.*;
 import org.reactivestreams.Publisher;
 
 import javax.validation.Valid;
+import java.net.MalformedURLException;
 
 @Controller("/otcc")
 public class OtccController {
 
     private OtccHandler otccHandler;
     private TestClientClient testClientClient;
+    private ExternalGateway externalGateway;
 
-    public OtccController(OtccHandler otccHandler, TestClientClient testClientClient) {
+    public OtccController(OtccHandler otccHandler, TestClientClient testClientClient, ExternalGateway externalGateway) {
         this.otccHandler = otccHandler;
         this.testClientClient = testClientClient;
+        this.externalGateway = externalGateway;
     }
 
     @Get(uri = "/fetch", produces = MediaType.APPLICATION_JSON)
@@ -24,30 +27,14 @@ public class OtccController {
         Publisher<Message> response = testClientClient.fetchSessionData();
         return response;
     }
-/*
 
-        response.subscribe(new Subscriber<Message>() {
-            @Override
-            public void onSubscribe(Subscription subscription) {
-                System.out.println("subscribed");
-            }
+    @Get(uri = "/session-data", produces = MediaType.APPLICATION_JSON)
+    @SingleResult
+    public Publisher<SessionData> fetchSessionData(@CookieValue("DEV_IBFD_SESSION") String cookie) throws MalformedURLException {
+        Publisher<SessionData> response = externalGateway.getSessionData(cookie);
+        return response;
+    }
 
-            @Override
-            public void onNext(Message message) {
-                System.out.println("Next: " + message.toString());
-            }
-
-            @Override
-            public void onError(Throwable throwable) {
-
-            }
-
-            @Override
-            public void onComplete() {
-                System.out.println("complete");
-            }
-        });
-* */
     @Get(uri="/{urlType}/{collection}/{format}/{fileName}.{ext}", produces="text/plain")
     public String index(@Valid @RequestBean RenderRequestBean request) {
         otccHandler.handle(request);
