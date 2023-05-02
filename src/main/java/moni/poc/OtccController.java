@@ -24,15 +24,12 @@ public class OtccController {
     @Get(uri = "/fetch", produces = MediaType.APPLICATION_JSON)
     @SingleResult
     public Publisher<Message> fetch() {
-        Publisher<Message> response = testClientClient.fetchSessionData();
-        return response;
+        return testClientClient.fetchSessionData();
     }
 
     @Get(uri = "/session-data", produces = MediaType.APPLICATION_JSON)
-    @SingleResult
-    public Publisher<SessionData> fetchSessionData(@CookieValue("DEV_IBFD_SESSION") String cookie) throws MalformedURLException {
-        Publisher<SessionData> response = externalGateway.getSessionData(cookie);
-        return response;
+    public SessionData fetchSessionData(@CookieValue("DEV_IBFD_SESSION") String cookie) throws MalformedURLException {
+        return externalGateway.getSessionData(cookie);
     }
 
     @Get(uri="/{urlType}/{collection}/{format}/{fileName}.{ext}", produces="text/plain")

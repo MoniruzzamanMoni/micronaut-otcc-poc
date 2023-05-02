@@ -2,38 +2,40 @@ package moni.poc;
 
 import io.micronaut.serde.annotation.Serdeable;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Stream;
+import java.util.stream.Collectors;
 
 @Serdeable
 public class SessionData {
+    private static final String USERNAME_PREFIX = "AUTHUSER:";
+    private static final String GREET_PREFIX = "GREET:";
+    private static final String SUB_PREFIX = "SUB:";
+
     private String username;
     private String greet;
     private List<String> subscriptions;
 
     public SessionData(String sessionDataRaw) {
         System.out.println("SessionData " );
-        this.username = sessionDataRaw;
-        this.subscriptions = new ArrayList<>();
-//        for (String s : sessionDataRaw.split("\n")) {
-//            this.initialize(s);
-//        }
-    }
-
-    private void initialize(String line){
-        String firstPart = line.split(";")[0];
-        String[] parts = firstPart.split(":");
-        String key = parts[0];
-        String value = parts[1];
-        System.out.println("key " + key);
-        System.out.println("v " + value);
-        switch (key) {
-            case "AUTHUSER" -> this.username = value;
-            case "SUB" -> this.subscriptions.add(value);
-            case "GREET" -> this.greet = value;
-        }
+        List<String> parts = sessionDataRaw.lines()
+                .map(line -> line.split(";"))
+                .flatMap(linePart -> Arrays.stream(linePart).sequential())
+                .collect(Collectors.toList());
+        this.username = parts.stream()
+                .filter(part -> part.startsWith(USERNAME_PREFIX))
+                .map(part -> part.substring(USERNAME_PREFIX.length()))
+                .findFirst()
+                .orElse("");
+        this.greet = parts.stream()
+                .filter(part -> part.startsWith(GREET_PREFIX))
+                .map(part -> part.substring(GREET_PREFIX.length()))
+                .findFirst()
+                .orElse("");
+        this.subscriptions = parts.stream()
+                .filter(part -> part.startsWith(SUB_PREFIX))
+                .map(part -> part.substring(SUB_PREFIX.length()))
+                .collect(Collectors.toList());
     }
 
     public String getUsername() {
