@@ -33,7 +33,7 @@ public class OtccController {
     }
 
     @Get(uri="/{urlType}/{collection}/{format}/{fileName}.{ext}", produces="text/plain")
-    public String index(@Valid @RequestBean RenderRequestBean request) {
+    public String index(@Valid @RequestBean RenderRequestBean request) throws Exception{
         otccHandler.handle(request);
         return """
                 Example Response

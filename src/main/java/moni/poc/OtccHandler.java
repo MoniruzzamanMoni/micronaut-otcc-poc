@@ -1,49 +1,32 @@
 package moni.poc;
 
 import jakarta.inject.Singleton;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.net.MalformedURLException;
 
 @Singleton
 public class OtccHandler {
 
-    private AppConfig appConfig;
+    private static Logger logger = LoggerFactory.getLogger(OtccHandler.class);
 
-    public OtccHandler(AppConfig appConfig) {
+    private AppConfig appConfig;
+    private ExternalGateway externalGateway;
+
+    public OtccHandler(AppConfig appConfig, ExternalGateway externalGateway) {
         this.appConfig = appConfig;
+        this.externalGateway = externalGateway;
     }
 
-    public void handle(RenderRequestBean request) {
-        System.out.println("handle");
-        System.out.println("""
-                Example Response
-                ======================= request
-                authKey: %s
-                urlPart1: %s
-                collection: %s
-                format: %s
-                fileName: %s
-                ext: %s
-                ======================= config
-                LimaserverBaseUrl: %s
-                LinkresolverBaseUrl: %s
-                LinkresolverUsePost: %s
-                PublicationBasePath: %s
-                RegionalPdfXslUrl: %s
-                SessionCookieName: %s
-                =======================
-                """.formatted(request.getAuthKey(),
-                request.getUrlType(),
-                request.getCollection(),
-                request.getFormat(),
-                request.getFileName(),
-                request.getExt(),
-                appConfig.getLimaserverBaseUrl(),
-                appConfig.getLinkresolverBaseUrl(),
-                appConfig.getLinkresolverUsePost(),
-                appConfig.getPublicationBasePath(),
-                appConfig.getRegionalPdfXslUrl(),
-                appConfig.getSessionCookieName()
-        ));
+    public void handle(RenderRequestBean request) throws MalformedURLException {
         // singleton api gateway
+        SessionData sessionData = externalGateway.getSessionData(request.getAuthKey());
+        logger.debug("## Session Data: " + sessionData);
+        logger.debug("Username: " + sessionData.getUsername());
+        logger.debug("Greet: " + sessionData.getGreet());
+        logger.debug("Subs: " + sessionData.getSubscriptions());
+
         // bean authorized uids retriever
         // List<String> uidList = uidRetriever.getUids();
         // List<String> uidList = new ArrayList<>();

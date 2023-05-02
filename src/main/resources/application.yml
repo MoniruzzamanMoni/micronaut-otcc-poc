@@ -17,6 +17,9 @@ micronaut:
       linkResolverClient:
         logger-name: linkResolverClientLogger
         url: ${app-config.linkresolver-base-url}
+logger:
+  levels:
+    moni.poc: DEBUG
 netty:
   default:
     allocator:
