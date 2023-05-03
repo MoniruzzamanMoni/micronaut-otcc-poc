@@ -3,6 +3,8 @@ package moni.poc;
 import io.micronaut.core.annotation.Introspected;
 import io.micronaut.http.annotation.CookieValue;
 import io.micronaut.http.annotation.PathVariable;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author: Md. Moniruzzaman <moni.return@gmail.com>
@@ -10,6 +12,7 @@ import io.micronaut.http.annotation.PathVariable;
  */
 @Introspected
 public class RenderRequestBean {
+    private static final Logger logger = LoggerFactory.getLogger(RenderRequestBean.class);
 
     @CookieValue("DEV_IBFD_SESSION")
     private String authKey;
@@ -41,6 +44,7 @@ public class RenderRequestBean {
         this.format = format;
         this.fileName = fileName;
         this.ext = ext;
+        logger.debug("req Data: %s".formatted(this));
     }
 
     public String getAuthKey() {
@@ -65,5 +69,17 @@ public class RenderRequestBean {
 
     public String getExt() {
         return ext;
+    }
+
+    @Override
+    public String toString() {
+        return "RenderRequestBean{" +
+                "authKey='" + authKey + '\'' +
+                ", urlType='" + urlType + '\'' +
+                ", collection='" + collection + '\'' +
+                ", format='" + format + '\'' +
+                ", fileName='" + fileName + '\'' +
+                ", ext='" + ext + '\'' +
+                '}';
     }
 }
