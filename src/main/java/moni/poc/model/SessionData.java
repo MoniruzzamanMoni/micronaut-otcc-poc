@@ -1,6 +1,8 @@
-package moni.poc;
+package moni.poc.model;
 
 import io.micronaut.serde.annotation.Serdeable;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Arrays;
 import java.util.List;
@@ -8,6 +10,8 @@ import java.util.stream.Collectors;
 
 @Serdeable
 public class SessionData {
+    private static Logger logger = LoggerFactory.getLogger(SessionData.class);
+
     private static final String USERNAME_PREFIX = "AUTHUSER:";
     private static final String GREET_PREFIX = "GREET:";
     private static final String SUB_PREFIX = "SUB:";
@@ -17,7 +21,6 @@ public class SessionData {
     private List<String> subscriptions;
 
     public SessionData(String sessionDataRaw) {
-        System.out.println("SessionData " );
         List<String> parts = sessionDataRaw.lines()
                 .map(line -> line.split(";"))
                 .flatMap(linePart -> Arrays.stream(linePart).sequential())
@@ -36,6 +39,8 @@ public class SessionData {
                 .filter(part -> part.startsWith(SUB_PREFIX))
                 .map(part -> part.substring(SUB_PREFIX.length()))
                 .collect(Collectors.toList());
+
+        logger.debug("Session Data: %s".formatted(this));
     }
 
     public String getUsername() {
@@ -48,5 +53,14 @@ public class SessionData {
 
     public List<String> getSubscriptions() {
         return subscriptions;
+    }
+
+    @Override
+    public String toString() {
+        return "SessionData{" +
+                "username='" + username + '\'' +
+                ", greet='" + greet + '\'' +
+                ", subscriptions=" + subscriptions +
+                '}';
     }
 }

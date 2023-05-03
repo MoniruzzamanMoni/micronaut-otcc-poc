@@ -1,10 +1,12 @@
 package moni.poc;
 
 import jakarta.inject.Singleton;
+import moni.poc.model.LinkResolverRequest;
+import moni.poc.model.SessionData;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.net.MalformedURLException;
+import java.io.IOException;
 
 @Singleton
 public class OtccHandler {
@@ -19,13 +21,12 @@ public class OtccHandler {
         this.externalGateway = externalGateway;
     }
 
-    public void handle(RenderRequestBean request) throws MalformedURLException {
+    public String handle(RenderRequestBean request) throws IOException {
         // singleton api gateway
         SessionData sessionData = externalGateway.getSessionData(request.getAuthKey());
-        logger.debug("## Session Data: " + sessionData);
-        logger.debug("Username: " + sessionData.getUsername());
-        logger.debug("Greet: " + sessionData.getGreet());
-        logger.debug("Subs: " + sessionData.getSubscriptions());
+        LinkResolverRequest linkResolverRequest = new LinkResolverRequest(request, sessionData);
+        return externalGateway.getLinkResolverData(request, linkResolverRequest);
+//        logger.debug("### ### res: %s".formatted(res));
 
         // bean authorized uids retriever
         // List<String> uidList = uidRetriever.getUids();

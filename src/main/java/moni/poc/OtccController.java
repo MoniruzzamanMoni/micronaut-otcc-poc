@@ -2,7 +2,11 @@ package moni.poc;
 
 import io.micronaut.core.async.annotation.SingleResult;
 import io.micronaut.http.MediaType;
-import io.micronaut.http.annotation.*;
+import io.micronaut.http.annotation.Controller;
+import io.micronaut.http.annotation.CookieValue;
+import io.micronaut.http.annotation.Get;
+import io.micronaut.http.annotation.RequestBean;
+import moni.poc.model.SessionData;
 import org.reactivestreams.Publisher;
 
 import javax.validation.Valid;
@@ -32,25 +36,8 @@ public class OtccController {
         return externalGateway.getSessionData(cookie);
     }
 
-    @Get(uri="/{urlType}/{collection}/{format}/{fileName}.{ext}", produces="text/plain")
+    @Get(uri="/{urlType}/{collection}/{format}/{fileName}.{ext}", produces = MediaType.APPLICATION_XML)
     public String index(@Valid @RequestBean RenderRequestBean request) throws Exception{
-        otccHandler.handle(request);
-        return """
-                Example Response
-                =======================
-                authKey: %s
-                urlPart1: %s
-                collection: %s
-                format: %s
-                fileName: %s
-                ext: %s
-                =======================
-                """.formatted(request.getAuthKey(),
-                                request.getUrlType(),
-                                request.getCollection(),
-                                request.getFormat(),
-                                request.getFileName(),
-                                request.getExt()
-                );
+        return otccHandler.handle(request);
     }
 }

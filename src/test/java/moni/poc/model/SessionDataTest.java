@@ -1,11 +1,11 @@
-package moni.poc;
+package moni.poc.model;
 
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * @author: Md. Moniruzzaman <moni.return@gmail.com>
@@ -20,10 +20,6 @@ public class SessionDataTest {
     void testSessionData() {
         String sessionDataRaw = getSessionDataRaw();
         SessionData sessionData = new SessionData(sessionDataRaw);
-
-        logger.info("Username: " + sessionData.getUsername());
-        logger.info("Greet: " + sessionData.getGreet());
-        logger.info("Subs: " + sessionData.getSubscriptions());
 
         assertEquals("test002@ibfd.org", sessionData.getUsername());
         assertEquals("IBFD", sessionData.getGreet());
