@@ -3,6 +3,7 @@ package moni.poc;
 import jakarta.inject.Singleton;
 import moni.poc.model.LinkResolverData;
 import moni.poc.model.LinkResolverRequest;
+import moni.poc.model.RenderData;
 import moni.poc.model.SessionData;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,20 +24,11 @@ public class OtccHandler {
     }
 
     public String handle(RenderRequestBean request) throws IOException {
-        // singleton api gateway
         SessionData sessionData = externalGateway.getSessionData(request.getAuthKey());
         LinkResolverRequest linkResolverRequest = new LinkResolverRequest(request, sessionData);
         LinkResolverData linkResolverData = externalGateway.getLinkResolverData(request, linkResolverRequest);
+        RenderData renderData = new RenderData(request, sessionData, linkResolverData, appConfig);
 
-
-
-//        logger.debug("### ### res: %s".formatted(res));
-
-        // bean authorized uids retriever
-        // List<String> uidList = uidRetriever.getUids();
-        // List<String> uidList = new ArrayList<>();
-        // bean session manager
-        // sessionData
         // rendererData.initialize(authKey, urlPart1, collection, format, fileName, ext, uidList);
 
         // check cache
