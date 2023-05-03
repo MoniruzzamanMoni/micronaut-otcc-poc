@@ -19,16 +19,13 @@ import java.net.URL;
 public class ExternalGateway {
     private final AppConfig appConfig;
     private final HttpClient sessionMangerClient;
-    private final HttpClient limaServerClient;
     private final HttpClient linkResolverClient;
 
     public ExternalGateway(AppConfig appConfig,
                            @Client("sessionManagerClient") HttpClient sessionMangerClient,
-                           @Client("limaServerClient") HttpClient limaServerClient,
                            @Client("linkResolverClient") HttpClient linkResolverClient) {
         this.appConfig = appConfig;
         this.sessionMangerClient = sessionMangerClient;
-        this.limaServerClient = limaServerClient;
         this.linkResolverClient = linkResolverClient;
     }
 

@@ -5,15 +5,9 @@ micronaut:
     client:
       logger-name: externalGatewayLogger
     services:
-      testClient:
-        logger-name: sessionMangerClientLogger
-        url: ${app-config.test-url}
       sessionManagerClient:
         logger-name: sessionMangerClientLogger
         url: ${app-config.session-manager-url}
-      limaServerClient:
-        logger-name: limaServerClientLogger
-        url: ${app-config.limaserver-base-url}
       linkResolverClient:
         logger-name: linkResolverClientLogger
         url: ${app-config.linkresolver-base-url}
