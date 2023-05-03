@@ -6,6 +6,7 @@ import io.micronaut.http.MediaType;
 import io.micronaut.http.client.HttpClient;
 import io.micronaut.http.client.annotation.Client;
 import jakarta.inject.Singleton;
+import moni.poc.model.LinkResolverData;
 import moni.poc.model.LinkResolverRequest;
 import moni.poc.model.SessionData;
 import reactor.core.publisher.Mono;
@@ -16,10 +17,10 @@ import java.net.URL;
 
 @Singleton
 public class ExternalGateway {
-    private AppConfig appConfig;
-    private HttpClient sessionMangerClient;
-    private HttpClient limaServerClient;
-    private HttpClient linkResolverClient;
+    private final AppConfig appConfig;
+    private final HttpClient sessionMangerClient;
+    private final HttpClient limaServerClient;
+    private final HttpClient linkResolverClient;
 
     public ExternalGateway(AppConfig appConfig,
                            @Client("sessionManagerClient") HttpClient sessionMangerClient,
@@ -44,7 +45,7 @@ public class ExternalGateway {
         return new SessionData(responseBody.blockOptional().orElse(""));
     }
 
-    public String getLinkResolverData(RenderRequestBean request, LinkResolverRequest linkResolverRequest)
+    public LinkResolverData getLinkResolverData(RenderRequestBean request, LinkResolverRequest linkResolverRequest)
             throws IOException {
         URL url = new URL(appConfig.getLinkresolverBaseUrl());
         String cookie = "%s=%s".formatted(appConfig.getSessionCookieName(), request.getAuthKey());
@@ -53,7 +54,9 @@ public class ExternalGateway {
                 .header(HttpHeaders.COOKIE, cookie);
 
         Mono<String> responseBody = Mono.from(linkResolverClient.retrieve(httpRequest, String.class));
-        return responseBody.blockOptional().orElse("");
+        String content = responseBody.blockOptional().orElse("");
+
+        return new LinkResolverData(content);
     }
 
     private String getVal() {

@@ -1,6 +1,7 @@
 package moni.poc;
 
 import jakarta.inject.Singleton;
+import moni.poc.model.LinkResolverData;
 import moni.poc.model.LinkResolverRequest;
 import moni.poc.model.SessionData;
 import org.slf4j.Logger;
@@ -11,10 +12,10 @@ import java.io.IOException;
 @Singleton
 public class OtccHandler {
 
-    private static Logger logger = LoggerFactory.getLogger(OtccHandler.class);
+    private static final Logger logger = LoggerFactory.getLogger(OtccHandler.class);
 
-    private AppConfig appConfig;
-    private ExternalGateway externalGateway;
+    private final AppConfig appConfig;
+    private final ExternalGateway externalGateway;
 
     public OtccHandler(AppConfig appConfig, ExternalGateway externalGateway) {
         this.appConfig = appConfig;
@@ -25,7 +26,10 @@ public class OtccHandler {
         // singleton api gateway
         SessionData sessionData = externalGateway.getSessionData(request.getAuthKey());
         LinkResolverRequest linkResolverRequest = new LinkResolverRequest(request, sessionData);
-        return externalGateway.getLinkResolverData(request, linkResolverRequest);
+        LinkResolverData linkResolverData = externalGateway.getLinkResolverData(request, linkResolverRequest);
+
+
+
 //        logger.debug("### ### res: %s".formatted(res));
 
         // bean authorized uids retriever
@@ -39,5 +43,6 @@ public class OtccHandler {
         // get renderer
         // render
         // write output
+        return "";
     }
 }
