@@ -1,4 +1,4 @@
-package moni.poc.model;
+package example.poc.model;
 
 import io.micronaut.core.util.StringUtils;
 import io.micronaut.serde.annotation.Serdeable;
@@ -19,10 +19,8 @@ public class LinkResolverRequest {
     private final String maxresults;
 
     public LinkResolverRequest(RenderRequest request, SessionData sessionData) {
-        String recordFilter = sessionData.getSubscriptions().stream()
-                .map(subscription -> "lcf:" + subscription)
-                .collect(Collectors.toList())
-                .stream().collect(Collectors.joining(","));
+        String recordFilter = String.join(",", sessionData.getSubscriptions().stream()
+                .map(subscription -> "lcf:" + subscription).toList());
         String filename = "%s.%s".formatted(request.getFileName(), request.getExt());
         this.search = StringUtils.isEmpty(recordFilter) ?
                 "N=0&Nr=xml_source_file:%s".formatted(filename) :

@@ -1,4 +1,4 @@
-package moni.poc;
+package example.poc;
 
 import io.micronaut.context.annotation.ConfigurationProperties;
 

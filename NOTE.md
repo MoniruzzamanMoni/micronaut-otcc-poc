@@ -2,21 +2,21 @@
 ### Create Application
 ```
 $ mn
-mn> create-app moni.poc.micronaut-otcc-poc --build=maven --lang=java
+mn> create-app example.poc.micronaut-otcc-poc --build=maven --lang=java
 >
 | Application created at D:\Workshop\poc\micronaut-otcc-poc
 ```
 
 ```
 $ mn create-controller otcc
-←[34m|←[39m←[0m Rendered controller to src/main/java/moni/poc/OtccController.java
-←[34m|←[39m←[0m Rendered test to src/test/java/moni/poc/OtccControllerTest.java
+←[34m|←[39m←[0m Rendered controller to src/main/java/example/poc/OtccController.java
+←[34m|←[39m←[0m Rendered test to src/test/java/example/poc/OtccControllerTest.java
 
-moni@moni-pc MINGW64 /d/Workshop/poc/micronaut-otcc-poc (master)
+example@example-pc MINGW64 /d/Workshop/poc/micronaut-otcc-poc (master)
 $ mvn mn:run
 [INFO] Scanning for projects...
 [INFO] 
-[INFO] --------------------< moni.poc:micronaut-otcc-poc >---------------------
+[INFO] --------------------< example.poc:micronaut-otcc-poc >---------------------
 [INFO] Building micronaut-otcc-poc 0.1
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
@@ -45,11 +45,11 @@ $ mvn mn:run
 ```
 
 ```
-moni@moni-pc MINGW64 /d/Workshop/poc/micronaut-otcc-poc (master)
+example@example-pc MINGW64 /d/Workshop/poc/micronaut-otcc-poc (master)
 $ mvn test
 [INFO] Scanning for projects...
 [INFO] 
-[INFO] --------------------< moni.poc:micronaut-otcc-poc >---------------------
+[INFO] --------------------< example.poc:micronaut-otcc-poc >---------------------
 [INFO] Building micronaut-otcc-poc 0.1
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
@@ -69,8 +69,8 @@ $ mvn test
 [INFO] --- maven-compiler-plugin:3.10.1:testCompile (default-testCompile) @ micronaut-otcc-poc ---
 [INFO] Changes detected - recompiling the module!
 [INFO] Compiling 2 source files to D:\Workshop\poc\micronaut-otcc-poc\target\test-classes
-[INFO] /D:/Workshop/poc/micronaut-otcc-poc/src/test/java/moni/poc/OtccControllerTest.java: D:\Workshop\poc\micronaut-otcc-poc\src\test\java\moni\poc\OtccControllerTest.java uses unchecked or unsafe operations.
-[INFO] /D:/Workshop/poc/micronaut-otcc-poc/src/test/java/moni/poc/OtccControllerTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] /D:/Workshop/poc/micronaut-otcc-poc/src/test/java/example/poc/OtccControllerTest.java: D:\Workshop\poc\micronaut-otcc-poc\src\test\java\example\poc\OtccControllerTest.java uses unchecked or unsafe operations.
+[INFO] /D:/Workshop/poc/micronaut-otcc-poc/src/test/java/example/poc/OtccControllerTest.java: Recompile with -Xlint:unchecked for details.
 [INFO]
 [INFO] --- micronaut-maven-plugin:3.5.3:start-testresources-service (default-start-testresources-service) @ micronaut-otcc-poc ---
 [INFO]
@@ -79,12 +79,12 @@ $ mvn test
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
-[INFO] Running moni.poc.MicronautOtccPocTest
+[INFO] Running example.poc.MicronautOtccPocTest
 17:37:33.850 [main] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test]
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.31 s - in moni.poc.MicronautOtccPocTest
-[INFO] Running moni.poc.OtccControllerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.31 s - in example.poc.MicronautOtccPocTest
+[INFO] Running example.poc.OtccControllerTest
 17:37:34.646 [main] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test]
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.623 s - in moni.poc.OtccControllerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.623 s - in example.poc.OtccControllerTest
 [INFO] 
 [INFO] Results:
 [INFO]

@@ -1,4 +1,4 @@
-package moni.poc.model;
+package example.poc.model;
 
 import io.micronaut.core.annotation.Introspected;
 import io.micronaut.http.annotation.CookieValue;

@@ -1,4 +1,4 @@
-package moni.poc.model;
+package example.poc.model;
 
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
 import org.junit.jupiter.api.Test;
@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @MicronautTest
 public class SessionDataTest {
 
-    private static Logger logger = LoggerFactory.getLogger(SessionDataTest.class);
+    private static final Logger logger = LoggerFactory.getLogger(SessionDataTest.class);
 
     @Test
     void testSessionData() {

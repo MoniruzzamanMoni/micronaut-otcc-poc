@@ -19,7 +19,7 @@
     <release.version>17</release.version>
     <micronaut.version>3.8.8</micronaut.version>
     <micronaut.runtime>netty</micronaut.runtime>
-    <exec.mainClass>moni.poc.Application</exec.mainClass>
+    <exec.mainClass>example.poc.Application</exec.mainClass>
   </properties>
 
   <repositories>
@@ -130,7 +130,7 @@
             </path>
           </annotationProcessorPaths>
           <compilerArgs>
-            <arg>-Amicronaut.processing.group=moni.poc</arg>
+            <arg>-Amicronaut.processing.group=example.poc</arg>
             <arg>-Amicronaut.processing.module=micronaut-otcc-poc</arg>
           </compilerArgs>
         </configuration>

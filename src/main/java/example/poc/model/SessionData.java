@@ -1,4 +1,4 @@
-package moni.poc.model;
+package example.poc.model;
 
 import io.micronaut.serde.annotation.Serdeable;
 import org.slf4j.Logger;
@@ -23,8 +23,7 @@ public class SessionData {
     public SessionData(String sessionDataRaw) {
         List<String> parts = sessionDataRaw.lines()
                 .map(line -> line.split(";"))
-                .flatMap(linePart -> Arrays.stream(linePart).sequential())
-                .collect(Collectors.toList());
+                .flatMap(linePart -> Arrays.stream(linePart).sequential()).toList();
         this.username = parts.stream()
                 .filter(part -> part.startsWith(USERNAME_PREFIX))
                 .map(part -> part.substring(USERNAME_PREFIX.length()))

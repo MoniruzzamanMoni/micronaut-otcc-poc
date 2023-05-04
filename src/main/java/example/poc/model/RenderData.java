@@ -1,7 +1,7 @@
-package moni.poc.model;
+package example.poc.model;
 
 import io.micronaut.core.util.StringUtils;
-import moni.poc.AppConfig;
+import example.poc.AppConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

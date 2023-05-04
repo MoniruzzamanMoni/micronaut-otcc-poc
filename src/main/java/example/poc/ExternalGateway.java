@@ -1,4 +1,4 @@
-package moni.poc;
+package example.poc;
 
 import io.micronaut.http.HttpHeaders;
 import io.micronaut.http.HttpRequest;
@@ -6,10 +6,10 @@ import io.micronaut.http.MediaType;
 import io.micronaut.http.client.HttpClient;
 import io.micronaut.http.client.annotation.Client;
 import jakarta.inject.Singleton;
-import moni.poc.model.LinkResolverData;
-import moni.poc.model.LinkResolverRequest;
-import moni.poc.model.RenderRequest;
-import moni.poc.model.SessionData;
+import example.poc.model.LinkResolverData;
+import example.poc.model.LinkResolverRequest;
+import example.poc.model.RenderRequest;
+import example.poc.model.SessionData;
 import reactor.core.publisher.Mono;
 
 import java.io.IOException;

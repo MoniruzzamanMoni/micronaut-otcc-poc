@@ -1,4 +1,4 @@
-package moni.poc.model;
+package example.poc.model;
 
 import io.micronaut.core.util.StringUtils;
 import io.micronaut.serde.annotation.Serdeable;

@@ -1,10 +1,10 @@
-package moni.poc;
+package example.poc;
 
 import io.micronaut.http.MediaType;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
 import io.micronaut.http.annotation.RequestBean;
-import moni.poc.model.RenderRequest;
+import example.poc.model.RenderRequest;
 
 import javax.validation.Valid;
 

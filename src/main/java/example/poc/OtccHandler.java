@@ -1,9 +1,9 @@
-package moni.poc;
+package example.poc;
 
 import jakarta.inject.Singleton;
-import moni.poc.model.*;
-import moni.poc.renderer.BaseRenderer;
-import moni.poc.renderer.RendererFactory;
+import example.poc.model.*;
+import example.poc.renderer.BaseRenderer;
+import example.poc.renderer.RendererFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

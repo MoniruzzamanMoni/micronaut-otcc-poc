@@ -13,7 +13,7 @@ micronaut:
         url: ${app-config.linkresolver-base-url}
 logger:
   levels:
-    moni.poc: DEBUG
+    example.poc: DEBUG
 netty:
   default:
     allocator:

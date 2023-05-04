@@ -1,4 +1,4 @@
-package moni.poc.renderer;
+package example.poc.renderer;
 
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
 import org.junit.jupiter.api.Test;

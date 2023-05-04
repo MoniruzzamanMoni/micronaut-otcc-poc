@@ -1,4 +1,4 @@
-package moni.poc.renderer;
+package example.poc.renderer;
 
 import io.micronaut.context.annotation.Factory;
 import jakarta.inject.Singleton;
