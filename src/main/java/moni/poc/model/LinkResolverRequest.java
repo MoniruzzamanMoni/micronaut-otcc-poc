@@ -2,7 +2,6 @@ package moni.poc.model;
 
 import io.micronaut.core.util.StringUtils;
 import io.micronaut.serde.annotation.Serdeable;
-import moni.poc.RenderRequestBean;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,12 +13,12 @@ import java.util.stream.Collectors;
  */
 @Serdeable
 public class LinkResolverRequest {
-    private static Logger logger = LoggerFactory.getLogger(LinkResolverRequest.class);
-    private String search;
-    private String properties;
-    private String maxresults;
+    private static final Logger logger = LoggerFactory.getLogger(LinkResolverRequest.class);
+    private final String search;
+    private final String properties;
+    private final String maxresults;
 
-    public LinkResolverRequest(RenderRequestBean request, SessionData sessionData) {
+    public LinkResolverRequest(RenderRequest request, SessionData sessionData) {
         String recordFilter = sessionData.getSubscriptions().stream()
                 .map(subscription -> "lcf:" + subscription)
                 .collect(Collectors.toList())
@@ -30,7 +29,8 @@ public class LinkResolverRequest {
                 "N=0&Nr=AND(xml_source_file:%s,OR(%s))".formatted(filename, recordFilter);
         this.properties = "uid";
         this.maxresults = "50";
-        logger.debug("Linkresolver Request: %s".formatted(this));
+
+        logger.debug("LinkResolverRequest is constructed: %s".formatted(this));
     }
 
     public String getSearch() {

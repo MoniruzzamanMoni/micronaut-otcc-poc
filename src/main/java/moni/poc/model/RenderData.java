@@ -2,7 +2,6 @@ package moni.poc.model;
 
 import io.micronaut.core.util.StringUtils;
 import moni.poc.AppConfig;
-import moni.poc.RenderRequestBean;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,7 +20,7 @@ public class RenderData {
     private final String userCompanyName;
     private final boolean userLoggedIn;
 
-    public RenderData(RenderRequestBean request, SessionData sessionData, LinkResolverData linkResolverData, AppConfig appConfig) {
+    public RenderData(AppConfig appConfig, RenderRequest request, SessionData sessionData, LinkResolverData linkResolverData) {
         this.srcXml = "file:///%s/%s/%s/%s/%s.%s".formatted(
                 appConfig.getPublicationBasePath(),
                 request.getUrlType(),
@@ -39,7 +38,7 @@ public class RenderData {
         this.userCompanyName = sessionData.getGreet();
         this.userLoggedIn = StringUtils.isNotEmpty(this.username);
 
-        logger.debug("Render Data: %s".formatted(this));
+        logger.debug("RenderData is constructed: %s".formatted(this));
     }
 
     public String getSrcXml() {

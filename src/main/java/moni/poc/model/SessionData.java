@@ -10,15 +10,15 @@ import java.util.stream.Collectors;
 
 @Serdeable
 public class SessionData {
-    private static Logger logger = LoggerFactory.getLogger(SessionData.class);
+    private static final Logger logger = LoggerFactory.getLogger(SessionData.class);
 
     private static final String USERNAME_PREFIX = "AUTHUSER:";
     private static final String GREET_PREFIX = "GREET:";
     private static final String SUB_PREFIX = "SUB:";
 
-    private String username;
-    private String greet;
-    private List<String> subscriptions;
+    private final String username;
+    private final String greet;
+    private final List<String> subscriptions;
 
     public SessionData(String sessionDataRaw) {
         List<String> parts = sessionDataRaw.lines()
@@ -40,7 +40,7 @@ public class SessionData {
                 .map(part -> part.substring(SUB_PREFIX.length()))
                 .collect(Collectors.toList());
 
-        logger.debug("Session Data: %s".formatted(this));
+        logger.debug("SessionData is constructed: %s".formatted(this));
     }
 
     public String getUsername() {

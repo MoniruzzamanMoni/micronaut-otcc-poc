@@ -1,4 +1,4 @@
-package moni.poc;
+package moni.poc.model;
 
 import io.micronaut.core.annotation.Introspected;
 import io.micronaut.http.annotation.CookieValue;
@@ -11,8 +11,8 @@ import org.slf4j.LoggerFactory;
  * @since: 4/30/2023
  */
 @Introspected
-public class RenderRequestBean {
-    private static final Logger logger = LoggerFactory.getLogger(RenderRequestBean.class);
+public class RenderRequest {
+    private static final Logger logger = LoggerFactory.getLogger(RenderRequest.class);
 
     @CookieValue("DEV_IBFD_SESSION")
     private String authKey;
@@ -32,19 +32,19 @@ public class RenderRequestBean {
     @PathVariable("ext")
     private String ext;
 
-    public RenderRequestBean(String authKey,
-                             String urlType,
-                             String collection,
-                             String format,
-                             String fileName,
-                             String ext) {
+    public RenderRequest(String authKey,
+                         String urlType,
+                         String collection,
+                         String format,
+                         String fileName,
+                         String ext) {
         this.authKey = authKey;
         this.urlType = urlType;
         this.collection = collection;
         this.format = format;
         this.fileName = fileName;
         this.ext = ext;
-        logger.debug("req Data: %s".formatted(this));
+        logger.debug("RenderRequest is constructed: %s".formatted(this));
     }
 
     public String getAuthKey() {
