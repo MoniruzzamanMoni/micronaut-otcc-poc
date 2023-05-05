@@ -1,6 +1,8 @@
 package example.poc.renderer;
 
 import example.poc.model.RenderData;
+import io.micronaut.http.HttpResponse;
+import org.apache.commons.io.IOUtils;
 import org.ibfd.regionalxml.RegionalXmlTransformer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,6 +10,8 @@ import org.slf4j.LoggerFactory;
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.TransformerException;
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
@@ -31,41 +35,31 @@ public abstract sealed class BaseRenderer permits PdfRenderer, PrintVersionRende
         return renderData;
     }
 
-    public final void render(RenderData renderData) throws Exception {
+    public final HttpResponse<String> render(RenderData renderData) throws Exception {
+        this.renderData = renderData;
         logger.info("BaseRenderer render");
         logger.debug("initializing transformer ...");
         initializeTransformer();
         configureTransformer();
         logger.debug("transformer initialization finished.");
         transform();
-        writeHtmlBytes();
+        return buildResponse();
     }
 
     protected abstract void configureTransformer();
 
-    protected abstract void writeHtmlBytes();
+    protected abstract HttpResponse<String> buildResponse() throws IOException;
 
     private void transform() throws Exception {
-        // get source xml stream
-        URL url = new URL(getRenderData().getSrcXml());
-        URLConnection connection = url.openConnection();
-        connection.addRequestProperty("Cookie", getRenderData().getAuthKey());
-        connection.connect();
+        InputStream srcXmlInputStream = null;
         try {
-            if (connection instanceof HttpURLConnection httpURLConnection) {
-                if (httpURLConnection.getResponseCode() == 403) {
-                    String message = "Fobbiden document - href: %s, with authKey: %s trying to access."
-                            .formatted(getRenderData().getSrcXml(), getRenderData().getAuthKey());
-                    logger.error(message);
-                    throw new TransformerException(message);
-                }
-            }
-            this.transformedResult = (ByteArrayOutputStream) transformer.transform(connection.getInputStream());
+            srcXmlInputStream = getSrcXmlInputStream();
+            this.transformedResult = (ByteArrayOutputStream) transformer.transform(srcXmlInputStream);
         } catch (Exception e) {
             e.printStackTrace();
             throw new Exception(e);
         } finally {
-            connection.getInputStream().close();
+            IOUtils.closeQuietly(srcXmlInputStream);
         }
     }
 
@@ -74,5 +68,26 @@ public abstract sealed class BaseRenderer permits PdfRenderer, PrintVersionRende
         transformer.setResultDocumentOutput(false);
         transformer.setExcelVersionPrefix("");
         transformer.setOutputProperty(OutputKeys.METHOD, "html");
+    }
+
+    private InputStream getSrcXmlInputStream() throws IOException, TransformerException {
+        URLConnection connection = getSrcXmlUrlConnection();
+        connection.connect();
+        if (connection instanceof HttpURLConnection httpURLConnection) {
+            if (httpURLConnection.getResponseCode() == 403) {
+                String message = "Fobbiden document - href: %s, with authKey: %s trying to access."
+                        .formatted(getRenderData().getSrcXml(), getRenderData().getAuthKey());
+                logger.error(message);
+                throw new TransformerException(message);
+            }
+        }
+        return connection.getInputStream();
+    }
+
+    private URLConnection getSrcXmlUrlConnection() throws IOException {
+        URL url = new URL(getRenderData().getSrcXml());
+        URLConnection connection = url.openConnection();
+        connection.addRequestProperty("Cookie", getRenderData().getAuthKey());
+        return connection;
     }
 }

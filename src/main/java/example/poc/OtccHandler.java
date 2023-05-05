@@ -1,13 +1,12 @@
 package example.poc;
 
+import io.micronaut.http.HttpResponse;
 import jakarta.inject.Singleton;
 import example.poc.model.*;
 import example.poc.renderer.BaseRenderer;
 import example.poc.renderer.RendererFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.io.IOException;
 
 @Singleton
 public class OtccHandler {
@@ -24,14 +23,12 @@ public class OtccHandler {
         this.rendererFactory = rendererFactory;
     }
 
-    public String handle(RenderRequest request) throws Exception {
+    public HttpResponse<String> handle(RenderRequest request) throws Exception {
         SessionData sessionData = externalGateway.getSessionData(request.getAuthKey());
         LinkResolverRequest linkResolverRequest = new LinkResolverRequest(request, sessionData);
         LinkResolverData linkResolverData = externalGateway.getLinkResolverData(request, linkResolverRequest);
         RenderData renderData = new RenderData(appConfig, request, sessionData, linkResolverData);
         BaseRenderer renderer = rendererFactory.getRenderer(request.getFormat());
-        renderer.render(renderData);
-        // write output
-        return "";
+        return renderer.render(renderData);
     }
 }

@@ -1,7 +1,7 @@
 package example.poc.renderer;
 
+import io.micronaut.http.HttpResponse;
 import jakarta.inject.Singleton;
-import example.poc.model.RenderData;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,7 +19,7 @@ public final class PdfRenderer extends BaseRenderer {
     }
 
     @Override
-    protected void writeHtmlBytes() {
-
+    protected HttpResponse<String> buildResponse() {
+        return HttpResponse.ok();
     }
 }
