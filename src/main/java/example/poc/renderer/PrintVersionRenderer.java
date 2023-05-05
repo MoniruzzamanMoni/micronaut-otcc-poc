@@ -14,6 +14,7 @@ import java.io.IOException;
 public final class PrintVersionRenderer extends BaseRenderer {
     private static final Logger logger = LoggerFactory.getLogger(PrintVersionRenderer.class);
     private static final String CONTENT_TYPE = "text/html; charset=UTF-8";
+    private static final GenerateOption GENERATE_OPTION = new GenerateOption(GenerateParam.FULL_CHAPTER, "");
 
     public PrintVersionRenderer() {
         logger.info("PrintVersionRenderer construct");
@@ -21,7 +22,7 @@ public final class PrintVersionRenderer extends BaseRenderer {
 
     @Override
     protected void configureTransformer() {
-        getTransformer().setGenerateOption(new GenerateOption(GenerateParam.FULL_CHAPTER, ""));
+        getTransformer().setGenerateOption(GENERATE_OPTION);
         getTransformer().setOmitToc(false);
         getTransformer().setPrintVersion(true);
         getTransformer().setDocidErrNoExit(true);

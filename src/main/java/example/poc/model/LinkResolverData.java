@@ -17,16 +17,20 @@ public class LinkResolverData {
     private final List<String> uids;
 
     public LinkResolverData(String content) {
-        this.uids = Pattern.compile(PATTERN).matcher(content).results()
-                .map(matchResult -> matchResult.group(1))
-                .filter(StringUtils::isNotEmpty)
-                .collect(Collectors.toList());
+        this.uids = parseUids(content);
 
         logger.debug("LinkResolverData is constructed: %s".formatted(this));
     }
 
     public List<String> getUids() {
         return uids;
+    }
+
+    private List<String> parseUids(String content) {
+        return Pattern.compile(PATTERN).matcher(content).results()
+                .map(matchResult -> matchResult.group(1))
+                .filter(StringUtils::isNotEmpty)
+                .collect(Collectors.toList());
     }
 
     @Override

@@ -22,18 +22,12 @@ public class RenderData {
     private final String limaServerBaseUrl;
 
     public RenderData(AppConfig appConfig, RenderRequest request, SessionData sessionData, LinkResolverData linkResolverData) {
-        this.srcXml = "file:///%s/%s/%s/%s/%s.%s".formatted(
-                appConfig.getPublicationBasePath(),
-                request.getUrlType(),
-                request.getCollection(),
-                "xml",
-                request.getFileName(),
-                "xml");
-        this.serverHost = this.srcXml.replaceAll("^(http[s]?://[^/]+).*$", "$1/");
+        this.srcXml = getSrcXml(appConfig, request);
+        this.serverHost = getHost(this.srcXml);
         this.assetHost = this.serverHost;
         this.uids = linkResolverData.getUids();
         this.srcXmlBaseName = request.getFileName();
-        this.srcXmlFileName = "%s.%s".formatted(this.srcXmlBaseName, request.getExt());
+        this.srcXmlFileName = getFileName(request, this.srcXmlBaseName);
         this.authKey = request.getAuthKey();
         this.username = sessionData.getUsername();
         this.userCompanyName = sessionData.getGreet();
@@ -41,6 +35,24 @@ public class RenderData {
         this.limaServerBaseUrl = appConfig.getLimaserverBaseUrl();
 
         logger.debug("RenderData is constructed: %s".formatted(this));
+    }
+
+    private String getFileName(RenderRequest request, String srcXmlBaseName) {
+        return "%s.%s".formatted(srcXmlBaseName, request.getExt());
+    }
+
+    private String getHost(String srcXml) {
+        return srcXml.replaceAll("^(http[s]?://[^/]+).*$", "$1/");
+    }
+
+    private String getSrcXml(AppConfig appConfig, RenderRequest request) {
+        return "file:///%s/%s/%s/%s/%s.%s".formatted(
+                appConfig.getPublicationBasePath(),
+                request.getUrlType(),
+                request.getCollection(),
+                "xml",
+                request.getFileName(),
+                "xml");
     }
 
     public String getSrcXml() {

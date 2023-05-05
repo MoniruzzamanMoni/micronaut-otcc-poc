@@ -24,20 +24,9 @@ public class SessionData {
         List<String> parts = sessionDataRaw.lines()
                 .map(line -> line.split(";"))
                 .flatMap(linePart -> Arrays.stream(linePart).sequential()).toList();
-        this.username = parts.stream()
-                .filter(part -> part.startsWith(USERNAME_PREFIX))
-                .map(part -> part.substring(USERNAME_PREFIX.length()))
-                .findFirst()
-                .orElse("");
-        this.greet = parts.stream()
-                .filter(part -> part.startsWith(GREET_PREFIX))
-                .map(part -> part.substring(GREET_PREFIX.length()))
-                .findFirst()
-                .orElse("");
-        this.subscriptions = parts.stream()
-                .filter(part -> part.startsWith(SUB_PREFIX))
-                .map(part -> part.substring(SUB_PREFIX.length()))
-                .collect(Collectors.toList());
+        this.username = parseUsername(parts);
+        this.greet = parseGreet(parts);
+        this.subscriptions = parseSubscriptions(parts);
 
         logger.debug("SessionData is constructed: %s".formatted(this));
     }
@@ -52,6 +41,29 @@ public class SessionData {
 
     public List<String> getSubscriptions() {
         return subscriptions;
+    }
+
+    private String parseUsername(List<String> parts) {
+        return parts.stream()
+                .filter(part -> part.startsWith(USERNAME_PREFIX))
+                .map(part -> part.substring(USERNAME_PREFIX.length()))
+                .findFirst()
+                .orElse("");
+    }
+
+    private String parseGreet(List<String> parts) {
+        return parts.stream()
+                .filter(part -> part.startsWith(GREET_PREFIX))
+                .map(part -> part.substring(GREET_PREFIX.length()))
+                .findFirst()
+                .orElse("");
+    }
+
+    private List<String> parseSubscriptions(List<String> parts) {
+        return parts.stream()
+                .filter(part -> part.startsWith(SUB_PREFIX))
+                .map(part -> part.substring(SUB_PREFIX.length()))
+                .collect(Collectors.toList());
     }
 
     @Override

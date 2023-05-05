@@ -19,12 +19,7 @@ public class LinkResolverRequest {
     private final String maxresults;
 
     public LinkResolverRequest(RenderRequest request, SessionData sessionData) {
-        String recordFilter = String.join(",", sessionData.getSubscriptions().stream()
-                .map(subscription -> "lcf:" + subscription).toList());
-        String filename = "%s.%s".formatted(request.getFileName(), request.getExt());
-        this.search = StringUtils.isEmpty(recordFilter) ?
-                "N=0&Nr=xml_source_file:%s".formatted(filename) :
-                "N=0&Nr=AND(xml_source_file:%s,OR(%s))".formatted(filename, recordFilter);
+        this.search = getSearch(request, sessionData);
         this.properties = "uid";
         this.maxresults = "50";
 
@@ -41,6 +36,15 @@ public class LinkResolverRequest {
 
     public String getMaxresults() {
         return maxresults;
+    }
+
+    private String getSearch(RenderRequest request, SessionData sessionData) {
+        String recordFilter = String.join(",", sessionData.getSubscriptions().stream()
+                .map(subscription -> "lcf:" + subscription).toList());
+        String filename = "%s.%s".formatted(request.getFileName(), request.getExt());
+        return StringUtils.isEmpty(recordFilter) ?
+                "N=0&Nr=xml_source_file:%s".formatted(filename) :
+                "N=0&Nr=AND(xml_source_file:%s,OR(%s))".formatted(filename, recordFilter);
     }
 
     @Override
