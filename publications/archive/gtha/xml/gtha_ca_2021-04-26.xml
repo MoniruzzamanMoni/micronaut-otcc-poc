@@ -1,0 +1,1519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE country-chap PUBLIC "-//IBFD//ELEMENTS COUNTRY-CHAP//EN" "http://dev-dtd.ibfd.org/dtd/regionalbook.dtd">
+<country-chap anchor="gtha_ca_2021-04-26"
+              infotype="Country_Survey"
+              standardoutline="y"
+              outlineyear="gtha__1_1.xml"
+              collection="gtha_ar">
+   <chaphead anchor="gtha_ca_2021-04-26_chaphead">
+      <pubdate pubdate="2021-05-05">5 May 2021</pubdate>
+      <title>Corporate Taxation</title>
+      <latestinfo anchor="gtha_ca_2021-04-26_late">
+         <title>Latest Information</title>
+         <reviewdate reviewdate="2021-04-26">This chapter is based on information available up to 26 April 2021.</reviewdate>
+      </latestinfo>
+      <country cc="ca">
+         <countryname>Canada</countryname>
+      </country>
+      <author anchor="gtha_ca_2021-04-26_auth">
+         <title>Author</title>
+         <name firstname="Julie" lastname="Rogers-Glabush">Julie Rogers-Glabush</name>
+         <affiliation>
+            <p spaceabove="0">IBFD, Amsterdam</p>
+         </affiliation>
+      </author>
+      <editor>
+         <title>IBFD Tax Technical Editor</title>
+         <name firstname="John" lastname="Rienstra" type="tte">John Rienstra</name>
+         <p spacebelow="0">Based on the original chapter written by Mr Blair P. Dwyer, Blair P. Dwyer Law Corporation, Canada.</p>
+      </editor>
+   </chaphead>
+   <chapbody>
+      <section anchor="gtha_ca_2021-04-26_ss_1">
+         <title>Introduction</title>
+         <p>Canada is a federation made up of ten provinces and three territories. In this commentary, a reference to a province includes the territories.</p>
+         <p>The federal and provincial governments each have taxing jurisdiction. Federal tax applies throughout Canada. The Canada Revenue Agency (CRA) is responsible for administering and collecting federal taxes. Provincial taxes are imposed on activity within the province. Most provinces have entered into a collection agreement with the federal government, and accordingly, the federal government, through the CRA, administers both the federal and the provincial corporate income tax systems. All taxes imposed by the province are remitted to the federal government. Corporations need file only a single corporate income tax return. The provinces of Quebec and Alberta administer their own provincial corporate income tax systems.</p>
+         <p>Corporations are subject to Canadian federal income tax, federal goods and services tax (a VAT-style tax), social security taxes and capital taxes. The provinces also levy a range of taxes including income taxes, capital taxes, resources taxes, payroll taxes, health taxes, insurance premium taxes and tobacco taxes. Not all provinces levy all of these taxes.</p>
+         <p>The currency is the Canadian dollar (CAD).</p>
+      </section>
+      <section anchor="gtha_ca_2021-04-26_s_1." label="1.">
+         <taxtopics>
+            <taxtopic tc="1_1" score="3">Corporate Taxation</taxtopic>
+         </taxtopics>
+         <taxtopics version="3.0">
+            <taxtopic tc="1_1" score="3">Corporate Taxation</taxtopic>
+         </taxtopics>
+         <title>Corporate Income Tax</title>
+         <section anchor="gtha_ca_2021-04-26_s_1.1." label="1.1.">
+            <taxtopics>
+               <taxtopic tc="1_1_21" score="3">Base</taxtopic>
+               <taxtopic tc="1_1_21_1" score="3">National / Federal</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_21" score="3">Base</taxtopic>
+               <taxtopic tc="1_1_21_1" score="3">National / Federal</taxtopic>
+            </taxtopics>
+            <title>Type of tax system</title>
+            <p>Companies are subject to corporate income tax, which is levied on taxable income. Taxable income is calculated by first determining business income, i.e. the profit realized from the business. Then income based on the profit and loss statement is computed to determine net income. The taxpayer then computes taxable income by claiming specific deductions. The appropriate tax rate is then applied to taxable income.</p>
+            <p>The Canadian corporate tax system attempts to achieve integration between corporations and their shareholders, meaning that income passing through a corporation should not attract any additional taxation than income received by an individual directly. As taxes are levied at both the individual and shareholder level, double taxation is partially eliminated through a modified imputation system. The system uses a notional dividend tax credit to provide tax relief in respect of domestic dividends paid to individuals. The dividend tax credit is provided at a fixed rate irrespective of the actual corporate tax rate that may have applied to the corporate income out of which the dividends were generated.</p>
+            <p>For purposes of calculating the credit, the corporation is considered to have paid the dividend out of one of two pools:</p>
+            <list>
+               <item label="-">
+                  <p>the low-rate income pool; this is after-tax profit paid out of income that was eligible for the “small business” rate; and</p>
+               </item>
+               <item label="-">
+                  <p>the general-rate income pool; this is after-tax profit paid out of income that was not eligible for the small business rate.</p>
+               </item>
+            </list>
+            <p>If the dividend is paid out of the low-rate income pool, a gross-up of 15% of the dividend is applied. If the dividend is paid out of the general-rate income pool, the gross-up is 38% of the dividend (a higher gross-up because the corporation is assumed to have paid a higher rate of corporate tax).</p>
+            <p>After grossing up the dividend, the individual calculates the individual’s federal income tax liability on the grossed-up amount of the dividend (not on the actual amount of the dividend). When the individual calculates the actual amount of federal income tax owing by the individual, however, the individual deducts a dividend tax credit of 9/13 of the 15% gross-up amount if the dividend has been paid out of the low-rate income pool and 6/11 of the 38% gross-up amount if the dividend has been paid out of the general-rate income pool.</p>
+            <example>
+               <title>Example</title>
+               <table anchor="gtha_ca_2021-04-26_t_0">
+                  <tgroup cols="3">
+                     <colspec colnum="1" colname="col1" colwidth="1*" align="left"/>
+                     <colspec colnum="2" colname="col2" colwidth="1*" align="left"/>
+                     <colspec colnum="3" colname="col3" colwidth="1*" align="left"/>
+                     <thead>
+                        <row>
+                           <entry align="left" colname="col1"/>
+                           <entry align="right" colname="col2">
+                              <p>Paid out of low-rate income pool</p>
+                           </entry>
+                           <entry align="right" colname="col3">
+                              <p>Paid out of general-rate income pool</p>
+                           </entry>
+                        </row>
+                     </thead>
+                     <tbody>
+                        <row>
+                           <entry align="left" colname="col1">
+                              <p>Actual dividend received</p>
+                           </entry>
+                           <entry align="right" colname="col2">
+                              <p>100.00</p>
+                           </entry>
+                           <entry align="right" colname="col3">
+                              <p>100.00</p>
+                           </entry>
+                        </row>
+                        <row>
+                           <entry align="left" colname="col1">
+                              <p>Dividend as grossed up by 15% or 38%</p>
+                           </entry>
+                           <entry align="right" colname="col2">
+                              <p>115.00</p>
+                           </entry>
+                           <entry align="right" colname="col3">
+                              <p>138.00</p>
+                           </entry>
+                        </row>
+                        <row>
+                           <entry align="left" colname="col1">
+                              <p>Basic federal income tax (at 33%)</p>
+                           </entry>
+                           <entry align="right" colname="col2">
+                              <p>37.95</p>
+                           </entry>
+                           <entry align="right" colname="col3">
+                              <p>45.54</p>
+                           </entry>
+                        </row>
+                        <row>
+                           <entry align="left" colname="col1">
+                              <p>Federal dividend tax credit</p>
+                           </entry>
+                           <entry align="right" colname="col2">
+                              <p>(10.38)</p>
+                           </entry>
+                           <entry align="right" colname="col3">
+                              <p>(20.72)</p>
+                           </entry>
+                        </row>
+                        <row>
+                           <entry align="left" colname="col1">
+                              <p>Net federal income tax</p>
+                           </entry>
+                           <entry align="right" colname="col2">
+                              <p>27.57</p>
+                           </entry>
+                           <entry align="right" colname="col3">
+                              <p>24.82</p>
+                           </entry>
+                        </row>
+                     </tbody>
+                  </tgroup>
+               </table>
+            </example>
+            <p>The above is a theoretical illustration only. Provincial tax rates vary, and the provinces provide their own dividend tax credit. Various federal and provincial surtaxes cause further distortions.</p>
+            <p>Subject to certain exceptions, resident corporations may deduct dividends received from another resident corporation. As a result, no additional tax is imposed on dividends that are paid through a chain of resident corporations. In certain cases, private corporations must pay a refundable tax equal to one third of dividends received from taxable resident corporations; however, this tax is refunded when the recipient corporation in turn pays a dividend to its shareholders.</p>
+            <p>Corporations resident in Canada are taxable on their worldwide income. Non-resident corporations are taxable only on certain types of Canadian-source income.</p>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_1.2." label="1.2.">
+            <taxtopics>
+               <taxtopic tc="1_1_1" score="3">Taxing Jurisdiction</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_1" score="3">Taxing Jurisdiction</taxtopic>
+            </taxtopics>
+            <title>Taxable persons</title>
+            <p>Legal entities subject to corporate income tax include the following:</p>
+            <list>
+               <item label="-">
+                  <p>all corporations resident in Canada; and</p>
+               </item>
+               <item label="-">
+                  <p>non-resident corporations, but only to the extent of income from certain Canadian sources (<emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_6.2.">6.2.</xref>).</p>
+               </item>
+            </list>
+            <p>This survey is restricted to public and private corporations resident in Canada as well as non-resident corporations.</p>
+            <p>A partnership is treated as a separate person for the purpose of computing the income of the partnership. Once the income of the partnership has been computed, that income is then allocated to the respective partners based on their respective interests in the partnership. A partner that is a corporation includes its share of partnership income in its own income and pays tax on such income as if the partner had earned the income directly.</p>
+            <p>A trust can opt to pay tax at the trust level, as if the trust were a separate entity, or can act as a form of conduit, flowing income through to the beneficiaries who then pay tax on the income. Investment funds may or may not be taxable depending on whether or not they are a trust and have chosen to flow the income through to beneficiaries, in which case the income is taxed in the hands of the beneficiary, or a corporation, in which case the entity itself is taxable.</p>
+            <p>A number of corporate entities are exempt from the corporate income tax. The more significant of such entities are as follows:</p>
+            <list>
+               <item label="-">
+                  <p>subject to certain exceptions, corporations that are at least 90% owned by the federal, a provincial, or a municipal government;</p>
+               </item>
+               <item label="-">
+                  <p>registered charities;</p>
+               </item>
+               <item label="-">
+                  <p>non-profit corporations organized and operated exclusively for non-profit purposes. This includes a non-profit corporation constituted exclusively to carry on or promote scientific research and experimental development; and</p>
+               </item>
+               <item label="-">
+                  <p>corporations incorporated and operated solely to administer a registered pension plan and accepted by the Canada Revenue Agency (CRA) as a funding medium in connection with the registration of the plan.</p>
+               </item>
+            </list>
+            <p>Special rules apply if a corporation becomes or ceases to be exempt from income tax. The tax year of the corporation is deemed to end at the time of the status change, a disposition of capital assets is deemed to occur, and loss carry-forwards may not be carried over for use after the changed status.</p>
+            <section anchor="gtha_ca_2021-04-26_s_1.2.1." label="1.2.1.">
+               <taxtopics>
+                  <taxtopic tc="1_1_1_1" score="3">Resident / Residence</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_1_1" score="3">Residence</taxtopic>
+               </taxtopics>
+               <title>Residence</title>
+               <p>A corporation is deemed to be resident in Canada if it has been incorporated in Canada.</p>
+               <p>A corporation that has been incorporated outside Canada is considered resident in Canada if its central management and control is located in Canada. Factors that determine where a corporation is centrally managed or controlled include the place where:</p>
+               <list>
+                  <item label="-">
+                     <p>its directors live and hold their meetings;</p>
+                  </item>
+                  <item label="-">
+                     <p>its shareholders live and hold their meetings;</p>
+                  </item>
+                  <item label="-">
+                     <p>its managers live and hold their meetings; and</p>
+                  </item>
+                  <item label="-">
+                     <p>the organization performs its principal business and operations, and keeps its books and records.</p>
+                  </item>
+               </list>
+               <p>Central management and control may be divided between two places, in which case the corporation is considered to be resident in both places. Usually, central management and control of a corporation is exercised by the directors. If so, the corporation is resident where the directors meet.</p>
+            </section>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_1.3." label="1.3.">
+            <taxtopics>
+               <taxtopic tc="1_1_21" score="3">Base</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_21" score="3">Base</taxtopic>
+            </taxtopics>
+            <title>Taxable income</title>
+            <section anchor="gtha_ca_2021-04-26_s_1.3.1." label="1.3.1.">
+               <taxtopics>
+                  <taxtopic tc="1_1_24" score="3">Income Streams</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_24" score="3">Income Streams</taxtopic>
+               </taxtopics>
+               <title>General</title>
+               <p>Corporations resident in Canada are taxable on their worldwide income. Non-resident corporations are taxable only on certain types of Canadian-source income (<emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_6.2.">6.2.</xref>).</p>
+               <p>If a corporation earns income in more than one province or territory, its taxable income is allocated among the provinces and territories pursuant to federal rules. The following allocation formula, which is based on the gross revenue and total wages attributed to the province, is used:</p>
+               <p>One half the aggregate of (i) that proportion of its taxable income for the year that the gross revenue for the year reasonably attributable to the permanent establishment in the province is of its total gross revenue for the year and (ii) that proportion of its taxable income for the year that the aggregate of the salaries and wages paid in the year by the corporation to employees of the permanent establishment in the province is of the aggregate of all salaries and wages paid in the year by the corporation.</p>
+               <p>The formula can also be expressed as follows:</p>
+               <eqngrp>
+                  <eqn>1/2 [(provincial gross revenue)/(total gross revenue) + (provincial salary and wages)/(total salary and wages)] × taxable income</eqn>
+               </eqngrp>
+               <p>A Canadian resident corporation that has only one permanent establishment in Canada and no other permanent establishment outside Canada is deemed to have earned its entire taxable income in the province in which its permanent establishment is located.</p>
+               <p>For corporations, the income tax system recognizes three main types of income sources: business income, property income and capital gains. Property income consists of passive income, such as rent, interest, royalties and dividends, earned through investment (as opposed to business) activities.</p>
+               <p>A corporation must compute income from each source separately, although the various sources of income are aggregated before computing the taxable income of the corporation. For example, a corporation might carry on two different businesses. Each separate business constitutes a different source of income and the net income or loss must be computed separately for each. Both sources of income are then aggregated with all other sources of income before computing taxable income.</p>
+               <p>When computing tax payable, a taxpayer first computes income based on the profit and loss statement to determine net income for the year. The taxpayer then computes taxable income by claiming specific deductions (such as unused loss carry-overs from other taxation years). Once taxable income has been determined, the appropriate tax rate is applied to calculate the tax payable.</p>
+               <p>Taxable income is taxable at full rates. Property income is usually taxable at full rates, with exceptions for certain types of dividends. Capital gains are effectively subject to tax at reduced rates, as only 50% of a capital gain must be included in income (<emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_1.4.">1.4.</xref>).</p>
+            </section>
+            <section anchor="gtha_ca_2021-04-26_s_1.3.2." label="1.3.2.">
+               <taxtopics>
+                  <taxtopic tc="1_1_21_15" score="3">Exemptions</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_21_15" score="3">Exemptions</taxtopic>
+               </taxtopics>
+               <title>Exempt income</title>
+               <p>Virtually all corporate income is subject to income tax, whether that income is received in money or in money’s worth. The only important exceptions are as follows:</p>
+               <list>
+                  <item label="-">
+                     <p>certain intercorporate dividends are deductible in computing taxable income (<emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_2.2.">2.2.</xref>); and</p>
+                  </item>
+                  <item label="-">
+                     <p>in general, the death benefit paid under a life insurance policy is exempt from income tax. For example, a corporation might acquire a life insurance policy on a key employee to provide the corporation with funds to assist the corporation if the employee were to die unexpectedly.</p>
+                  </item>
+               </list>
+            </section>
+            <section anchor="gtha_ca_2021-04-26_s_1.3.3." label="1.3.3.">
+               <taxtopics>
+                  <taxtopic tc="1_1_21_11" score="3">Deductions</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_21_11" score="3">Deductions</taxtopic>
+               </taxtopics>
+               <title>Deductions</title>
+               <section anchor="gtha_ca_2021-04-26_s_1.3.3.1." label="1.3.3.1.">
+                  <taxtopics>
+                     <taxtopic tc="1_1_21_11_1" score="3">Deductible</taxtopic>
+                  </taxtopics>
+                  <taxtopics version="3.0">
+                     <taxtopic tc="1_1_21_11_1" score="3">Deductible</taxtopic>
+                  </taxtopics>
+                  <title>Deductible expenses</title>
+                  <p>Income from a business or property is equal to the profit from that business or property. The Income Tax Act applies the following general principles in respect of the deduction of expenses:</p>
+                  <list>
+                     <item label="-">
+                        <p>expenses are deductible only to the extent that they are incurred for the purpose of gaining or producing income;</p>
+                     </item>
+                     <item label="-">
+                        <p>expenses are deductible only to the extent that they are reasonable in the circumstances;</p>
+                     </item>
+                     <item label="-">
+                        <p>expenses incurred on capital account are deductible only to the extent that the deduction is expressly permitted by the Act (<emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_1.3.5.">1.3.5.</xref>);</p>
+                     </item>
+                     <item label="-">
+                        <p>expenses are not deductible to the extent that they are incurred for the purpose of gaining or producing exempt income; and</p>
+                     </item>
+                     <item label="-">
+                        <p>expenses are not deductible if they are incurred solely for the purpose of realizing capital gains.</p>
+                     </item>
+                  </list>
+                  <p>In general, an expenditure must have been incurred in the year in order to be deductible in that year. A prepaid expense is deductible only to the extent that the expense relates to the year in question.</p>
+                  <p>In general, the following expenses may be deducted:</p>
+                  <list>
+                     <item label="-">
+                        <p>intercorporate dividends (<emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_2.2.">2.2.</xref>);</p>
+                     </item>
+                     <item label="-">
+                        <p>royalties;</p>
+                     </item>
+                     <item label="-">
+                        <p>financing expenses (over a 5-year period, with 20% of the expense being deducted in each year);</p>
+                     </item>
+                     <item label="-">
+                        <p>management fees; and</p>
+                     </item>
+                     <item label="-">
+                        <p>overhead expenses.</p>
+                     </item>
+                  </list>
+                  <p>Interest expense that is on capital account may be deducted only in accordance with specific statutory rules. Generally, these rules provide a current deduction for simple interest during the year in which it accrues (not the year in which it is paid). In contrast, compound interest is deductible only in the year of payment. In lieu of taking a current deduction for interest on money borrowed to acquire depreciable capital assets, a corporation may elect to capitalize the interest. This election does not apply to inventory.</p>
+                  <p>With regard to interest expenses, thin capitalization rules apply pursuant to which a corporation resident in Canada may deduct interest on debts owed to specified non-residents only to the extent that the debt does not exceed two times the corporation’s equity (<emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_7.3.">7.3.</xref>).</p>
+                  <p>Budget 2021 proposes to introduce an earnings-stripping rule that would limit the amount of net interest expense that a corporation may deduct in computing its taxable income to no more than a fixed ratio of "tax EBITDA" (<emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_7.3.">7.3.</xref>).</p>
+               </section>
+               <section anchor="gtha_ca_2021-04-26_s_1.3.3.2." label="1.3.3.2.">
+                  <taxtopics>
+                     <taxtopic tc="1_1_21_11_2" score="3">Non-Deductible</taxtopic>
+                  </taxtopics>
+                  <taxtopics version="3.0">
+                     <taxtopic tc="1_1_21_11_2" score="3">Non-Deductible</taxtopic>
+                  </taxtopics>
+                  <title>Non-deductible expenses</title>
+                  <p>Subject to specific exceptions, a corporation may deduct only 50% of entertainment expenses. This limitation does not apply to employee functions (for example a staff Christmas party) up to a maximum of six employee functions per year.</p>
+                  <p>Fines and penalties in general are not deductible. Federal and provincial income taxes are not a deductible expense (they are not incurred for an income-earning purpose but are a result of the income-earning process). Other taxes are deductible if they meet the income-earning purpose requirement. For example, municipal property taxes paid in respect of real estate used in the business represent a cost of doing business and are deductible under this principle.</p>
+               </section>
+            </section>
+            <section anchor="gtha_ca_2021-04-26_s_1.3.4." label="1.3.4.">
+               <taxtopics>
+                  <taxtopic tc="1_1_21_12_1" score="3">Amortization / Depreciation</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_21_12_1" score="3">Amortization / Depreciation</taxtopic>
+               </taxtopics>
+               <title>Depreciation and amortization</title>
+               <p>Taxpayers may depreciate or amortize the cost of most types of capital assets acquired for an income-earning purpose. The major exceptions are land and corporate shares.</p>
+               <section anchor="gtha_ca_2021-04-26_s_1.3.4.1." label="1.3.4.1.">
+                  <taxtopics>
+                     <taxtopic tc="1_1_21_12_1" score="3">Amortization / Depreciation</taxtopic>
+                  </taxtopics>
+                  <taxtopics version="3.0">
+                     <taxtopic tc="1_1_21_12_1" score="3">Amortization / Depreciation</taxtopic>
+                  </taxtopics>
+                  <title>Capital cost allowance</title>
+                  <p>The capital cost allowance (CCA) system groups depreciable assets into various classes. Each class is depreciable at a specific rate, generally on a declining-balance basis. Depreciation for tax purposes may differ from depreciation for accounting purposes.</p>
+                  <p>CCA is calculated on the basis of asset pools. Assets of the same class form the pool. For example, office furniture is a class 8 asset, depreciable at a rate of 20% per year on a declining-balance basis. In the year of acquisition, only half the normal depreciation rate may be claimed. The taxpayer may claim as much or as little capital cost allowance as the taxpayer chooses, subject to the maximum amount permitted.</p>
+                  <p>A negative balance in a pool may arise if assets are sold for more than their depreciated cost. A negative balance is brought into income only if it exists at the end of the tax year. A taxpayer can avoid including the negative balance in income if the taxpayer acquires other assets of that same class prior to the end of the tax year and the combined cost of those other assets is at least equal to the amount of the negative balance that would otherwise arise.</p>
+                  <p>If no assets are in the pool at the end of the tax year, the taxpayer may deduct the full amount of the remaining balance as a terminal loss. A terminal loss may not be claimed if any assets are brought back into the pool before the end of the tax year.</p>
+                  <p>No capital cost allowance may be claimed before an asset is available for use. Various statutory criteria determine the date on which an asset is considered to be available for use; however, the maximum delay in claiming capital cost allowance is generally 2 years.</p>
+                  <p>The following table sets out capital cost allowance rates for some of the more common items of tangible depreciable assets. All rates are on a declining-balance basis and are subject to the half-rate rule for the year of acquisition.</p>
+                  <table anchor="gtha_ca_2021-04-26_t_1">
+                     <tgroup cols="3">
+                        <colspec colnum="1" colname="col1" colwidth="1.00*" align="left"/>
+                        <colspec colnum="2" colname="col2" colwidth="3.87*" align="left"/>
+                        <colspec colnum="3" colname="col3" colwidth="1.92*" align="left"/>
+                        <thead>
+                           <row>
+                              <entry align="left" colname="col1">
+                                 <p>Class</p>
+                              </entry>
+                              <entry align="left" colname="col2">
+                                 <p>Type of asset</p>
+                              </entry>
+                              <entry align="right" colname="col3">
+                                 <p>Rate (declining-balance basis) (%)</p>
+                              </entry>
+                           </row>
+                        </thead>
+                        <tbody>
+                           <row>
+                              <entry align="left" colname="col1">
+                                 <p>3</p>
+                              </entry>
+                              <entry align="left" colname="col2">
+                                 <p>Data communication wire or cable</p>
+                              </entry>
+                              <entry align="right" colname="col3">
+                                 <p>5</p>
+                              </entry>
+                           </row>
+                           <row>
+                              <entry align="left" colname="col1">
+                                 <p>8</p>
+                              </entry>
+                              <entry align="left" colname="col2">
+                                 <p>Office furniture, general machinery and equipment and other tangible property not included in any other class</p>
+                              </entry>
+                              <entry align="right" valign="bottom" colname="col3">
+                                 <p>20</p>
+                              </entry>
+                           </row>
+                           <row>
+                              <entry align="left" colname="col1">
+                                 <p>10</p>
+                              </entry>
+                              <entry align="left" colname="col2">
+                                 <p>Automobiles and automobile equipment, except that Class 54 allows a taxpayer to use a temporary 100% rate on up to CAD 55,000 (per vehicle) spent to acquire a new zero-emission vehicle. The 100% rate applies if the vehicle becomes available for use after 18 March 2019 and before 2023. A 75% year-of-acquisition rate will apply if the zero-emission vehicle becomes available for use in 2024 or 2025. A 55% year-of-acquisition rate will apply if the zero-emission vehicle becomes available for use in 2026 or 2027. The half-rate rule will not apply to these year-of-acquisition rates.</p>
+                              </entry>
+                              <entry align="right" colname="col3">
+                                 <p>30</p>
+                              </entry>
+                           </row>
+                           <row>
+                              <entry align="left" colname="col1">
+                                 <p>12</p>
+                              </entry>
+                              <entry align="left" colname="col2">
+                                 <p>Metric scales and non-system computer software</p>
+                              </entry>
+                              <entry align="right" valign="bottom" colname="col3">
+                                 <p>100</p>
+                              </entry>
+                           </row>
+                           <row>
+                              <entry align="left" colname="col1">
+                                 <p>43</p>
+                              </entry>
+                              <entry align="left" colname="col2">
+                                 <p>Machinery and equipment used for manufacturing and processing operations in Canada (subject to a 50% straight-line rate for machinery and equipment acquired after 18 March 2007 and before 2016 – Class 29)</p>
+                              </entry>
+                              <entry align="right" valign="bottom" colname="col3">
+                                 <p>30</p>
+                              </entry>
+                           </row>
+                           <row>
+                              <entry align="left" colname="col1">
+                                 <p>43.2</p>
+                              </entry>
+                              <entry align="left" colname="col2">
+                                 <p>Specified clean energy generation and conservation equipment acquired before 2020</p>
+                              </entry>
+                              <entry align="right" valign="bottom" colname="col3">
+                                 <p>50</p>
+                              </entry>
+                           </row>
+                           <row>
+                              <entry align="left" colname="col1">
+                                 <p>50</p>
+                              </entry>
+                              <entry align="left" colname="col2">
+                                 <p>Computer hardware acquired after 18 March 2007</p>
+                              </entry>
+                              <entry align="right" valign="bottom" colname="col3">
+                                 <p>55</p>
+                              </entry>
+                           </row>
+                        </tbody>
+                     </tgroup>
+                  </table>
+               </section>
+            </section>
+            <section anchor="gtha_ca_2021-04-26_s_1.3.5." label="1.3.5.">
+               <taxtopics>
+                  <taxtopic tc="1_1_24_1" score="3">Active / Business</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_24_1" score="3">Active / Business</taxtopic>
+               </taxtopics>
+               <title>Reserves and provisions</title>
+               <p>Except as specifically provided by statute, no deduction may be made on account of reserves and provisions.</p>
+               <p>An accrual-basis taxpayer must include all receivables in calculating income. However, the taxpayer may claim a reasonable provision for doubtful debts. The provision must be included in income in the following tax year, at which point another provision may be claimed based on the facts in existence in that subsequent year. A taxpayer may deduct bad debts in the tax year that they have gone bad. If any part of the debt is later recovered, the recovery must be included in income in the year of recovery.</p>
+               <p>In addition, a reserve may be claimed for goods or services that are to be delivered or rendered after the end of the tax year, provided the taxpayer has included the payment for those goods or services in income. A reserve may be claimed for periods in respect of which rent has been received in advance. A maximum 5-year reserve may be claimed in respect of the unpaid portion of a capital gain arising on the sale of capital assets. A maximum 3-year provision may be claimed for the unearned profit on instalment sales.</p>
+               <p>Taxpayers in the extractive industries may be required to establish trust funds to ensure the future rehabilitation of mining sites, quarries and waste disposal sites. Contributions made to these reclamation trusts are deductible provided the contribution is made pursuant to a statutory obligation.</p>
+            </section>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_1.4." label="1.4.">
+            <taxtopics>
+               <taxtopic tc="1_1_24_3" score="3">Capital Gains</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_24_3" score="3">Capital Gains</taxtopic>
+            </taxtopics>
+            <title>Capital gains</title>
+            <p>Generally, one half of a capital gain must be included in income and is then subject to the normal rate of tax. This provides for a lower effective tax rate on capital gains. The inclusion rate is reduced to one third in the case of capital gains arising as a result of gifts to certain types of charitable organizations.</p>
+            <p>Capital gains and losses arise on the disposition of capital assets. Whether an asset is held on capital or income account is a question of fact. Generally, capital assets are those that form the structure within which a taxpayer carries on his business (as opposed to inventory assets that are bought and sold in the normal course of the business). No ownership periods have been prescribed to distinguish between capital and non-capital assets.</p>
+            <p>Rollover relief is available in order to defer the capital gains tax that would otherwise arise on certain types of dispositions. In general, these rollovers also defer the recognition of recaptured depreciation that might otherwise arise on the disposition of depreciable capital assets. Replacement property that was subject to an involuntary disposition may be exempt from capital gains taxation.</p>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_1.5." label="1.5.">
+            <taxtopics>
+               <taxtopic tc="1_1_21_14" score="3">Losses</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_21_14" score="3">Losses</taxtopic>
+            </taxtopics>
+            <title>Losses</title>
+            <section anchor="gtha_ca_2021-04-26_s_1.5.1." label="1.5.1.">
+               <title>Ordinary losses</title>
+               <p>Ordinary losses may be carried back 3 years and forward 20 years for deduction against any form of income. Special rules apply in the case of losses incurred in farming and fishing businesses.</p>
+               <p>The carry-back and carry-forward of losses is restricted if control of a corporation is acquired. The restriction applies only on an acquisition of control by a person; the rules do not apply if a person merely gives up control of a corporation without another person acquiring control.</p>
+               <p>If an acquisition of control occurs, the tax year of the target corporation is deemed to end immediately before that event. Except for losses incurred in earning business income, ordinary losses incurred by the target corporation prior to an acquisition of control are not deductible after the acquisition of control (and vice versa). Ordinary losses incurred in earning business income prior to the acquisition of control are deductible in subsequent years (and vice versa) only if the business which gave rise to the loss (the loss business) is carried on with a reasonable expectation of profit throughout the subsequent year. The loss is deductible only to the extent of income from the loss business or a similar business.</p>
+               <p>As corporate groups may not elect to file tax returns on a consolidated basis, there is no opportunity to transfer losses within a group (<emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_2.1.">2.1.</xref>).</p>
+            </section>
+            <section anchor="gtha_ca_2021-04-26_s_1.5.2." label="1.5.2.">
+               <title>Capital losses</title>
+               <p>Capital losses may be deducted only against capital gains. The deductible portion of capital losses is one half of the loss, which is the same proportion as the portion of the capital gain that must be included in income.</p>
+               <p>To the extent that the deductible portion of capital losses exceed the includible portion of capital gains in any tax year, the excess may not be deducted against any other form of income. Instead, the excess may be carried over to the 3 immediately preceding tax years or any subsequent tax year and deducted from the includible portion of any capital gain realized in those other years.</p>
+               <p>Net capital losses may not be carried over to other years if there has been an intervening acquisition of control of the corporation that incurred the loss. This prohibition applies whether or not the corporation continues to carry on the same or a similar business.</p>
+               <p>If a capital loss has been realized on shares or debt of a small business corporation, that capital loss becomes an allowable business investment loss and may be deducted against any type of income. A small business corporation is a Canadian-controlled private corporation that uses substantially all its assets in an active business carried on primarily in Canada.</p>
+            </section>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_1.6." label="1.6.">
+            <taxtopics>
+               <taxtopic tc="1_1_22" score="3">Rates</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_22" score="3">Rates</taxtopic>
+            </taxtopics>
+            <title>Rates</title>
+            <section anchor="gtha_ca_2021-04-26_s_1.6.1." label="1.6.1.">
+               <taxtopics>
+                  <taxtopic tc="1_1_22_32" score="3">Capital Gains</taxtopic>
+                  <taxtopic tc="1_1_22" score="3">Rates</taxtopic>
+                  <taxtopic tc="1_1_22_1" score="3">National / Federal</taxtopic>
+                  <taxtopic tc="1_1_22_2" score="3">Local / Municipal / Cantonal</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_22_32" score="3">Capital Gains</taxtopic>
+                  <taxtopic tc="1_1_22" score="3">Rates</taxtopic>
+                  <taxtopic tc="1_1_22_1" score="3">National / Federal</taxtopic>
+                  <taxtopic tc="1_1_22_2" score="3">Local / Municipal / Cantonal</taxtopic>
+               </taxtopics>
+               <title>Income and capital gains</title>
+               <p>The rate of corporate income tax depends on the type of income earned, the status of the corporation and the Canadian province or territory in which the income is earned.</p>
+               <p>The general federal rate of tax on corporations is 38%. A 10% rebate applies to the extent the income has been earned in a Canadian province, bringing the federal rate down to 28%.</p>
+               <p>The tax rate on corporate income that is earned in a Canadian province and that does not currently benefit from other preferential tax treatment is further reduced by a general rate reduction of 13 percentage points. This makes the general rate 15%.</p>
+               <p>Various types of corporate income currently benefit from preferential treatment and thus do not qualify for the reduced rate, including Canadian manufacturing and processing income, investment income earned by a Canadian-controlled private corporation, income from non-renewable natural resource activities and income earned by mutual fund corporations, mortgage investment corporations and investment corporations.</p>
+               <p>A non-resident corporation is subject to a branch profits tax equal to 25% of taxable income earned in Canada (after deduction of federal and provincial income tax and after deduction of an allowance for investments in certain types of Canadian property), which may be reduced under a tax treaty (<emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_6.2.1.">6.2.1.</xref>).</p>
+               <p>The appropriate provincial income tax rate is added to the federal rate (general or reduced) to get the effective combined rate. The rates of provincial income tax vary from jurisdiction to jurisdiction. The following table shows the combined general federal and provincial tax rates effective 1 January 2021 (according to information available as of 1 January 2021), listed by province and type of income:</p>
+               <table anchor="gtha_ca_2021-04-26_t_2">
+                  <tgroup cols="5">
+                     <colspec colnum="1" colname="col1" colwidth="1*" align="left"/>
+                     <colspec colnum="2" colname="col2" colwidth="1*" align="left"/>
+                     <colspec colnum="3" colname="col3" colwidth="1*" align="left"/>
+                     <colspec colnum="4" colname="col4" colwidth="1*" align="left"/>
+                     <colspec colnum="5" colname="col5" colwidth="1*" align="left"/>
+                     <thead>
+                        <row>
+                           <entry align="left" colname="col1">
+                              <p>Province</p>
+                           </entry>
+                           <entry align="right" colname="col2">
+                              <p>General<br/>rate (%)</p>
+                           </entry>
+                           <entry align="right" colname="col3">
+                              <p>General<br/>reduced rate (%)</p>
+                           </entry>
+                           <entry align="right" colname="col4">
+                              <p>M&amp;P<br/>rate (%)</p>
+                           </entry>
+                           <entry align="right" colname="col5">
+                              <p>CCPC<br/>active rate (%)</p>
+                           </entry>
+                        </row>
+                     </thead>
+                     <tbody>
+                        <row>
+                           <entry align="left" colname="col1">
+                              <p>Alberta</p>
+                           </entry>
+                           <entry align="right" colname="col2">
+                              <p>36</p>
+                           </entry>
+                           <entry align="right" colname="col3">
+                              <p>23</p>
+                           </entry>
+                           <entry align="right" colname="col4">
+                              <p>23</p>
+                           </entry>
+                           <entry align="right" colname="col5">
+                              <p>11</p>
+                           </entry>
+                        </row>
+                        <row>
+                           <entry align="left" colname="col1">
+                              <p>British Columbia</p>
+                           </entry>
+                           <entry align="right" colname="col2">
+                              <p>40</p>
+                           </entry>
+                           <entry align="right" colname="col3">
+                              <p>27</p>
+                           </entry>
+                           <entry align="right" colname="col4">
+                              <p>27</p>
+                           </entry>
+                           <entry align="right" colname="col5">
+                              <p>11</p>
+                           </entry>
+                        </row>
+                        <row>
+                           <entry align="left" colname="col1">
+                              <p>Manitoba</p>
+                           </entry>
+                           <entry align="right" colname="col2">
+                              <p>40</p>
+                           </entry>
+                           <entry align="right" colname="col3">
+                              <p>27</p>
+                           </entry>
+                           <entry align="right" colname="col4">
+                              <p>27</p>
+                           </entry>
+                           <entry align="right" colname="col5">
+                              <p>9</p>
+                           </entry>
+                        </row>
+                        <row>
+                           <entry align="left" colname="col1">
+                              <p>New Brunswick</p>
+                           </entry>
+                           <entry align="right" colname="col2">
+                              <p>42</p>
+                           </entry>
+                           <entry align="right" colname="col3">
+                              <p>29</p>
+                           </entry>
+                           <entry align="right" colname="col4">
+                              <p>29</p>
+                           </entry>
+                           <entry align="right" colname="col5">
+                              <p>11.5</p>
+                           </entry>
+                        </row>
+                        <row>
+                           <entry align="left" colname="col1">
+                              <p>Newfoundland</p>
+                           </entry>
+                           <entry align="right" colname="col2">
+                              <p>43</p>
+                           </entry>
+                           <entry align="right" colname="col3">
+                              <p>30</p>
+                           </entry>
+                           <entry align="right" colname="col4">
+                              <p>30</p>
+                           </entry>
+                           <entry align="right" colname="col5">
+                              <p>12</p>
+                           </entry>
+                        </row>
+                        <row>
+                           <entry align="left" colname="col1">
+                              <p>Northwest Territories</p>
+                           </entry>
+                           <entry align="right" colname="col2">
+                              <p>39.5</p>
+                           </entry>
+                           <entry align="right" colname="col3">
+                              <p>26.5</p>
+                           </entry>
+                           <entry align="right" colname="col4">
+                              <p>26.5</p>
+                           </entry>
+                           <entry align="right" colname="col5">
+                              <p>11</p>
+                           </entry>
+                        </row>
+                        <row>
+                           <entry align="left" colname="col1">
+                              <p>Nova Scotia</p>
+                           </entry>
+                           <entry align="right" colname="col2">
+                              <p>42</p>
+                           </entry>
+                           <entry align="right" colname="col3">
+                              <p>29</p>
+                           </entry>
+                           <entry align="right" colname="col4">
+                              <p>29</p>
+                           </entry>
+                           <entry align="right" colname="col5">
+                              <p>11.5</p>
+                           </entry>
+                        </row>
+                        <row>
+                           <entry align="left" colname="col1">
+                              <p>Nunavut</p>
+                           </entry>
+                           <entry align="right" colname="col2">
+                              <p>40</p>
+                           </entry>
+                           <entry align="right" colname="col3">
+                              <p>27</p>
+                           </entry>
+                           <entry align="right" colname="col4">
+                              <p>27</p>
+                           </entry>
+                           <entry align="right" colname="col5">
+                              <p>12</p>
+                           </entry>
+                        </row>
+                        <row>
+                           <entry align="left" colname="col1">
+                              <p>Ontario</p>
+                           </entry>
+                           <entry align="right" colname="col2">
+                              <p>39.5</p>
+                           </entry>
+                           <entry align="right" colname="col3">
+                              <p>26.5</p>
+                           </entry>
+                           <entry align="right" colname="col4">
+                              <p>25</p>
+                           </entry>
+                           <entry align="right" colname="col5">
+                              <p>12.2</p>
+                           </entry>
+                        </row>
+                        <row>
+                           <entry align="left" colname="col1">
+                              <p>Prince Edward Island</p>
+                           </entry>
+                           <entry align="right" colname="col2">
+                              <p>44</p>
+                           </entry>
+                           <entry align="right" colname="col3">
+                              <p>31</p>
+                           </entry>
+                           <entry align="right" colname="col4">
+                              <p>31</p>
+                           </entry>
+                           <entry align="right" colname="col5">
+                              <p>11</p>
+                           </entry>
+                        </row>
+                        <row>
+                           <entry align="left" colname="col1">
+                              <p>Quebec</p>
+                           </entry>
+                           <entry align="right" colname="col2">
+                              <p>39.5</p>
+                           </entry>
+                           <entry align="right" colname="col3">
+                              <p>26.5</p>
+                           </entry>
+                           <entry align="right" colname="col4">
+                              <p>26.5</p>
+                           </entry>
+                           <entry align="right" colname="col5">
+                              <p>13</p>
+                           </entry>
+                        </row>
+                        <row>
+                           <entry align="left" colname="col1">
+                              <p>Saskatchewan</p>
+                           </entry>
+                           <entry align="right" colname="col2">
+                              <p>40</p>
+                           </entry>
+                           <entry align="right" colname="col3">
+                              <p>27</p>
+                           </entry>
+                           <entry align="right" colname="col4">
+                              <p>24</p>
+                           </entry>
+                           <entry align="right" colname="col5">
+                              <p>9 </p>
+                           </entry>
+                        </row>
+                        <row>
+                           <entry align="left" colname="col1">
+                              <p>Yukon Territory</p>
+                           </entry>
+                           <entry align="right" colname="col2">
+                              <p>40</p>
+                           </entry>
+                           <entry align="right" colname="col3">
+                              <p>27</p>
+                           </entry>
+                           <entry align="right" colname="col4">
+                              <p>17.5</p>
+                           </entry>
+                           <entry align="right" colname="col5">
+                              <p>9</p>
+                           </entry>
+                        </row>
+                     </tbody>
+                  </tgroup>
+               </table>
+               <p>The M&amp;P rate referred to in the table applies to Canadian manufacturing and processing income.</p>
+               <p>The federal portion of the CCPC active rate, 9% in 2021, applies to the first CAD 500,000 of active business income earned by a Canadian-controlled private corporation provided the business activity is carried on primarily in Canada. The CAD 500,000 small business limit is reduced if the CCPC and its associated corporations have combined investment income in excess of CAD 50,000. The limit is reduced by CAD 5 for each CAD 1 of investment income in excess of CAD 50,000. As a result, the active business rate is not available if the associated group has investment income of CAD 150,000 or more. For purposes of this calculation, investment income includes dividends from other corporations but excludes capital gains on the sale of active business assets.</p>
+               <p>The threshold is CAD 500,000, with the exception of Saskatchewan (CAD 600,000). The limit applies on an annual basis and is not cumulative, although it must be shared among associated corporations. The federal annual income limit is reduced for corporate groups having taxable capital in excess of CAD 10 million. For a corporate group with CAD 15 million or more of capital, no income is eligible for the preferential rate.</p>
+               <p>The effective income tax rate on capital gains is lower than the general rate because only one half of capital gains are included in income. In general, the effective rate on a capital gain can be computed by multiplying the general tax rate by one half.</p>
+            </section>
+            <section anchor="gtha_ca_2021-04-26_s_1.6.2." label="1.6.2.">
+               <taxtopics>
+                  <taxtopic tc="1_3_1" score="3">Income Streams</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_3_1" score="3">Income Streams</taxtopic>
+               </taxtopics>
+               <title>Withholding taxes on domestic payments</title>
+               <p>In general, no withholding tax applies on payments made to resident corporations. For rates of withholding tax on payments to non-residents, <emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_6.3.">6.3.</xref> </p>
+            </section>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_1.7." label="1.7.">
+            <taxtopics>
+               <taxtopic tc="1_1_2" score="3">Incentives</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_2" score="3">Incentives</taxtopic>
+            </taxtopics>
+            <title>Incentives</title>
+            <p>For the preferential tax rate on manufacturing and processing activity and on the first CAD 500,000 of active business income earned by Canadian-controlled private corporations, <emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_1.6.1.">1.6.1.</xref> </p>
+            <p>Special tax credits may be claimed in respect of qualifying expenditures. For example, a 15% investment tax credit may be claimed in respect of qualifying scientific research activities. Any such tax credit claim will generally reduce the depreciable cost of the asset in question. Various provinces also have provincial tax credit programmes to encourage specific activities (including film and video productions).</p>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_1.8." label="1.8.">
+            <taxtopics>
+               <taxtopic tc="2_17" score="3">Tax Management / Procedure / Administration</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="2_17" score="3">Tax Management / Procedure / Administration</taxtopic>
+            </taxtopics>
+            <title>Administration</title>
+            <p>The Canada Revenue Agency (CRA) administers the federal income tax system, and administers the provincial corporate income tax system for all provinces except Quebec, Ontario and Alberta.</p>
+            <section anchor="gtha_ca_2021-04-26_s_1.8.1." label="1.8.1.">
+               <title>Taxable period</title>
+               <p>The tax year of a corporation is its fiscal period. A fiscal period is the period for which the accounts of the business are ordinarily made up; however, a fiscal period may not exceed 53 weeks. Accordingly, a corporation may choose to have a tax year that is other than the calendar year. Once a fiscal period has been established, any change in that fiscal period requires the consent of the CRA.</p>
+            </section>
+            <section anchor="gtha_ca_2021-04-26_s_1.8.2." label="1.8.2.">
+               <taxtopics>
+                  <taxtopic tc="2_17_2" score="3">Filings / Returns</taxtopic>
+                  <taxtopic tc="2_17_21" score="3">Assessments</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="2_17_2" score="3">Filings / Returns</taxtopic>
+                  <taxtopic tc="2_17_21" score="3">Assessments</taxtopic>
+               </taxtopics>
+               <title>Tax returns and assessment</title>
+               <p>A corporation must file an income tax return no later than 6 months after the end of each tax year. Canada employs a self-assessment system.</p>
+            </section>
+            <section anchor="gtha_ca_2021-04-26_s_1.8.3." label="1.8.3.">
+               <taxtopics>
+                  <taxtopic tc="2_17_31" score="3">Payments</taxtopic>
+                  <taxtopic tc="2_17_31_2" score="3">Advance</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="2_17_31" score="3">Payments</taxtopic>
+                  <taxtopic tc="2_17_31_2" score="3">Advance</taxtopic>
+               </taxtopics>
+               <title>Payment of tax</title>
+               <p>Corporations must make monthly tax instalment payments. A corporation may choose one of the following three instalment options:</p>
+               <list>
+                  <item label="-">
+                     <p>it may make payments at each month-end equal to 1/12 of its estimated tax liability for the current year;</p>
+                  </item>
+                  <item label="-">
+                     <p>it may make payments at each month-end equal to 1/12 of tax paid in the immediately preceding year; or</p>
+                  </item>
+                  <item label="-">
+                     <p>at the first 2 month-ends, it may make payments equal to 1/12 of tax paid for its second preceding tax year and, at each of the 10 succeeding month-ends, payments equal to 1/10 of the amount remaining after deducting the payments made in the first 2 months from tax paid in the immediately preceding tax year.</p>
+                  </item>
+               </list>
+               <p>If instalment payments fall short of actual tax liability for the current year, the corporation must pay the shortfall by the end of the second month after the end of the tax year (even though the tax return is not due until the end of the sixth month after the end of the tax year). The deadline for final payment of tax is extended by 1 month for Canadian-controlled private corporations in certain circumstances.</p>
+            </section>
+            <section anchor="gtha_ca_2021-04-26_s_1.8.4." label="1.8.4.">
+               <taxtopics>
+                  <taxtopic tc="2_17_41" score="3">Rulings</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="2_17_41" score="3">Rulings</taxtopic>
+               </taxtopics>
+               <title>Rulings</title>
+               <p>Taxpayers may request advance income tax rulings to confirm how the income tax law will apply to a stated set of facts. In general, advance rulings are not given on pure questions of fact. The taxpayer must assume responsibility for the accuracy of all statements of fact upon which the interpretation of the law is based.</p>
+               <p>A fee is charged for advance rulings. A ruling can be obtained only on the tax consequences of an actual proposed future transaction (as opposed to a hypothetical transaction). Advance ruling letters do not have the force of law. However, the CRA considers itself bound by advance ruling letters provided that the taxpayer has fully disclosed all relevant facts and that the transaction is implemented as set out in the advance ruling letter.</p>
+            </section>
+         </section>
+      </section>
+      <section anchor="gtha_ca_2021-04-26_s_2." label="2.">
+         <taxtopics>
+            <taxtopic tc="1_1_1_1_1" score="3">Resident</taxtopic>
+         </taxtopics>
+         <taxtopics version="3.0">
+            <taxtopic tc="1_1_1_1_1" score="3">Resident</taxtopic>
+         </taxtopics>
+         <title>Transactions between Resident Companies</title>
+         <section anchor="gtha_ca_2021-04-26_s_2.1." label="2.1.">
+            <taxtopics>
+               <taxtopic tc="1_1_41" score="3">Group Treatment</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_41" score="3">Group Treatment</taxtopic>
+            </taxtopics>
+            <title>Group treatment</title>
+            <p>Corporate groups may not elect to file tax returns on a consolidated basis.</p>
+            <p>Expenses incurred by a parent corporation as a shareholder managing its investments should be borne entirely by the parent corporation and applied against its income from the investments. Expenses that are clearly incurred for the benefit of a single member of a corporate group should not be borne by other members of the group.</p>
+            <p>Generally, the Canada Revenue Agency takes the view that no profit element should be present in shared costs charged to Canadian branches and subsidiaries. However, a reasonable mark-up is allowed in respect of charges made by a non-arm’s length non-resident who is in the business of providing management and administration services.</p>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_2.2." label="2.2.">
+            <taxtopics>
+               <taxtopic tc="1_1_24_2" score="3">Passive / Investment</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_24_2" score="3">Passive / Investment Income</taxtopic>
+            </taxtopics>
+            <title>Intercompany dividends</title>
+            <p>Corporations must include dividends in income but generally may claim an offsetting deduction to the extent that the dividends have been received from taxable resident corporations. Generally, no additional tax cost results from dividends passing through several layers of resident corporations.</p>
+            <p>The intercorporate dividend deduction is not available in respect of dividends received on certain types of preferred shares that are more akin to debt substitutes than equity shares. For example, the deduction may be denied if certain entities have provided a guarantee against loss to the shareholder or if the payment of dividends is secured by certain assets.</p>
+            <p>Other rules applicable to dividends on preferred shares may impose a tax if the corporation paying the dividend has not paid a minimum amount of tax on the income used to generate the dividend.</p>
+            <p>An otherwise deductible intercorporate dividend may be subject to capital gains treatment if the dividend reduces the capital gain inherent in a share and is not supported by what may be loosely described as taxed retained earnings realized after 1971. This rule prevents the realization of appraisal surplus (the untaxed pre-realization growth in value of corporate assets) in the form of a tax-free intercorporate dividend. An exception applies if:</p>
+            <list>
+               <item label="-">
+                  <p>the dividend is not part of, and is not preparatory to, a transaction in which an unrelated third party acquires an interest in a corporation; or</p>
+               </item>
+               <item label="-">
+                  <p>the dividend is paid as part of certain corporate reorganizations.</p>
+               </item>
+            </list>
+            <p>While intercorporate dividends generally pass tax-free, private corporations and certain other closely held corporations must pay a refundable tax equal to one third of dividends received. The tax approximates the tax that would have been payable by an individual shareholder and is refunded to the corporation when it in turn pays a taxable dividend (whether to a corporate or non-corporate shareholder). The refund is granted at the rate of CAD 1 of refund for each CAD 3 of dividend paid. No refundable tax is imposed if the recipient corporation controls the payer corporation or owns at least 10% of the votes and value of the payer corporation.</p>
+            <p>Dividend treatment is generally denied for dividends received as part of a dividend rental arrangement. A dividend rental arrangement involves transferring the right to receive a dividend on a share without also transferring the risk of loss and opportunity for gain that normally accompanies ownership of a share.</p>
+            <p>For foreign-source dividends, <emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_6.1.1.">6.1.1.</xref>; for dividends paid to non-resident companies, <emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_6.3.1.">6.3.1.</xref> </p>
+         </section>
+      </section>
+      <section anchor="gtha_ca_2021-04-26_s_3." label="3.">
+         <taxtopics>
+            <taxtopic tc="1_1" score="3">Corporate Taxation</taxtopic>
+         </taxtopics>
+         <taxtopics version="3.0">
+            <taxtopic tc="1_1" score="3">Corporate Taxation</taxtopic>
+         </taxtopics>
+         <title>Other Taxes on Income</title>
+         <p>Each province imposes a provincial corporate income tax (<emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_1.6.1.">1.6.1.</xref>). The provinces of Quebec and Alberta administer their own corporate income tax system; in other provinces, the provincial system is administered by the federal government so that corporations in those provinces need file only one income tax return. Such taxes are not deductible from federal income tax.</p>
+         <p>In general, Canadian municipalities do not impose income taxes. However, various municipalities impose business licence fees. Such fees will depend on the type of business and the location in which the business is carried on. Such fees are deductible in computing taxable income.</p>
+         <p>The provinces of British Columbia and Quebec impose a special tax on income from logging operations. The federal government and the two provinces in question allow taxpayers to claim the provincial logging tax as a credit against regular income tax.</p>
+         <p>Each province charges its own royalties or taxes on income from oil, gas and mining operations. The federal government also charges royalties on such production from lands under federal control. In general, these charges are equal to a specified percentage of production.</p>
+      </section>
+      <section anchor="gtha_ca_2021-04-26_s_4." label="4.">
+         <title>Taxes on Payroll</title>
+         <section anchor="gtha_ca_2021-04-26_s_4.1." label="4.1.">
+            <taxtopics>
+               <taxtopic tc="1_5_11" score="3">Payroll Taxes / Wage Taxes</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_10_11" score="3">Payroll Taxes / Wage Taxes</taxtopic>
+            </taxtopics>
+            <title>Payroll tax</title>
+            <p>Newfoundland, Manitoba, Quebec, Ontario, the Northwest Territories, Nunavut and British Columbia are the only Canadian jurisdictions that impose a payroll tax. In general, payroll taxes constitute a cost of doing business and may be deducted in computing income for income tax purposes. However, the federal government does not allow the deduction of any increase in provincial payroll taxes over the rates in effect as of March 1993.</p>
+            <p>Rates of payroll tax range from a maximum of 1.95% in Ontario to 4.3% in Manitoba. Various exemptions apply based on the level of annual payroll.</p>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_4.2." label="4.2.">
+            <taxtopics>
+               <taxtopic tc="1_5_12" score="3">Social Security Contributions</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_10_12" score="3">Social Security Contributions</taxtopic>
+            </taxtopics>
+            <title>Social security contributions</title>
+            <p>The employer must collect the employee portion of the contribution and remit both the employer and employee portions to the tax authorities on at least a monthly basis.</p>
+            <p>The federal government administers an employment insurance fund to provide assistance to workers during periods of temporary unemployment. In 2021, the employer must contribute CAD 2.212 per CAD 100 of insurable earnings up to an annual maximum level of CAD 56,300 in insurable earnings per employee. For employers, the maximum per-employee annual contribution is CAD 1,245.36. Employees must also make contributions, which are deducted and paid to the CRA by the employer (<emph type="i">see</emph> <extxref publish="n" target="gthb_ca_s_3.2.">Individual Taxation section 3.2.</extxref>).</p>
+            <p>The taxable base is salaries and wages (including cash benefits and the value of board and lodging).</p>
+            <p>The federal government also administers a contributory pension plan designed to provide a minimum level of retirement, disability and certain other benefits to Canadian residents. The province of Quebec administers a separate but similar plan for residents of Quebec. In 2021, employers must contribute 5.45% of pensionable earnings in excess of CAD 3,500 per employee, up to a maximum of CAD 61,600 in pensionable earnings per employee. For employers, the maximum per-employee annual contribution is CAD 3,166.45. Employees must also make contributions, which are deducted and paid to the CRA by the employer (<emph type="i">see</emph> <extxref publish="n" target="gthb_ca_s_3.3.">Individual Taxation section 3.3.</extxref>).</p>
+            <p>The taxable base is salaries and wages (including the value of most fringe benefits).</p>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_4.3." label="4.3.">
+            <title>Other taxes</title>
+            <section anchor="gtha_ca_2021-04-26_s_4.3.1." label="4.3.1.">
+               <title>Provincial medical insurance</title>
+               <p>Each province administers a general health insurance plan to assist provincial residents with the cost of medical care. The method of funding the plan varies from province to province. In most provinces, residents must pay monthly premiums and employers must collect and remit the premiums.</p>
+            </section>
+            <section anchor="gtha_ca_2021-04-26_s_4.3.2." label="4.3.2.">
+               <title>Workers’ compensation</title>
+               <p>Each province administers an accident fund to compensate employees who have been injured on the job. In general, membership in the fund is mandatory for certain industries and may be voluntary for others. Employers participating in the fund must make monthly contributions on a per-employee basis. Rates vary by province and by industry.</p>
+            </section>
+         </section>
+      </section>
+      <section anchor="gtha_ca_2021-04-26_s_5." label="5.">
+         <taxtopics>
+            <taxtopic tc="1_5_2" score="3">Capital / Property Taxes</taxtopic>
+         </taxtopics>
+         <taxtopics version="3.0">
+            <taxtopic tc="1_10_2" score="3">Capital / Property Taxes</taxtopic>
+         </taxtopics>
+         <title>Taxes on Capital</title>
+         <section anchor="gtha_ca_2021-04-26_s_5.1." label="5.1.">
+            <taxtopics>
+               <taxtopic tc="1_5_2_1" score="3">Wealth / Worth Taxes</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_10_2_1" score="3">Wealth / Worth Taxes</taxtopic>
+            </taxtopics>
+            <title>Net worth tax</title>
+            <section anchor="gtha_ca_2021-04-26_s_5.1.1." label="5.1.1.">
+               <title>Federal taxes</title>
+               <p>The federal government imposes a capital tax on financial institutions. Generally, income tax or corporate surtax may be credited against the capital tax. In effect, the capital tax is a form of minimum tax. If a corporation has no income in a year and hence no income tax or surtax to credit against the capital tax, carry-over mechanisms allow unused credits from other years to be applied to reduce the capital tax due.</p>
+            </section>
+            <section anchor="gtha_ca_2021-04-26_s_5.1.2." label="5.1.2.">
+               <title>Provincial taxes</title>
+               <p>Many provinces impose a form of capital tax on financial institutions with a permanent establishment in the province including Manitoba, New Brunswick, Newfoundland, Nova Scotia, Prince Edward Island and Saskatchewan.</p>
+               <p>In general, capital taxes are deductible for income tax purposes. However, the federal government allows the deduction of provincial capital taxes only up to the rates in effect in March 1993.</p>
+            </section>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_5.2." label="5.2.">
+            <taxtopics>
+               <taxtopic tc="1_5_2_4" score="3">Real Estate Holding Taxes</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_10_2_4" score="3">Real Estate Holding Taxes</taxtopic>
+            </taxtopics>
+            <title>Real estate tax</title>
+            <p>Real estate taxes are imposed in each province, usually at the municipal government level. In general, the tax is based on the annual assessed value of the real estate. Rates vary by class of property and from municipality to municipality.</p>
+            <p>In general, municipal real estate taxes are deductible for income tax purposes. However, property taxes paid in respect of vacant land may be deducted only to the extent of the net income from that land. A limited exemption from this restriction exists for corporations whose principal business is the leasing, rental, sale, or development of real estate. Restrictions also apply on the deductibility of municipal property taxes incurred during the construction, renovation or alteration of a building.</p>
+            <p>Transfer tax is also payable on transfers of real property (<emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_9.2.">9.2.</xref>).</p>
+         </section>
+      </section>
+      <section anchor="gtha_ca_2021-04-26_s_6." label="6.">
+         <title>International Aspects</title>
+         <section anchor="gtha_ca_2021-04-26_s_6.1." label="6.1.">
+            <taxtopics>
+               <taxtopic tc="1_1_1_1_1" score="3">Resident</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_1_1_1" score="3">Resident</taxtopic>
+            </taxtopics>
+            <title>Resident companies</title>
+            <p>For the concept of residence, <emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_1.2.1.">1.2.1.</xref> </p>
+            <section anchor="gtha_ca_2021-04-26_s_6.1.1." label="6.1.1.">
+               <taxtopics>
+                  <taxtopic tc="1_1_1_2_2" score="3">Foreign</taxtopic>
+                  <taxtopic tc="1_1_22_32" score="3">Capital Gains</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_1_2_2" score="3">Foreign</taxtopic>
+                  <taxtopic tc="1_1_22_32" score="3">Capital Gains</taxtopic>
+               </taxtopics>
+               <title>Foreign income and capital gains</title>
+               <p>A resident corporation is subject to Canadian tax on its worldwide income and worldwide capital gains. The rules described in sections <xref target="gtha_ca_2021-04-26_s_1.3.">1.3.</xref> and <xref target="gtha_ca_2021-04-26_s_1.4.">1.4.</xref> generally apply.</p>
+               <p>If foreign income is not considered to be earned in a province or territory, provincial or territorial income tax does not apply. Instead, the 10% abatement in the federal rate is not available (<emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_1.6.1.">1.6.1.</xref>). The reduced rates for manufacturing and processing income and for active business income of Canadian-controlled private corporations do not apply.</p>
+               <p>Dividends received from a foreign affiliate must be included in income. Certain deductions may then be claimed, depending on the nature of the income from which the dividend is considered to have been paid. Income effectively retains its nature through intercorporate dividends passing through several tiers of foreign affiliates. A foreign affiliate is a foreign corporation in respect of which a resident corporation owns (directly or indirectly) at least 10% of the shares of any class. In calculating indirect ownership, one attributes to the top corporation its proportion of shares owned through other entities.</p>
+            </section>
+            <section anchor="gtha_ca_2021-04-26_s_6.1.2." label="6.1.2.">
+               <taxtopics>
+                  <taxtopic tc="1_1_21_14" score="3">Losses</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_21_14" score="3">Losses</taxtopic>
+               </taxtopics>
+               <title>Foreign losses</title>
+               <p>Foreign-source losses are treated in the same way as domestic-source losses (<emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_1.5.">1.5.</xref>).</p>
+            </section>
+            <section anchor="gtha_ca_2021-04-26_s_6.1.3." label="6.1.3.">
+               <title>Foreign capital</title>
+               <p>Corporate capital taxes generally do not apply to capital that is considered to be employed outside Canada.</p>
+            </section>
+            <section anchor="gtha_ca_2021-04-26_s_6.1.4." label="6.1.4.">
+               <taxtopics>
+                  <taxtopic tc="1_1_32" score="3">Unilateral Double Tax Relief [DTR]</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_32" score="3">Unilateral Double Tax Relief [DTR]</taxtopic>
+               </taxtopics>
+               <title>Double taxation relief</title>
+               <p>Canada provides its residents with a foreign tax credit in respect of foreign income taxes paid on foreign income. Two separate credits apply: a credit for foreign non-business income tax and a separate credit for foreign business income tax.</p>
+               <p>The foreign tax credit is limited to the level of Canadian income tax otherwise payable on the foreign income and is computed separately for each foreign country based on the income earned in that country as a proportion of the taxpayer’s world income.</p>
+               <p>If foreign income is exempt from tax in the source country under the provisions of a tax treaty, the foreign tax credit is not available to reduce the Canadian tax payable in respect of that exempt foreign income. If the foreign tax would not have been imposed in the absence of a Canadian tax credit for the foreign tax, no foreign tax credit is granted in Canada.</p>
+               <p>Within certain limits, a resident corporation may elect to increase its foreign-source taxable income in order to increase the Canadian tax otherwise payable and therefore the portion of foreign taxes that qualifies for the foreign tax credit. The increase may not be so large as to entitle the corporation to certain other deductions. Any amount added to the corporation’s income is treated as an ordinary loss for the year.</p>
+               <p>The foreign non-business credit applies to foreign income taxes paid on foreign non-business income. This includes foreign taxes paid on passive income such as interest, rent, dividend, royalties and capital gains.</p>
+               <p>A taxpayer must claim the non-business credit in the year in respect of which the foreign tax was paid. The credit cannot be carried over to other years. No credit may be claimed for non-business tax that exceeds the Canadian tax rate; however, the taxpayer may claim the excess as a deduction in computing income.</p>
+               <p>A special indirect credit applies in the case of dividends received by a resident corporation out of the taxable surplus of a foreign affiliate (<emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_6.1.1.">6.1.1.</xref>).</p>
+               <p>The foreign business income tax credit applies to foreign taxes paid on foreign-source business income. The tax credit is the only relief available in respect of foreign business income tax.</p>
+               <p>If the foreign tax exceeds the Canadian tax otherwise payable on the income, the excess amount cannot be claimed as a deduction. However, excess foreign tax that cannot be claimed as a credit in the year paid can be carried over on a per-country basis to reduce Canadian income taxes in the 3 preceding years and the 7 following years. This carry-over provision applies only if the taxpayer carries on business in the foreign country in the applicable year.</p>
+               <p>The foreign business income tax credit must be deducted after the foreign non-business income tax credit.</p>
+               <p>For a list of tax treaties in force, <emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_6.3.5.">6.3.5.</xref> </p>
+            </section>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_6.2." label="6.2.">
+            <taxtopics>
+               <taxtopic tc="1_1_1_1_2" score="3">Non-Resident</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_1_1_2" score="3">Non-Resident</taxtopic>
+            </taxtopics>
+            <title>Non-resident companies</title>
+            <p>For the concept of residence, <emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_1.2.1.">1.2.1.</xref> </p>
+            <section anchor="gtha_ca_2021-04-26_s_6.2.1." label="6.2.1.">
+               <taxtopics>
+                  <taxtopic tc="1_1_1_2_2" score="3">Foreign</taxtopic>
+                  <taxtopic tc="1_1_22_32" score="3">Capital Gains</taxtopic>
+                  <taxtopic tc="2_15" score="3">Permanent Establishments [PE]</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_1_2_2" score="3">Foreign</taxtopic>
+                  <taxtopic tc="1_1_22_32" score="3">Capital Gains</taxtopic>
+                  <taxtopic tc="1_1_51" score="3">Permanent Establishments [PE]</taxtopic>
+               </taxtopics>
+               <title>Taxes on income and capital gains</title>
+               <p>A non-resident must file a Canadian income tax return in respect of income derived from carrying on a business in Canada, whether or not carried on through a permanent establishment. A non-resident is deemed to be carrying on business in Canada if the non-resident either:</p>
+               <list>
+                  <item label="-">
+                     <p>produces, grows, mines, creates, manufactures, fabricates, improves, packs, preserves, or constructs anything in Canada; or</p>
+                  </item>
+                  <item label="-">
+                     <p>solicits orders or offers anything for sale in Canada through an agent or servant.</p>
+                  </item>
+               </list>
+               <p>Most of Canada’s tax treaties override this broad definition by exempting a non-resident from paying Canadian income tax on Canadian-source business income unless the non-resident earns the income through a permanent establishment situated in Canada. Generally, the definition in recent Canadian treaties follows the OECD Model.</p>
+               <p>A non-resident carrying on business in Canada is subject to the general rates of Canadian tax on Canadian-source business income (<emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_1.6.1.">1.6.1.</xref>). In addition, a non-resident corporation is subject to a branch profits tax equal to 25% of taxable income earned in Canada (after deduction of federal and provincial income tax and after deduction of an allowance for investments in certain types of Canadian property). The branch tax essentially takes the place of the withholding tax that would have been levied on dividends if a Canadian subsidiary had carried on the business. To the extent that a tax treaty reduces the rate of withholding tax on dividends, the rate of branch tax is generally also reduced.</p>
+               <p>Other Canadian-source income is generally taxed under the withholding tax provisions discussed in section <xref target="gtha_ca_2021-04-26_s_6.3.">6.3.</xref> However, it is possible for dividend, interest, royalty and rental income to have a business source. For example, a non-resident corporation carrying on business in Canada through a permanent establishment may earn interest income on overdue accounts. Such income is Canadian business income and is taxed as such rather than under the withholding tax regime. If the non-resident did not carry on the business through a Canadian permanent establishment, the withholding tax regime applies to the interest on the overdue accounts.</p>
+               <p>Non-residents are also subject to Canadian tax in respect of capital gains realized on the disposition of taxable Canadian property. Taxable Canadian property includes the following:</p>
+               <list>
+                  <item label="-">
+                     <p>immovable property situated in Canada;</p>
+                  </item>
+                  <item label="-">
+                     <p>capital property used at any time in carrying on a business in Canada (if the non-resident is carrying on an insurance business in Canada, the property must have been used or held in that business in the year of disposition);</p>
+                  </item>
+                  <item label="-">
+                     <p>a share of a private corporation resident in Canada but only if the share, at any time during the preceding 60 months, derived more than 50% of its value from immovable property (including certain resource properties) situated in Canada;</p>
+                  </item>
+                  <item label="-">
+                     <p>a share of a public corporation resident in Canada if, at any time during the preceding 5 years, the non-resident and/or non-arm’s length persons owned 25% or more of the shares of any class of stock issued by the corporation and the share, at any time during the preceding 60 months, derived more than 50% of its value from immovable property (including certain resource properties) situated in Canada;</p>
+                  </item>
+                  <item label="-">
+                     <p>an interest in a partnership if, at any time during the preceding 12 months, not less than 50% of the fair market value of the assets and cash held by the partnership was represented by certain types of Canadian property (including taxable Canadian property and Canadian resource property) and the partnership interest, at any time during the preceding 60 months, derived more than 50% of its value from immovable property (including certain resource properties) situated in Canada;</p>
+                  </item>
+                  <item label="-">
+                     <p>an interest in a trust resident in Canada (with the exception of a unit in a mutual fund trust unless, however, the non-resident and/or non-arm’s length persons have held, at any time in the preceding 5 years, 25% or more of the issued units of the mutual fund trust) if the trust interest, at any time during the preceding 60 months, derived more than 50% of its value from immovable property (including certain resource properties) situated in Canada; and</p>
+                  </item>
+                  <item label="-">
+                     <p>except for shares that are listed on prescribed foreign stock exchanges, shares of a non-Canadian corporation or trust if, at any time in the preceding 12 months, the fair market value of Canadian immovable property or resource properties, including such properties owned by lower-tier entities, represents at least 50% of the fair market value of all properties. Transitional relief applies to gains that accrued prior to May of 1995.</p>
+                  </item>
+               </list>
+               <p>Most of Canada’s tax treaties modify the general rules regarding capital gains by restricting Canadian tax to direct and indirect interests in Canadian real estate.</p>
+               <p>A non-resident who disposes of taxable Canadian property is subject to a source deduction regime. The purchaser of the asset will usually insist that the non-resident obtain a clearance certificate from the Canadian tax authorities. In the absence of such a certificate, the purchaser may insist on withholding up to 50% of the entire purchase price (not merely the vendor’s estimated gain). If the purchaser fails to obtain the certificate, the purchaser may become liable to pay up to 50% of the purchase price directly to the tax authorities.</p>
+               <p>In order to obtain the clearance certificate, the non-resident will usually have to pay estimated tax liability in respect of the transaction. In calculating this amount, the non-resident will not be able to deduct expenses of disposition. Consequently, the non-resident may have to file a Canadian income tax return in order to claim a refund of any overpaid tax.</p>
+               <p>Effective 1 January 2009, the clearance certificate procedure changed for dispositions of taxable Canadian property that qualifies for exemption from Canadian income tax under a tax treaty. In this situation, no clearance certificate and no prepayment of tax are necessary (even if the transaction is between related persons). The new procedure also exempts the non-resident from having to file a Canadian income tax return solely because of the disposition of the taxable Canadian property.</p>
+            </section>
+            <section anchor="gtha_ca_2021-04-26_s_6.2.2." label="6.2.2.">
+               <title>Taxes on capital</title>
+               <p>A non-resident is subject to tax on capital in the same manner as a resident (<emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_5.">5.</xref>) but only in respect of capital that is situated in Canada or that is considered to be employed in Canada.</p>
+            </section>
+            <section anchor="gtha_ca_2021-04-26_s_6.2.3." label="6.2.3.">
+               <taxtopics>
+                  <taxtopic tc="2_17" score="3">Tax Management / Procedure / Administration</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="2_17" score="3">Tax Management / Procedure / Administration</taxtopic>
+               </taxtopics>
+               <title>Administration</title>
+               <p>A non-resident must file a Canadian income tax return if the non-resident earns income from carrying on a business in Canada or realizes capital gains in respect of taxable Canadian property. Otherwise, the non-resident generally pays tax on Canadian-source income through the withholding tax system (<emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_6.3.">6.3.</xref>).</p>
+               <p>The administrative rules for residents also generally apply to non-residents (<emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_1.8.">1.8.</xref>).</p>
+            </section>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_6.3." label="6.3.">
+            <taxtopics>
+               <taxtopic tc="1_3_1" score="3">Income Streams</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_3_1" score="3">Income Streams</taxtopic>
+            </taxtopics>
+            <title>Withholding taxes on payments to non-resident companies</title>
+            <p>Canada imposes withholding tax at a flat 25% rate on the gross amount of enumerated types of Canadian-source income paid or credited to non-residents. The rate may be reduced under an applicable tax treaty (<emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_6.3.5.">6.3.5.</xref>).</p>
+            <p>No deductions may be claimed in computing income for withholding tax purposes. Liability for the tax rests on the non-resident; however, any person making the enumerated types of payments to a non-resident must withhold the appropriate amount of tax at source and remit that amount to the tax authority.</p>
+            <p>The non-resident need not file any income tax return in respect of income that is subject to the withholding tax regime. If an enumerated type of Canadian-source income relates to a business carried on in Canada through a permanent establishment, the non-resident must file a Canadian income tax return in respect of that income and the withholding tax regime does not apply.</p>
+            <section anchor="gtha_ca_2021-04-26_s_6.3.1." label="6.3.1.">
+               <taxtopics>
+                  <taxtopic tc="1_3_1_1" score="3">Dividends</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_3_1_1" score="3">Dividends</taxtopic>
+               </taxtopics>
+               <title>Dividends</title>
+               <p>Dividends paid to a non-resident are subject to a final 25% withholding tax with no provision for deductions. The rate may be reduced under an applicable tax treaty (<emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_6.3.5.">6.3.5.</xref>).</p>
+            </section>
+            <section anchor="gtha_ca_2021-04-26_s_6.3.2." label="6.3.2.">
+               <taxtopics>
+                  <taxtopic tc="1_3_1_2" score="3">Interest</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_3_1_2" score="3">Interest</taxtopic>
+               </taxtopics>
+               <title>Interest</title>
+               <p>Interest is exempt from withholding tax if it is payable on various bonds, debentures, notes and mortgages issued or guaranteed by the Canadian government. This exemption further extends to interest payable on obligations issued by (but not those merely guaranteed by) provincial governments, Canadian municipalities and Crown corporations.</p>
+               <p>In other cases, interest paid to an arm’s length non-resident is exempt from withholding tax effective 1 January 2008. Interest paid to non-arm’s length non-residents remains subject to a final 25% withholding tax rate, with no provision for deductions (subject to reduction by any applicable tax treaty).</p>
+               <p>The above exemption does not apply to participating debt interest, i.e. interest that is contingent on the use of Canadian property, that is computed by reference to dividends or that is computed by reference to revenue, profit, cash flow, commodity prices or similar criteria.</p>
+            </section>
+            <section anchor="gtha_ca_2021-04-26_s_6.3.3." label="6.3.3.">
+               <taxtopics>
+                  <taxtopic tc="1_3_1_3" score="3">Royalties</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_3_1_3" score="3">Royalties</taxtopic>
+               </taxtopics>
+               <title>Royalties</title>
+               <p>Royalties paid to a non-resident are subject to a final 25% withholding tax, with no provision for deductions. The rate may be reduced under an applicable tax treaty (<emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_6.3.5.">6.3.5.</xref>). For this purpose, royalties include payments for know-how as well as payments for the use of assets, inventions, trademarks, patents and secret formulae.</p>
+               <p>No withholding tax applies in respect of the following:</p>
+               <list>
+                  <item label="-">
+                     <p>copyright payments made in respect of literary, dramatic, musical, or artistic works;</p>
+                  </item>
+                  <item label="-">
+                     <p>payments made under cost-sharing arrangements governing research and development expenses provided the payer acquires an interest in the fruits of the research; and</p>
+                  </item>
+                  <item label="-">
+                     <p>any payment made to an arm’s length person to the extent that the payer can deduct the amount in computing income from a business carried on in a country other than Canada.</p>
+                  </item>
+               </list>
+            </section>
+            <section anchor="gtha_ca_2021-04-26_s_6.3.4." label="6.3.4.">
+               <taxtopics>
+                  <taxtopic tc="1_3_1_4" score="3">Fees</taxtopic>
+                  <taxtopic tc="1_3_1_4_1" score="3">Management</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_3_1_4" score="3">Fees</taxtopic>
+                  <taxtopic tc="1_3_1_4_1" score="3">Management</taxtopic>
+               </taxtopics>
+               <title>Other</title>
+               <p>A 25% final withholding tax also applies to rental payments and management fees, with no provision for deductions.</p>
+               <p>Technical assistance and service fees are subject to the withholding tax on royalties if they relate to the use or right to use patents, inventions, trade names, secret formulae, designs, or know-how. In other cases, technical assistance and service fees are subject to the income tax rules governing general business income.</p>
+               <p>The withholding tax applies to rents paid by a non-resident to another non-resident in the following circumstances:</p>
+               <list>
+                  <item label="-">
+                     <p>the payment is for the use of an asset in Canada; and</p>
+                  </item>
+                  <item label="-">
+                     <p>the non-resident payer is entitled to deduct the payment in computing taxable income earned in Canada and the non-resident payer carries on its business principally in Canada or engages in manufacturing, processing, or certain resource activities in Canada.</p>
+                  </item>
+               </list>
+               <p>A non-resident may elect to file an income tax return and pay tax at normal rates on net rental income rather than being subject to the 25% withholding tax on gross rental income. The election may be made on a year-by-year basis.</p>
+               <p>A withholding tax exemption applies for reasonable management or administration fees paid on account of a service performed in the ordinary course of business of a non-resident provided the non-resident and the payer deal at arm’s length. An exemption also applies for payments reimbursing a non-resident (whether or not dealing at arm’s length) for expenses incurred in performing a service for the benefit of the payer.</p>
+            </section>
+            <section anchor="gtha_ca_2021-04-26_s_6.3.5." label="6.3.5.">
+               <title>Withholding tax rates chart</title>
+               <include-item collection="wht" src="wht_ca.xml"/>
+            </section>
+         </section>
+      </section>
+      <section anchor="gtha_ca_2021-04-26_s_7." label="7.">
+         <title>Anti-Avoidance</title>
+         <section anchor="gtha_ca_2021-04-26_s_7.1." label="7.1.">
+            <title>General</title>
+            <p>A general anti-avoidance rule (GAAR) applies to an avoidance transaction, which is broadly defined to mean any transaction that would otherwise result in a direct or indirect tax benefit or that is part of a series of transactions that would otherwise result in a tax benefit. A tax benefit means a reduction, avoidance or deferral of tax or any other amount payable as well as an increase in a refund of tax or other amount.</p>
+            <p>A transaction is not considered to be an avoidance transaction if it can reasonably be considered to have been undertaken or arranged primarily for bona fide purposes other than to obtain the tax benefit.</p>
+            <p>If a transaction is an avoidance transaction, the ensuing tax consequences will be determined in a reasonable manner so as to deny the tax benefit that would otherwise result. However, the anti-avoidance rule will not apply to an avoidance transaction if the transaction does not result in a direct or indirect misuse of the statute or a direct or indirect abuse of the statute. Accordingly, the anti-avoidance rule applies only to transactions that lack a bona fide non-tax purpose and that result in a misuse or abuse of the statute.</p>
+            <p>A number of specific statutory anti-avoidance rules apply in certain circumstances.</p>
+            <p>Judicial anti-avoidance doctrines are limited in scope. For example, a taxpayer who fails to achieve intended legal results will be taxed on the basis of the legal results actually effected. If the taxpayer deceitfully attempts to create an impression that it has created legal results that are different from the legal results actually created, the taxpayer will be taxed in accordance with the actual legal results.</p>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_7.2." label="7.2.">
+            <taxtopics>
+               <taxtopic tc="2_16" score="3">Transfer Pricing</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_6" score="3">Transfer Pricing</taxtopic>
+            </taxtopics>
+            <title>Transfer pricing</title>
+            <p>In general, an arm’s length principle governs transfer pricing both in domestic transactions between non-arm’s length Canadian taxpayers and in transactions between a Canadian taxpayer and a non-arm’s length non-resident. The Canadian provider of the goods or services to the non-arm’s length entity must report income on the basis of having charged a fair price. The Canadian payer may deduct no more than a fair price for amounts paid to a non-arm’s length party.</p>
+            <p>Related persons are deemed to deal with each other on an non-arm’s length basis, regardless of whether those persons actually have any dealings with each other and regardless of the nature of any such dealings. The categories of related persons are quite detailed and extensive. Persons who normally deal at arm’s length may also be in a factual non-arm’s length relationship in respect of a specific transaction.</p>
+            <p>In applying the arm’s length principle, the CRA follows the methods contained in the OECD Transfer Pricing Guidelines.</p>
+            <p>The Canada Revenue Agency (CRA) has initiated an advance pricing agreement service to assist multinational groups and tax treaty partners in connection with transfer pricing matters. The purpose of an advance pricing agreement is to establish an acceptable transfer pricing methodology rather than to set a specific price for any specific good.</p>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_7.3." label="7.3.">
+            <taxtopics>
+               <taxtopic tc="1_1_31_2_2" score="3">Interest Deduction Limitations / Thin Capitalization</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_31_2_2" score="3">Interest Deduction Limitations / Thin Capitalization</taxtopic>
+            </taxtopics>
+            <title>Thin capitalization</title>
+            <p>Under Canadian thin capitalization rules, a corporation resident in Canada may deduct interest on debts owed to specified non-residents only to the extent that the debt does not exceed 1.5 times the corporation's equity. A specified non-resident is a non-resident who owns at least 25% of any class of shares of the resident corporation (either alone or together with non-arm's length persons). The debt component of the ratio is calculated as the average of specified monthly debt amounts. Each monthly debt amount will be equal to the highest amount of debt owing to "specified non-residents" at any time in that month. Equity is equal to retained earnings at the start of the year (excluding retained earnings attributable to other corporations), paid-up capital in respect of shares owned by "specified non-resident shareholders", calculated as the average of all paid-up capital amounts at the start of each month in the fiscal year; and contributed surplus attributable to "specified non-resident shareholders", calculated as the average of all such contributed surplus amounts at the start of each month in the fiscal year.</p>
+            <p>The application of the thin capitalization rules results in the disallowed interest expense being taxed as income of the Canadian corporation. Disallowance of the interest deduction effectively recharacterizes the interest payment as a non-deductible dividend. This recharacterization also applies for Canadian withholding tax purposes so that the Canadian corporation must remit the appropriate amount of Canadian withholding tax on a deemed dividend.</p>
+            <p>Budget 2021 proposes to introduce an earnings-stripping rule consistent with the recommendations in the OECD’s Action 4 Report. The new rule would limit the amount of net interest expense that a corporation may deduct in computing its taxable income to no more than a fixed ratio of "tax EBITDA", which is that corporation's taxable income before taking into account interest expense, interest income and income tax, and deductions for depreciation and amortization, where each of these items is as determined for tax purposes. The rule would be subject to certain exemptions and will be phased in. Further, interest denied under the earnings-stripping rule could be carried forward for up to 20 years or back for up to 3 years.</p>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_7.4." label="7.4.">
+            <taxtopics>
+               <taxtopic tc="1_1_31_2_1" score="3">Controlled Foreign Corporations / Anti-Tax Havens [CFCs]</taxtopic>
+               <taxtopic tc="2_14_12" score="3">Controlled Foreign Corporations / Anti-Tax Haven [CFCs]</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_31_2_1" score="3">Controlled Foreign Corporations / Anti-Tax Havens [CFCs]</taxtopic>
+               <taxtopic tc="1_1_42_12" score="3">Controlled Foreign Corporations / Anti-Tax Haven [CFCs]</taxtopic>
+            </taxtopics>
+            <title>Controlled foreign company</title>
+            <p>A Canadian resident (corporation or individual) must pay Canadian income tax on a current basis to the extent of the resident’s share of any foreign accrual property income (FAPI) earned by a controlled foreign affiliate.</p>
+            <p>A foreign affiliate of a resident is a foreign corporation in which the Canadian resident owns (directly or indirectly) at least 1% of the shares of any class and the Canadian corporation and persons related to the Canadian corporation own (directly or indirectly) at least 10% of the shares of any class. A controlled foreign affiliate of a Canadian resident means a foreign affiliate that is controlled by any of the following:</p>
+            <list>
+               <item label="-">
+                  <p>the Canadian resident;</p>
+               </item>
+               <item label="-">
+                  <p>the Canadian resident and not more than four other Canadian residents; or</p>
+               </item>
+               <item label="-">
+                  <p>a related group of which the Canadian resident is a member.</p>
+               </item>
+            </list>
+            <p>For this purpose, control means de jure control. In general, this means the ability to elect a majority of the directors of the corporation (assuming that the directors have control over the day-to-day management of the corporation).</p>
+            <p>Foreign accrual property income consists of foreign direct investment income of a passive nature (such as dividends, interest, rent and royalties), certain capital gains, income from an investment business (unless the business employs at least six full-time employees) and certain other income. In general, a business that involves the sale of real estate is classified as an investment business.</p>
+            <p>Corporations and individuals resident in Canada must file annual reports in respect of specified foreign assets. This includes direct interests in foreign assets as well as interests in foreign affiliates and non-resident trusts.</p>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_7.5." label="7.5.">
+            <title>Other anti-avoidance rules</title>
+            <p>There are also a number of specific anti-avoidance rules that apply, inter alia, to closely held companies, dividend stripping arrangements and the conferral of benefits (for example, benefits conferred on a shareholder by a corporation). Budget 2021 proposes to introduce hybrid mismatch rules.</p>
+         </section>
+      </section>
+      <section anchor="gtha_ca_2021-04-26_s_8." label="8.">
+         <taxtopics>
+            <taxtopic tc="1_4" score="3">VAT</taxtopic>
+         </taxtopics>
+         <taxtopics version="3.0">
+            <taxtopic tc="1_7" score="3">VAT</taxtopic>
+         </taxtopics>
+         <title>Value Added Tax</title>
+         <p>The federal government imposes a form of value added tax known as the goods and services tax (GST). Notwithstanding the goods and services name, the tax also applies to various transfers of real estate.</p>
+         <section anchor="gtha_ca_2021-04-26_s_8.1." label="8.1.">
+            <title>General</title>
+            <p>The GST requires most businesses in the production and distribution chain to charge tax on domestic sales. Vendors are able to claim refunds (input tax credits) of tax paid on purchases of goods and services used in the course of a commercial activity of making taxable or zero-rated supplies. The final consumer ultimately bears the full cost of the tax, since the final consumer is unable to claim an input tax credit for GST paid.</p>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_8.2." label="8.2.">
+            <taxtopics>
+               <taxtopic tc="1_4_2" score="3">Taxable Persons</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_7_2" score="3">Taxable Persons</taxtopic>
+            </taxtopics>
+            <title>Taxable persons</title>
+            <p>The tax is paid by the purchaser and is collected by the supplier of the goods or services. In general, every person who makes a taxable supply in Canada in the course of a commercial activity engaged in by the person in Canada must register for GST.</p>
+            <p>The GST concept of a “person” is very broad. In contrast to income tax, the GST treats a partnership as an entity separate from its partners. The GST also treats a trust, estate, society, union, club, association, and any other organization as a separate person (even though such entities may be in unincorporated form). Individuals and corporations are also persons.</p>
+            <p>A commercial activity means a business or adventure in the nature of trade, except to the extent that the business or adventure involves the making of exempt supplies. A commercial activity also specifically includes the making of non-exempt supplies of real estate situated in Canada.</p>
+            <p>A small supplier may elect to register for GST purposes but is not required to do so. Subject to special rules for public service bodies, a person is a small supplier if the total annual taxable supplies made by that person on a worldwide basis do not exceed CAD 30,000. The CAD 30,000 small supplier threshold must be shared among associated persons.</p>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_8.3." label="8.3.">
+            <taxtopics>
+               <taxtopic tc="1_4_3" score="3">Taxable Events</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_7_3" score="3">Taxable Events</taxtopic>
+            </taxtopics>
+            <title>Taxable events</title>
+            <p>Generally, all domestic transactions are subject to GST. The tax also applies to imported goods. Imported services are taxable only if the recipient of the service is not registered for GST purposes.</p>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_8.4." label="8.4.">
+            <taxtopics>
+               <taxtopic tc="1_4_6" score="3">Taxable Amount</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_7_6" score="3">Taxable Amount</taxtopic>
+            </taxtopics>
+            <title>Taxable amount</title>
+            <p>In general, the taxable amount is the sale price. This includes all amounts payable in respect of the goods or services and includes customs and excise duties levied at earlier levels of the supply as well as the cost of packaging and transportation (assuming that the seller attempts to recover these costs in the sale price).</p>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_8.5." label="8.5.">
+            <taxtopics>
+               <taxtopic tc="1_4_7" score="3">Rates</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_7_7" score="3">Rates</taxtopic>
+            </taxtopics>
+            <title>Rates</title>
+            <p>The rate is 5%, except for goods and services that are zero rated (<emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_8.6.">8.6.</xref>). For provincial sales taxes, <emph type="i">see</emph> section <xref target="gtha_ca_2021-04-26_s_8.8.">8.8.</xref> </p>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_8.6." label="8.6.">
+            <taxtopics>
+               <taxtopic tc="1_4_8" score="3">Exemptions</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_7_8" score="3">Exemptions</taxtopic>
+            </taxtopics>
+            <title>Exemptions</title>
+            <p>A limited range of goods and services are subject to a zero rate of tax. These include basic groceries, certain prescription drugs, certain medical devices and certain agriculture and fishing products. In general, the GST does not apply to goods and services that are exported from Canada (same effect as if the exported goods and services had been taxable and zero rated).</p>
+            <p>A limited range of other goods and services are exempt from GST. This means that the supplier of the exempt good or service bears the cost of the tax because the supplier is unable to claim input tax credits for GST paid in respect of business inputs. Exempt goods and services include residential rents, most health and dental services, most educational services, the sale of used residential housing and domestic financial services.</p>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_8.7." label="8.7.">
+            <taxtopics>
+               <taxtopic tc="1_4_2_31" score="3">Non-Residents</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_7_2_31" score="3">Non-Residents</taxtopic>
+            </taxtopics>
+            <title>Non-residents</title>
+            <p>A non-resident person operating through a Canadian permanent establishment is a deemed resident of Canada in respect of activities carried on through the permanent establishment.</p>
+            <p>The following non-resident suppliers must register for GST purposes:</p>
+            <list>
+               <item label="-">
+                  <p>every non-resident who makes taxable supplies in Canada in the course of carrying on business in Canada; and</p>
+               </item>
+               <item label="-">
+                  <p>every non-resident who makes taxable supplies of admissions in respect of a place of amusement, a seminar, an activity, or an event in Canada. Such a non-resident must be registered <emph type="i">before</emph> making any such supply.</p>
+               </item>
+            </list>
+            <p>The definition of “business” for GST purposes differs from the definition of “business” used for income tax purposes. Therefore, a non-resident who is carrying on business for income tax purposes is not necessarily carrying on business for GST purposes (and vice versa). Whether a person is carrying on business is a question of fact based on all the relevant facts and circumstances.</p>
+            <p>A refund scheme exists for non-resident visitors in respect of goods exported from Canada and in respect of services such as transient accommodation used while visiting Canada.</p>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_8.8." label="8.8.">
+            <title>Other</title>
+            <p>Various provinces impose provincial sales taxes on the sale and lease price of tangible personal assets (movable assets) and some services. Alberta and the three territories do not impose provincial sales tax. In general, provincial sales taxes are not VAT systems. Instead, businesses pay the tax on business inputs and are unable to recover the tax.</p>
+            <p>General rates of provincial sales taxes are as follows:</p>
+            <list>
+               <item label="-">
+                  <p>Alberta has no provincial sales tax;</p>
+               </item>
+               <item label="-">
+                  <p>British Columbia levies a retail sales tax of 7%;</p>
+               </item>
+               <item label="-">
+                  <p>Manitoba levies a retail sales tax of 6%;</p>
+               </item>
+               <item label="-">
+                  <p>New Brunswick participates in the federal harmonized sales tax (HST). The provincial component of the harmonized rate is 10%. To get the total rate, add the federal GST rate of 5%;</p>
+               </item>
+               <item label="-">
+                  <p>Newfoundland participates in the federal harmonized sales tax (HST). The provincial component of the harmonized rate is 10%. To get the total rate, add the federal GST rate of 5%;</p>
+               </item>
+               <item label="-">
+                  <p>the Northwest Territories has no provincial sales tax;</p>
+               </item>
+               <item label="-">
+                  <p>Nova Scotia participates in the federal harmonized sales tax (HST). The provincial component of the harmonized rate is 10%. To get the total rate, add the federal GST rate of 5%;</p>
+               </item>
+               <item label="-">
+                  <p>Nunavut has no provincial sales tax;</p>
+               </item>
+               <item label="-">
+                  <p>Ontario participates in the federal harmonized sales tax (HST). The provincial component of the harmonized rate is 8%. To get the total rate, add the federal GST rate of 5%;</p>
+               </item>
+               <item label="-">
+                  <p>Prince Edward Island participates in the federal harmonized sales tax (HST). The provincial component of the harmonized rate is 10%. To get the total rate, add the federal GST rate of 5%;</p>
+               </item>
+               <item label="-">
+                  <p>Quebec levies a form of value added tax that is similar to (but not identical with) the federal GST. The rate is 9.975%;</p>
+               </item>
+               <item label="-">
+                  <p>Saskatchewan levies a retail sales tax of 6%; and</p>
+               </item>
+               <item label="-">
+                  <p>Yukon Territory has no provincial sales tax.</p>
+               </item>
+            </list>
+            <p>Other tax rates may apply to specific goods and services. In some provinces, namely British Columbia, Quebec and Saskatchewan, the sales tax has been extended to digital services supplied in Canada by non-residents.</p>
+         </section>
+      </section>
+      <section anchor="gtha_ca_2021-04-26_s_9." label="9.">
+         <taxtopics>
+            <taxtopic tc="1_5" score="3">Other Taxes</taxtopic>
+         </taxtopics>
+         <taxtopics version="3.0">
+            <taxtopic tc="1_10" score="3">Other Taxes</taxtopic>
+         </taxtopics>
+         <title>Miscellaneous Taxes</title>
+         <section anchor="gtha_ca_2021-04-26_s_9.1." label="9.1.">
+            <taxtopics>
+               <taxtopic tc="1_5_2" score="3">Capital / Property Taxes</taxtopic>
+               <taxtopic tc="1_5_3" score="3">Capital Contribution</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_10_2" score="3">Capital / Property Taxes</taxtopic>
+               <taxtopic tc="1_10_3" score="3">Capital Contribution</taxtopic>
+            </taxtopics>
+            <title>Capital duty</title>
+            <p>No capital duty is levied on the contribution of capital to a company.</p>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_9.2." label="9.2.">
+            <taxtopics>
+               <taxtopic tc="1_5_1" score="3">Transfer Taxes</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_10_1" score="3">Transfer Taxes</taxtopic>
+            </taxtopics>
+            <title>Transfer tax</title>
+            <section anchor="gtha_ca_2021-04-26_s_9.2.1." label="9.2.1.">
+               <taxtopics>
+                  <taxtopic tc="1_5_1_13" score="3">Immovable Property Transfer Taxes</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_10_1_13" score="3">Immovable Property Transfer Taxes</taxtopic>
+               </taxtopics>
+               <title>Immovable property</title>
+               <p>Many provinces and territories impose tax on transfers of real property (including fixtures attached to land). Some municipalities have a separate land transfer tax. The rate of tax is a percentage of the amount paid for the property (and/or the mortgage amount) and varies from 1% in New Brunswick to a maximum of 3% in British Columbia. Some provinces/municipalities impose higher rates for transfers of certain land to non-residents: a 33% rate in Quebec, a 15% non-resident speculation tax in the Greater Golden Horseshoe Region (including, inter alia, Toronto) and an additional 20% in Vancouver, British Columbia.</p>
+            </section>
+            <section anchor="gtha_ca_2021-04-26_s_9.2.2." label="9.2.2.">
+               <taxtopics>
+                  <taxtopic tc="1_5_1_11" score="3">Share Transfer Taxes</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_10_1_11" score="3">Share Transfer Taxes</taxtopic>
+               </taxtopics>
+               <title>Shares, bonds and other securities</title>
+               <p>No taxes or duties are imposed on the issuance or transfer of shares and bonds.</p>
+            </section>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_9.3." label="9.3.">
+            <taxtopics>
+               <taxtopic tc="1_5_1_2" score="3">Stamp Duties / Documentary Taxes</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_10_1_2" score="3">Stamp Duties / Documentary Taxes</taxtopic>
+            </taxtopics>
+            <title>Stamp duty</title>
+            <p>There are no stamp duties.</p>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_9.4." label="9.4.">
+            <taxtopics>
+               <taxtopic tc="1_5_21" score="3">Customs Duties</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_10_21" score="3">Customs Duties</taxtopic>
+            </taxtopics>
+            <title>Customs duty</title>
+            <p>Customs duties are imposed at varying rates on goods imported into Canada. Remission of duty is available for certain goods, including machinery and equipment that is not produced in Canada.</p>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_9.5." label="9.5.">
+            <taxtopics>
+               <taxtopic tc="1_5_22" score="3">Excise Duties</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_10_22" score="3">Excise Duties</taxtopic>
+            </taxtopics>
+            <title>Excise duty</title>
+            <p>Excise duties are imposed at varying rates on certain goods, including tobacco, alcohol and cosmetics. Goods subject to excise taxes can be described generally as luxury goods. Excise taxes are payable on the manufacture or sale of the goods.</p>
+         </section>
+         <section anchor="gtha_ca_2021-04-26_s_9.6." label="9.6.">
+            <title>Digital services tax</title>
+            <p>Budget 2021 proposes to implement a digital services tax (DST). The proposed tax would ensure that “revenue earned by large businesses – foreign or domestic – from engagement with online users in Canada, including through the collection, processing and monetizing of data and content contributions from those users, is subject to Canadian tax”. The tax is intended to be temporary. It would apply as of 1 January 2022 until an acceptable multilateral approach comes into effect. The rate would be 3% on digital services that “rely on data and content contributions from Canadian users”.</p>
+         </section>
+      </section>
+   </chapbody>
+</country-chap>

@@ -1,0 +1,1866 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE country-chap PUBLIC "-//IBFD//ELEMENTS COUNTRY-CHAP//EN" "http://dev-dtd.ibfd.org/dtd/regionalbook.dtd">
+<country-chap anchor="gtha_ar_2022-07-01"
+              infotype="Country_Survey"
+              standardoutline="y"
+              outlineyear="gtha__1_1.xml"
+              collection="gtha_ar">
+   <chaphead anchor="gtha_ar_2022-07-01_chaphead">
+      <pubdate pubdate="2022-07-26">26 July 2022</pubdate>
+      <title>Corporate Taxation</title>
+      <latestinfo anchor="gtha_ar_2022-07-01_late">
+         <title>Latest Information</title>
+         <reviewdate reviewdate="2022-07-01">This chapter is based on information available up to 1 July 2022. Please find below the main changes made to this chapter up to that date:</reviewdate>
+         <p>
+            <xref target="gtha_ar_2022-07-01_s_1.7.13.">New incentives regime for manufacturers of capital goods, and computer science and communications equipment.</xref>
+         </p>
+         <p>
+            <xref target="gtha_ar_2022-07-01_s_6.2.3.">Tax authorities enhance control on payments of services to foreign parties.</xref>
+         </p>
+         <p>
+            <xref target="gtha_ar_2022-07-01_s_9.6.4.">New tax rates for tax on online gambling.</xref>
+         </p>
+         <p>
+            <xref target="gtha_ar_2022-07-01_s_9.6.6.">Increased rates for tax on purchase of foreign currency.</xref>
+         </p>
+      </latestinfo>
+      <country cc="ar">
+         <countryname>Argentina</countryname>
+      </country>
+      <author anchor="gtha_ar_2022-07-01_auth">
+         <title>Author</title>
+         <name firstname="Eduardo O." lastname="Meloni">Eduardo O. Meloni</name>
+         <affiliation>
+            <p spaceabove="0" spacebelow="0">Independent Tax Advisor, Buenos Aires, Argentina</p>
+         </affiliation>
+      </author>
+      <editor>
+         <title>IBFD Tax Technical Editor</title>
+         <name firstname="Vanessa" lastname="Arruda Ferreira" type="tte">Vanessa Arruda Ferreira</name>
+      </editor>
+   </chaphead>
+   <chapbody>
+      <section anchor="gtha_ar_2022-07-01_ss_1">
+         <title>Introduction</title>
+         <p>Companies are subject to corporate income tax. </p>
+         <p>Employers must pay social security contributions on salaries. A VAT system applies.</p>
+         <p>Companies are also subject to tax on current accounts and local turnover taxes levied by the federal district (City of Buenos Aires) and by the provinces on gross receipts.</p>
+         <p>On 1 July 2021 and 8 October 2021, Argentina signed joint statements with other Inclusive Framework members with an agreement to implement a two-pillar solution to address the tax challenges arising from the digitalisation of the economy (<emph type="i">see</emph> details in <xref target="gtha_ar_2022-07-01_s_6.2.1.">sections 6.2.1.</xref> and <xref target="gtha_ar_2022-07-01_s_7.1.">7.1.</xref>).</p>
+         <p>The currency is the Argentinian peso (ARS).</p>
+         <p>The federal tax authority is the <emph type="i">Administración Federal de Ingresos Públicos</emph> (AFIP).</p>
+      </section>
+      <section anchor="gtha_ar_2022-07-01_s_1." label="1.">
+         <taxtopics>
+            <taxtopic tc="1_1" score="3">Corporate Taxation</taxtopic>
+         </taxtopics>
+         <taxtopics version="3.0">
+            <taxtopic tc="1_1" score="3">Corporate Taxation</taxtopic>
+         </taxtopics>
+         <title>Corporate Income Tax</title>
+         <section anchor="gtha_ar_2022-07-01_s_1.1." label="1.1.">
+            <taxtopics>
+               <taxtopic tc="1_1_1_2_1" score="3">Domestic</taxtopic>
+               <taxtopic tc="1_1_1_2_2" score="3">Foreign</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_1_2_1" score="3">Domestic</taxtopic>
+               <taxtopic tc="1_1_1_2_2" score="3">Foreign</taxtopic>
+            </taxtopics>
+            <title>Type of tax system</title>
+            <p>Income derived by companies is subject to income tax at the corporate level. Dividends distributed to resident companies are exempt. However, the distribution of profits to non-resident persons and resident individuals is subject to a final withholding tax at a rate of 7%. A corporate income tax rate in accordance with a sliding scale of between 25% and 35% applies as of 1 January 2021 (previously, a 30% rate applied). Permanent establishments are subject to an equivalent treatment on the taxation of profits and the distribution thereof. <emph type="i">See also</emph> sections <xref target="gtha_ar_2022-07-01_s_2.2.">2.2.</xref> and <xref target="gtha_ar_2022-07-01_s_6.2.1.">6.2.1.</xref> </p>
+            <p>The Income Tax Law (ITL) contains a mechanism to adjust the taxable income for inflation when annual inflation exceeds a certain threshold. As provided by Law 27,541, the adjustment for inflation for fiscal years 2019 and 2020 must be allocated among the relevant tax year and the following 5 years equally (as an exception to the regular method) where the total adjustment impacts the taxable base of the relevant year only.</p>
+            <p>The profits of partnerships and other transparent entities must be reported by their members.</p>
+            <p>The basis of taxation is worldwide.</p>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_1.2." label="1.2.">
+            <taxtopics>
+               <taxtopic tc="1_1_1" score="3">Taxing Jurisdiction</taxtopic>
+               <taxtopic tc="2_18_1_1_2" score="3">Limited Liability Corporations</taxtopic>
+               <taxtopic tc="2_18_1_1_3" score="3">Joint Stock Corporations</taxtopic>
+               <taxtopic tc="2_18_1_3_1" score="3">General Partnerships</taxtopic>
+               <taxtopic tc="2_18_1_3_2_1" score="3">Per Shares</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_1" score="3">Taxing Jurisdiction</taxtopic>
+               <taxtopic tc="2_22_1_1_2" score="3">Limited Liability Corporations</taxtopic>
+               <taxtopic tc="2_22_1_1_3" score="3">Joint Stock Corporations</taxtopic>
+               <taxtopic tc="2_22_1_3" score="3">Partnerships</taxtopic>
+            </taxtopics>
+            <title>Taxable persons</title>
+            <p>The main rules on taxable persons are found in articles 53, 54, 73 and 74 of the ITL.</p>
+            <p>Taxable persons are joint-stock companies (<emph type="i">Sociedad Anónima</emph>, SAs); limited liability companies (<emph type="i">sociedad de responsabilidad limitada</emph>, SRLs); limited partnerships; partnerships limited by shares; permanent establishments of foreign enterprises (<emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_6.2.">6.2.</xref>); non-exempt civil associations and foundations; and companies owned by the government (income derived by these entities is subject to tax in the hands of the respective entity).</p>
+            <p>General partnerships (SCs) and sole proprietorships are treated as semi-transparent entities: the income tax is calculated under the general rules applicable to companies, but it is levied on partners or owners, irrespective of actual distribution. Joint ventures or de facto companies are treated as transparent entities and their income must be reported by their members. The new Civil and Commercial Code enacted by Law 26,994, in force from 1 August 2015, no longer contemplates the category of civil companies and has created a special type of joint-stock company of only one shareholder, different from the standard joint-stock company that requires a minimum of two shareholders. The ITL makes no distinction regarding the tax treatment of both types of joint-stock companies.</p>
+            <p>Law 27,349, published in the Official Gazette of 12 April 2017, established the simplified joint-stock company as a means to promote entrepreneurial activities. The expected benefits derive from simplified steps to incorporate and less costly bookkeeping and compliance requirements (e.g. digital books and electronic filing). The Companies Law (Law 19,550 as amended) rules all legal matters not specifically addressed by Law 27,349.</p>
+            <p>Trusts and investment funds may be either treated as taxable persons or transparent entities, depending on the type. Trusts (<emph type="i">fideicomisos</emph>) created under Law 24,441 and investment funds (<emph type="i">fondos comunes de inversion</emph>), except those comprised by article 1 of Law 24,083, are treated as taxable persons.</p>
+            <p>Enterprises belonging to national, provincial and municipal governments are in principle taxable, unless otherwise provided. Cooperative societies, religious institutions, certain social welfare institutions and non-profit international institutions, among others, are exempt from income tax.</p>
+            <p>The rules applicable for determining the corporate taxable base must also be applied by sole proprietorships, unincorporated partnerships and, in general, in relation to any activity deemed to be a business or an enterprise, resulting in partners or members (individuals) applying the corporate rules to determine their taxable base.</p>
+            <p>This survey is restricted to joint-stock companies (SAs), limited liability companies (SRLs), limited partnerships (<emph type="i">sociedad en comandita simple</emph>), partnerships limited by shares (<emph type="i">sociedad en comandita por acciones</emph>) and permanent establishments of foreign enterprises, as well as foreign-incorporated entities of a similar description, whether resident or non-resident.</p>
+            <section anchor="gtha_ar_2022-07-01_s_1.2.1." label="1.2.1.">
+               <taxtopics>
+                  <taxtopic tc="1_1_1_1" score="3">Resident / Residence</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_1_1" score="3">Residence</taxtopic>
+               </taxtopics>
+               <title>Residence</title>
+               <p>The main rules about residence are found in article 116 of the ITL. A company is resident for tax purposes if it is incorporated in Argentina.</p>
+               <p>Permanent establishments of foreign companies are deemed to be residents and therefore subject to income tax on their worldwide income as provided by article 116 of the ITL. </p>
+            </section>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_1.3." label="1.3.">
+            <taxtopics>
+               <taxtopic tc="1_1_21" score="3">Base</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_21" score="3">Base</taxtopic>
+            </taxtopics>
+            <title>Taxable income</title>
+            <section anchor="gtha_ar_2022-07-01_s_1.3.1." label="1.3.1.">
+               <taxtopics>
+                  <taxtopic tc="1_1_24" score="3">Income Streams</taxtopic>
+                  <taxtopic tc="1_1_1_2_1" score="3">Domestic</taxtopic>
+                  <taxtopic tc="1_1_1_2_2" score="3">Foreign</taxtopic>
+                  <taxtopic tc="1_1_21_1" score="3">National / Federal</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_24" score="3">Income Streams</taxtopic>
+                  <taxtopic tc="1_1_1_2_1" score="3">Domestic</taxtopic>
+                  <taxtopic tc="1_1_1_2_2" score="3">Foreign</taxtopic>
+                  <taxtopic tc="1_1_21_1" score="3">National / Federal</taxtopic>
+               </taxtopics>
+               <title>General</title>
+               <p>The main rules about taxable income are found in articles 1, 2, 23, 24, 44, 48, 53 and 82 of the ITL.</p>
+               <p>Resident taxpayers are taxed on their worldwide income. The ITL specifies four categories of income; for a description of the four categories, <emph type="i">see</emph> <extxref publish="n" target="gthb_ar_s_1.2.1.">Individual Taxation section 1.2.1.</extxref> </p>
+               <p>All income derived by a company is classified as Third Category income, regardless of the category into which the income would ordinarily be included if it were earned by a taxpayer other than a company. More specifically, the following are included in Third Category income:</p>
+               <list>
+                  <item label="-">
+                     <p>income derived by companies, civil associations and foundations established in Argentina, mixed economy companies (private and government entities) with regard to that portion of their income that is taxable, and permanent establishments of non-residents;</p>
+                  </item>
+                  <item label="-">
+                     <p>income derived by any other entity incorporated in Argentina (e.g. limited liability companies, general partnerships, limited partnerships, sole proprietorships and partnerships limited by shares);</p>
+                  </item>
+                  <item label="-">
+                     <p>income derived from the activities of commission agents, auctioneers, consignees and other trade agents not specifically included in the Fourth Category;</p>
+                  </item>
+                  <item label="-">
+                     <p>income received by certain trusts or investment funds;</p>
+                  </item>
+                  <item label="-">
+                     <p>income arising from the transfer of certain immovable property; and</p>
+                  </item>
+                  <item label="-">
+                     <p>any income not included in other categories.</p>
+                  </item>
+               </list>
+               <p>In computing taxable income, net income is calculated by deducting from sales proceeds and other income (gross income), exempt income, the cost of goods sold and business expenses.</p>
+               <p>Companies apply the “balance sheet principle” to determine their taxable income, i.e. all increase or decrease in the net worth of a company, based on the accrual method as reported in its annual financial statements, is in principle taxable income or losses. Profits reported in the financial statements are subsequently subject to adjustments to reflect any differences between the accounting principles used to prepare the statements and the provisions of the tax law. Capital gains are taxed as ordinary income.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_1.3.2." label="1.3.2.">
+               <taxtopics>
+                  <taxtopic tc="1_1_21_15" score="3">Exemptions</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_21_15" score="3">Exemptions</taxtopic>
+               </taxtopics>
+               <title>Exempt income</title>
+               <p>The main rules on exempt income are found in article 26 of the ITL.</p>
+               <p>The following items are exempt from corporate income tax: Argentinian-source dividends from registered shares (<emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_2.2.">2.2.</xref>) and premiums derived by stock companies, limited liability companies, limited partnerships and partnerships limited by shares from contributions to their capital.</p>
+               <p>Some entities which are formally corporate taxpayers may derive exempt income in accordance with the purpose of the activity (e.g. charities, non-profit international organizations and sports clubs), provided they do not distribute their profits and are recognized by the tax authorities.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_1.3.3." label="1.3.3.">
+               <taxtopics>
+                  <taxtopic tc="1_1_21_11" score="3">Deductions</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_21_11" score="3">Deductions</taxtopic>
+               </taxtopics>
+               <title>Deductions</title>
+               <p>The main rules on deductions are found in articles 83, 85-88 and 91 of the ITL.</p>
+               <p>Deductible business expenses are those expenses which are necessary to earn income or to maintain or preserve the source of income. In general, the rules discussed below (applicable to Argentinian-source income) also apply for assessing foreign-source income; however, some particular rules provide for the determination of foreign-source income when converting foreign currency into Argentinian pesos (articles 124-164 of the ITL).</p>
+               <p>Net sales proceeds are calculated by deducting refunds, bonuses, discounts and similar items from gross sales proceeds, in accordance with market practice.</p>
+               <p>Deductions for business expenses paid to related parties or to parties domiciled in low-tax jurisdictions, whether related or not, are allowed in the tax year in which they are effectively paid.</p>
+               <section anchor="gtha_ar_2022-07-01_s_1.3.3.1." label="1.3.3.1.">
+                  <taxtopics>
+                     <taxtopic tc="1_1_21_11_1" score="3">Deductible</taxtopic>
+                  </taxtopics>
+                  <taxtopics version="3.0">
+                     <taxtopic tc="1_1_21_11_1" score="3">Deductible</taxtopic>
+                  </taxtopics>
+                  <title>Deductible expenses</title>
+                  <p>The main rules on deductible expenses are found in articles 83, 85 and 91 of the ITL.</p>
+                  <p>The general principle provided in article 80 of the ITL is that all expenses that are deemed “necessary” (a term that has led to some doctrinal and jurisprudential debates) to obtain and maintain taxable income are deductible. </p>
+                  <p>Deductions which are specifically mentioned include:</p>
+                  <list>
+                     <item label="-">
+                        <p>advertising;</p>
+                     </item>
+                     <item label="-">
+                        <p>amortization;</p>
+                     </item>
+                     <item label="-">
+                        <p>automobile maintenance;</p>
+                     </item>
+                     <item label="-">
+                        <p>bad debts;</p>
+                     </item>
+                     <item label="-">
+                        <p>depletion;</p>
+                     </item>
+                     <item label="-">
+                        <p>depreciation (<emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_1.3.4.">1.3.4.</xref>);</p>
+                     </item>
+                     <item label="-">
+                        <p>directors’ fees (the deduction is limited to the greater of 25% of accounting profits of the tax period or ARS 12,500 for each recipient of the fees; however, the fixed amount is increased to ARS 17,000 if the recipient of the fee is a woman and to ARS 20,000 if the recipient is a transgender person;</p>
+                     </item>
+                     <item label="-">
+                        <p>gifts to certain exempt entities, the federal and provincial states and recognized political parties not exceeding 5% of the fiscal year’s net profit;</p>
+                     </item>
+                     <item label="-">
+                        <p>insurance premiums;</p>
+                     </item>
+                     <item label="-">
+                        <p>interest (thin capitalization rules apply; <emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_7.3.">7.3.</xref>);</p>
+                     </item>
+                     <item label="-">
+                        <p>organization expenses;</p>
+                     </item>
+                     <item label="-">
+                        <p>representation expenses;</p>
+                     </item>
+                     <item label="-">
+                        <p>royalties credited or paid abroad for technical assistance, provided the agreement under which they are paid is registered with the National Institute of Industrial Technology as provided for in the Transfer of Technology Law. However, the deduction may not exceed (i) 3% of the sales or proceeds for purposes of determining the consideration for the technical assistance or (ii) 5% of the investment made as a consequence of the technical assistance;</p>
+                     </item>
+                     <item label="-">
+                        <p>trademark or patent royalties paid to non-residents. Only 80% of the royalty is deductible. If the parties are related or the foreign party is a resident of a low-tax jurisdiction the 80% limit is applied to the notional arm’s length consideration;</p>
+                     </item>
+                     <item label="-">
+                        <p>salaries and other employment income;</p>
+                     </item>
+                     <item label="-">
+                        <p>service fees;</p>
+                     </item>
+                     <item label="-">
+                        <p>severance payments;</p>
+                     </item>
+                     <item label="-">
+                        <p>social security and welfare contributions; and</p>
+                     </item>
+                     <item label="-">
+                        <p>taxes (other than income tax) and legal fees.</p>
+                     </item>
+                  </list>
+                  <p>For deductible expenses under tax incentives, <emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_1.7.">1.7.</xref> </p>
+               </section>
+               <section anchor="gtha_ar_2022-07-01_s_1.3.3.2." label="1.3.3.2.">
+                  <taxtopics>
+                     <taxtopic tc="1_1_21_11_2" score="3">Non-Deductible</taxtopic>
+                  </taxtopics>
+                  <taxtopics version="3.0">
+                     <taxtopic tc="1_1_21_11_2" score="3">Non-Deductible</taxtopic>
+                  </taxtopics>
+                  <title>Non-deductible expenses</title>
+                  <p>The main rules on non-deductible expenses are found in article 88 of the ITL.</p>
+                  <p>Under certain circumstances, some items are not deductible in calculating taxable income, including:</p>
+                  <list>
+                     <item label="-">
+                        <p>expenses related to exempt income and expenses related to personal expenses of the shareholder and the shareholder’s family;</p>
+                     </item>
+                     <item label="-">
+                        <p>dividends;</p>
+                     </item>
+                     <item label="-">
+                        <p>interest on the capital owned by the company, member or partner;</p>
+                     </item>
+                     <item label="-">
+                        <p>losses suffered in illegal operations and the payment of bribes or inducements;</p>
+                     </item>
+                     <item label="-">
+                        <p>taxes on income; and</p>
+                     </item>
+                     <item label="-">
+                        <p>taxes on unimproved land.</p>
+                     </item>
+                  </list>
+               </section>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_1.3.4." label="1.3.4.">
+               <taxtopics>
+                  <taxtopic tc="1_1_21_12_1" score="3">Amortization / Depreciation</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_21_12_1" score="3">Amortization / Depreciation</taxtopic>
+               </taxtopics>
+               <title>Depreciation and amortization</title>
+               <p>The main rules on depreciation and amortization are found in articles 87 and 88 of the ITL.</p>
+               <p>Depreciation occasioned by normal wear and tear of assets used in the business or activities of the taxpayer which produce taxable income must be computed at a fixed annual percentage.</p>
+               <p>Depreciation is allowed on buildings and other constructions of immovable property. Depreciation is also allowed as a deduction on fixed assets having a useful life that exceeds 1 year. Cattle kept for breeding are treated as depreciable fixed assets, provided that they have been purchased by the taxpayer.</p>
+               <p>Depreciation allowances are calculated on the basis of a straight-line method. Other depreciation methods may be used if justified for technical reasons. In general, neither accelerated depreciation nor postponement of depreciation is allowed. The amortization of intangible property is computed under the same rules, except in relation to trademarks and goodwill for which amortization is not allowed.</p>
+               <p>There are special provisions for the depreciation of mines, quarries and forests under the depletion method. </p>
+               <p>The ITL provides a legal prescription of useful life only for immovable property, setting it at 50 years but allowing, however, a shorter period in proven circumstances. Accordingly, there is no legal link to accounting books depreciation. Notwithstanding, it is a matter of common sense and good practice to calculate the same useful life of assets for both tax and accounting purposes, save in cases where deviation is objectively justified (e.g. tax incentives regime).</p>
+               <p>An accelerated depreciation system may be available in respect of investment in capital assets and infrastructure projects under incentives regimes (<emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_1.7.">1.7.</xref>).</p>
+               <p>Conventional percentages used in computing annual depreciation allowances include:</p>
+               <list>
+                  <item label="-">
+                     <p>trucks and automobiles, 20%;</p>
+                  </item>
+                  <item label="-">
+                     <p>office furniture, 10%; and</p>
+                  </item>
+                  <item label="-">
+                     <p>machinery and equipment, 10%.</p>
+                  </item>
+               </list>
+               <p>A higher percentage rate for immovable property may be accepted when sufficient proof is provided that the useful life is less than 50 years and notice is given to the tax authorities at the time the income tax return is filed for the first tax period in which the higher percentage is used.</p>
+               <p>Depreciation on automobiles, including those used for leasing, is deductible on that part of the acquisition cost not exceeding ARS 20,000 (net of VAT).</p>
+               <p>When movable assets are no longer of use, the taxpayer may opt to continue annual depreciation until the respective residual value is exhausted or to stop depreciating the asset until it is sold, at which time the taxpayer may compute the residual value as a deduction and the proceeds from the sale as a taxable item.</p>
+               <p>Article 71 of the ITL provides for an optional rollover scheme by which the profit derived from the sale of a depreciable asset is imputed to the cost of another newly acquired asset reducing in consequence the depreciable tax basis of the latter. The rollover option is also available for immovable property used for the generation of taxable income.</p>
+               <p>For special depreciation rules under tax incentives, <emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_1.7.">1.7.</xref> </p>
+               <p>For treatment of losses, <emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_1.5.">1.5.</xref>
+               </p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_1.3.5." label="1.3.5.">
+               <taxtopics>
+                  <taxtopic tc="1_1_24_1" score="3">Active / Business</taxtopic>
+                  <taxtopic tc="1_1_21_11_1" score="3">Deductible</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_24_1" score="3">Active / Business</taxtopic>
+                  <taxtopic tc="1_1_21_11_1" score="3">Deductible</taxtopic>
+               </taxtopics>
+               <title>Reserves and provisions</title>
+               <p>The main rules on reserves are found in article 92 of the ITL.</p>
+               <p>Amounts added to reserves established to meet anticipated future expenditures or provisions for contingencies are generally not deductible. Global deductions made when valuing inventory, in order to establish general reserves that cover price fluctuations or other contingencies, are not permitted. However, amounts set aside for bad debts are deductible provided certain conditions are met (e.g. the creditor has started legal collection proceedings or the debtor is bankrupt).</p>
+            </section>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_1.4." label="1.4.">
+            <taxtopics>
+               <taxtopic tc="1_1_24_3" score="3">Capital Gains</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_24_3" score="3">Capital Gains</taxtopic>
+            </taxtopics>
+            <title>Capital gains</title>
+            <p>The main rules on capital gains are found in articles 2, 3, 62, 63, 64, 65, 69, 71 and 93 of the ITL.</p>
+            <p>The taxable base of capital gains from the disposal of securities is the difference between the selling price and the acquisition cost. In the case of stock dividends, the acquisition cost is the face value.</p>
+            <p>Capital gains are not subject to a specific tax but are instead considered ordinary income subject to income tax under general rules.</p>
+            <p>The alienation of any asset by a company may produce a capital gain subject to income tax.</p>
+            <p>Article 3 of the ITL provides that alienation (<emph type="i">enajenación</emph>) means a sale, exchange, expropriation or contribution to the capital of a company and, in general, any act of disposal that produces the transfer, for consideration, of the property right.</p>
+            <p>A liquidation of a company that entails a distribution of assets may give rise to a taxable profit for the company if there is a difference between the market value and the tax cost of the assets involved.</p>
+            <p>When movable or immovable property which is subject to depreciation and is not part of inventory is sold, capital gains are calculated by deducting from the sales price:</p>
+            <list>
+               <item label="-">
+                  <p>the acquisition cost, as adjusted for inflation, less depreciation; or</p>
+               </item>
+               <item label="-">
+                  <p>the manufacture cost, as adjusted for inflation, less depreciation.</p>
+               </item>
+            </list>
+            <p>Capital gains derived from the transfer of goodwill, trademarks, patents, concession rights and other similar assets are calculated by deducting from the sale price the acquisition cost, as adjusted by inflation, less amortization.</p>
+            <p>Capital gains derived from the transfer of shares, ownership interests or participation rights, including shares in common investment funds, are calculated by deducting from the transfer price the acquisition cost, as adjusted by inflation. In the case of stock dividends, the acquisition cost is the face value thereof. For allocation purposes the “first in, first out” (FIFO) method is used. No cost is computed in the case of transfer of shares received as exempt dividends from taxable periods beginning after 11 October 1985.</p>
+            <p>Capital gains derived from the transfer of public securities, bonds and other documents are calculated by deducting from the transfer price a cost equal to the value registered in the inventory at the beginning of the fiscal year in which the transfer was made. If the acquisition of the securities was made during the fiscal year of the sale, the cost is the price of purchase. For allocation purposes the FIFO method is used.</p>
+            <p>Capital gains derived from the sale of goods other than those mentioned above are calculated by deducting from the sale price the acquisition, production or construction cost, plus the amount of improvements (articles 62 to 69 of the ITL).</p>
+            <p>As a general rule, there are no exemptions for capital gains derived by companies.</p>
+            <p>There are no specific provisions regarding the deferment of tax on capital gains, except in situations of replacement of assets described in section <xref target="gtha_ar_2022-07-01_s_1.3.4.">1.3.4.</xref> </p>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_1.5." label="1.5.">
+            <taxtopics>
+               <taxtopic tc="1_1_21_14" score="3">Losses</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_21_14" score="3">Losses</taxtopic>
+            </taxtopics>
+            <title>Losses</title>
+            <section anchor="gtha_ar_2022-07-01_s_1.5.1." label="1.5.1.">
+               <taxtopics>
+                  <taxtopic tc="1_1_21_14_1" score="3">Carry-forward</taxtopic>
+                  <taxtopic tc="1_1_21_14_1_2" score="3">Same Business / Activity</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_21_14_1" score="3">Carry-Forward</taxtopic>
+                  <taxtopic tc="1_1_21_14_1_2" score="3">Same Business / Activity</taxtopic>
+               </taxtopics>
+               <title>Ordinary losses</title>
+               <p>The main rules on losses are found in article 25 of the ITL.</p>
+               <p>Losses incurred in a year may be carried forward to be set off against taxable income for up to 5 years from the year in which the loss was incurred. Losses may not be carried back. For foreign-source losses, <emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_6.1.1.">6.1.1.</xref> </p>
+               <p>The following losses may be offset only against income of the same nature:</p>
+               <list>
+                  <item label="-">
+                     <p>losses from transactions with shares, quotas and participations in other companies;</p>
+                  </item>
+                  <item label="-">
+                     <p>losses from transactions with derivatives except those transactions entered into for hedging purposes (to which the general rule applies); and</p>
+                  </item>
+                  <item label="-">
+                     <p>losses caused by transactions that generate foreign-source income.</p>
+                  </item>
+               </list>
+               <p>Additionally, losses derived from the exploration and exploitation of natural resources in Argentina´s continental platform and exclusive economic area in the sea may only be offset with income of Argentine source.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_1.5.2." label="1.5.2.">
+               <taxtopics>
+                  <taxtopic tc="1_1_21_14_1" score="3">Carry-forward</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_21_14_1" score="3">Carry-Forward</taxtopic>
+               </taxtopics>
+               <title>Capital losses</title>
+               <p>The main rules on capital losses are found in article 25 of the ITL.</p>
+               <p>Losses incurred by companies upon the disposition of shares, ownership interests in companies or shares in common investment funds may only be set off against net income derived from the disposition of similar property. Such losses may be carried forward up to 5 years from the year in which the loss was incurred, to be set off against income derived in other years from the same type of transaction.</p>
+            </section>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_1.6." label="1.6.">
+            <taxtopics>
+               <taxtopic tc="1_1_22" score="3">Rates</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_22" score="3">Rates</taxtopic>
+            </taxtopics>
+            <title>Rates</title>
+            <section anchor="gtha_ar_2022-07-01_s_1.6.1." label="1.6.1.">
+               <taxtopics>
+                  <taxtopic tc="1_1_22_32" score="3">Capital Gains</taxtopic>
+                  <taxtopic tc="1_1_22_1" score="3">National / Federal</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_22_32" score="3">Capital Gains</taxtopic>
+                  <taxtopic tc="1_1_22_1" score="3">National / Federal</taxtopic>
+               </taxtopics>
+               <title>Income and capital gains</title>
+               <p>The main rules on rates are found in article 73 of the ITL.</p>
+               <p>For 2022, the following progressive rates apply:</p>
+               <table>
+                  <tgroup cols="5">
+                     <colspec colnum="1" colname="col1" colwidth="2.05*"/>
+                     <colspec colnum="2" colname="col2" colwidth="1.00*"/>
+                     <colspec colnum="3" colname="col3" colwidth="1.91*" align="right"/>
+                     <colspec colnum="4" colname="col4" colwidth="5.38*" align="right"/>
+                     <colspec colnum="5" colname="col5" colwidth="2.60*" align="right"/>
+                     <thead>
+                        <row>
+                           <entry namest="col1" nameend="col3">
+                              <p>Taxable income (ARS)</p>
+                           </entry>
+                           <entry colname="col4">
+                              <p>Tax due on lower limit (ARS)</p>
+                           </entry>
+                           <entry colname="col5">
+                              <p>Marginal rate on the excess (%)</p>
+                           </entry>
+                        </row>
+                     </thead>
+                     <tbody>
+                        <row>
+                           <entry colname="col1">
+                              <p>Up to</p>
+                           </entry>
+                           <entry colname="col2"/>
+                           <entry colname="col3">
+                              <p>5,000,000</p>
+                           </entry>
+                           <entry colname="col4">
+                              <p>0</p>
+                           </entry>
+                           <entry colname="col5">
+                              <p>25</p>
+                           </entry>
+                        </row>
+                        <row>
+                           <entry colname="col1">
+                              <p>5,000,000</p>
+                           </entry>
+                           <entry align="center" colname="col2">
+                              <p>–</p>
+                           </entry>
+                           <entry colname="col3">
+                              <p>50,000,000</p>
+                           </entry>
+                           <entry colname="col4">
+                              <p>1,250,000</p>
+                           </entry>
+                           <entry colname="col5">
+                              <p>30</p>
+                           </entry>
+                        </row>
+                        <row>
+                           <entry colname="col1">
+                              <p>Over</p>
+                           </entry>
+                           <entry colname="col2"/>
+                           <entry colname="col3">
+                              <p>50,000,000</p>
+                           </entry>
+                           <entry colname="col4">
+                              <p>14,750,000</p>
+                           </entry>
+                           <entry colname="col5">
+                              <p>35</p>
+                           </entry>
+                        </row>
+                     </tbody>
+                  </tgroup>
+               </table>
+               <p>As an exception, a special flat rate of 41.5% applies to income from gambling derived through casinos and bets through bookmakers.</p>
+               <p>There are no surtaxes or surcharges imposed on corporate income.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_1.6.2." label="1.6.2.">
+               <taxtopics>
+                  <taxtopic tc="1_3_1" score="3">Income Streams</taxtopic>
+                  <taxtopic tc="1_3_1_1_2" score="3">Portfolio</taxtopic>
+                  <taxtopic tc="1_3_1_2_1" score="3">Private</taxtopic>
+                  <taxtopic tc="1_3_1_2_2" score="3">Public</taxtopic>
+                  <taxtopic tc="1_3_1_3" score="3">Royalties</taxtopic>
+                  <taxtopic tc="1_3_1_4_2" score="3">Technical</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_3_1" score="3">Income Streams</taxtopic>
+                  <taxtopic tc="1_3_1_1_2" score="3">Portfolio</taxtopic>
+                  <taxtopic tc="1_3_1_2_1" score="3">Private</taxtopic>
+                  <taxtopic tc="1_3_1_2_2" score="3">Public</taxtopic>
+                  <taxtopic tc="1_3_1_3" score="3">Royalties</taxtopic>
+                  <taxtopic tc="1_3_1_4_2" score="3">Technical</taxtopic>
+               </taxtopics>
+               <title>Withholding taxes on domestic payments</title>
+               <p>The main rules on withholding taxes are found in article 22 of Law 11,683, and General Resolutions AFIP 830-2000, as amended.</p>
+               <p>Domestic income derived by companies resident in Argentina may be subject to withholding tax as described below. This tax is generally treated as an advance payment, which is credited against the recipient’s final corporate income tax liability for the year concerned.</p>
+               <p>Interest paid on loans or any other financing (including qualifying corporate bonds) is subject to withholding tax at a rate of 3% or 6% (depending on the type of payment), which is credited against the final income tax due. The withholding tax system does not apply to payments made to financial institutions, interest derived by fixed time deposits made in financial entities regulated by Law 21,526, interest derived by financial trusts, or any other similar income as provided by the first article added after article 94 of the ITL by Law 27,430.</p>
+               <p>For withholding tax on interest paid to non-residents, <emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_6.3.1.">6.3.1.</xref> </p>
+               <p>Royalties, service fees and fees for technical assistance are generally subject to a 6% or to a sliding scale withholding tax rate if the beneficiary of the payment is a registered taxpayer (otherwise the applicable rate is 28%).</p>
+               <p>The mentioned rates apply on the excess over a non-taxable amount defined for each category of income that is adjusted regularly (to reflect the effect of inflation).</p>
+               <p>Fees and payments to members of the board of directors exceeding ARS 67,170 annually are subject to withholding tax at rates ranging from 10% to 30%.</p>
+               <p>The withholding tax does not apply to royalties paid to certain taxpayers (e.g. insurance companies and banks).</p>
+               <p>Dividends paid to resident companies are exempt and, therefore, no withholding tax applies. However, dividends paid to resident individuals and to non-resident persons are subject to a withholding tax. For withholding tax on payments to non-resident companies, <emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_6.3.">6.3.</xref> </p>
+            </section>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_1.7." label="1.7.">
+            <taxtopics>
+               <taxtopic tc="1_1_2" score="3">Incentives</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_2" score="3">Incentives</taxtopic>
+            </taxtopics>
+            <title>Incentives</title>
+            <p>Incentives are available for mining, financial investments, personnel training, research and development, the software industry, investment in capital assets and infrastructure works, the biofuel industry, modern biotechnology, the bioethanol industry, the petroleum industry and electricity produced using renewable sources of energy.</p>
+            <p>For non-tax incentives, <emph type="i">see</emph> <extxref publish="n" target="gthc_ar_s_5.">Business &amp; Investment section 5.</extxref> </p>
+            <section anchor="gtha_ar_2022-07-01_s_1.7.1." label="1.7.1.">
+               <taxtopics>
+                  <taxtopic tc="2_19_2_1" score="3">Exploration</taxtopic>
+                  <taxtopic tc="2_19_2_2" score="3">Exploitation</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="2_19_2" score="3">Chemicals</taxtopic>
+               </taxtopics>
+               <title>Mining promotion</title>
+               <p>Mining promotion is ruled by Law 24,196 as amended.</p>
+               <p>Tax incentives are granted to resident individuals and legal entities organized or established in Argentina that engage in mining activities. Eligible projects receive, among others, the following benefits:</p>
+               <list>
+                  <item label="-">
+                     <p>fiscal stability, except for VAT and social contributions (the total tax burden may not be increased during 30 years from the filing of feasibility studies). This benefit includes taxation at federal, provincial and municipal levels;</p>
+                  </item>
+                  <item label="-">
+                     <p>development expenses (amounts invested in mineral prospecting, exploration, special studies, mineral assays, applied research and feasibility studies) are deductible from taxable income;</p>
+                  </item>
+                  <item label="-">
+                     <p>investments in infrastructure (equipment, civil works and construction work) may be depreciated at a rate of 60% in the year in which the asset is approved and 20% in each of the 2 following years. Other investments in machinery, equipment, vehicles and installations may be depreciated from the operation start-up at an annual rate of 33.33%;</p>
+                  </item>
+                  <item label="-">
+                     <p>profits derived from the contribution of mining deposits or rights to the capital of an enterprise engaged in eligible activities are exempt from income tax. The capital increase and issue of shares derived from the capitalization of such contributions are exempt from stamp duties;</p>
+                  </item>
+                  <item label="-">
+                     <p>for the input VAT derived from imports and acquisitions of goods and services by enterprises engaged in mining exploration after 12 fiscal periods, a refund is granted under the conditions established by the Executive Branch;</p>
+                  </item>
+                  <item label="-">
+                     <p>import of capital assets, special equipment or parts thereof and inputs specified by the competent authority are exempt from duties, special taxes and charges (including the statistical rate but excluding other legal fees); the same exemption applies to spare parts and accessories necessary to start the operation. This benefit is also granted for imports of goods that are to be transferred under commercial or financial leasing; and</p>
+                  </item>
+                  <item label="-">
+                     <p>royalties charged by provinces are limited to 3% of the value of the mineral extracted and transported before any transformation process (the so-called <emph type="i">boca mina</emph> value).</p>
+                  </item>
+               </list>
+               <p>Up to 50% of the value of proven reserves (as valued by a responsible professional) may be capitalized. The capitalization has effects for accountancy purposes only and is neutral for income tax purposes. The issue of shares resulting from the capitalization is not subject to federal tax. The provincial governments are invited to grant similar exemptions concerning provincial taxes (basically stamp taxes).</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_1.7.2." label="1.7.2.">
+               <taxtopics>
+                  <taxtopic tc="1_1_23" score="3">Credits</taxtopic>
+                  <taxtopic tc="1_1_23_2" score="3">Investment Tax Credits</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_23" score="3">Credits</taxtopic>
+                  <taxtopic tc="1_1_23_2" score="3">Investment Tax Credits</taxtopic>
+               </taxtopics>
+               <title>Personnel training</title>
+               <p>A tax credit against federal taxes (e.g. income tax and VAT) is granted on qualifying gifts or expenses incurred by any corporate or individual entrepreneur destined for the support of training institutions. This is ruled by Law 22,317 and Decree 819/1998, as amended.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_1.7.3." label="1.7.3.">
+               <taxtopics>
+                  <taxtopic tc="1_1_23_2" score="3">Investment Tax Credits</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_23_2" score="3">Investment Tax Credits</taxtopic>
+               </taxtopics>
+               <title>Research and development projects</title>
+               <p>A tax credit is granted on qualifying expenses incurred by corporate or individual entrepreneurs on research and development projects, which may be offset against the income tax due up to a certain limit. The credit may not exceed 50% of the total amount of the submitted project. This is ruled by Law 23,877.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_1.7.4." label="1.7.4.">
+               <taxtopics>
+                  <taxtopic tc="1_1_2" score="3">Incentives</taxtopic>
+                  <taxtopic tc="1_1_21_11_1" score="3">Deductible</taxtopic>
+                  <taxtopic tc="1_1_21_15" score="3">Exemptions</taxtopic>
+                  <taxtopic tc="1_4_9_1_1" score="3">Excess Input Tax</taxtopic>
+                  <taxtopic tc="1_1_23_2" score="3">Investment Tax Credits</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_2" score="3">Incentives</taxtopic>
+                  <taxtopic tc="1_1_21_11_1" score="3">Deductible</taxtopic>
+                  <taxtopic tc="1_1_21_15" score="3">Exemptions</taxtopic>
+                  <taxtopic tc="1_7_9_1_1" score="3">Excess Input Tax</taxtopic>
+                  <taxtopic tc="1_1_23_2" score="3">Investment Tax Credits</taxtopic>
+               </taxtopics>
+               <title>Modern biotechnology</title>
+               <p>“Modern biotechnology” is defined as the technology application based on rational knowledge and scientific principles derived from biology, biochemistry, microbiology, bioinformatics, molecular biology and genetic engineering, which uses live organisms or part of them, for the production of goods and services or the substantial improvement of productive processes or products.</p>
+               <p>Tax benefits available by Law 26,270 are the following:</p>
+               <list>
+                  <item label="-">
+                     <p>accelerated depreciation for income tax purposes of fixed assets, equipment and parts thereof;</p>
+                  </item>
+                  <item label="-">
+                     <p>pre-reimbursement of VAT on purchases of such assets. This credit can be used against other national taxes;</p>
+                  </item>
+                  <item label="-">
+                     <p>a credit certificate in respect of 50% of the social security contributions paid. These certificates can be credited against national taxes, e.g. VAT, income tax and income tax advance payments; and</p>
+                  </item>
+                  <item label="-">
+                     <p>beneficiaries may also obtain a credit certificate in respect of 50% of the outflows incurred for contracting research and development services with the national system of science, technology and innovation.</p>
+                  </item>
+               </list>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_1.7.5." label="1.7.5.">
+               <taxtopics>
+                  <taxtopic tc="1_1_2" score="3">Incentives</taxtopic>
+                  <taxtopic tc="1_1_21_11_1" score="3">Deductible</taxtopic>
+                  <taxtopic tc="1_1_21_15" score="3">Exemptions</taxtopic>
+                  <taxtopic tc="1_4_9_1_1" score="3">Excess Input Tax</taxtopic>
+                  <taxtopic tc="1_1_23_2" score="3">Investment Tax Credits</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_2" score="3">Incentives</taxtopic>
+                  <taxtopic tc="1_1_21_11_1" score="3">Deductible</taxtopic>
+                  <taxtopic tc="1_1_21_15" score="3">Exemptions</taxtopic>
+                  <taxtopic tc="1_7_9_1_1" score="3">Excess Input Tax</taxtopic>
+                  <taxtopic tc="1_1_23_2" score="3">Investment Tax Credits</taxtopic>
+               </taxtopics>
+               <title>Electricity produced using renewable sources of energy</title>
+               <p>This preferential regime is made available by Law 26,190 as amended to resident individuals and legal entities which produce electricity using renewable sources of energy and are approved by the competent authorities. The tax benefits available under this regime are:</p>
+               <list>
+                  <item label="-">
+                     <p>pre-reimbursement of VAT on investments in capital assets or infrastructure works; or</p>
+                  </item>
+                  <item label="-">
+                     <p>accelerated depreciation of such assets for income tax purposes.</p>
+                  </item>
+               </list>
+               <p>The two tax benefits mentioned above may not be combined. The tax benefits may apply for 15 years from the date of approval of the project.</p>
+               <p>The AFIP's General Resolution 4101-E, published in the Official Gazette of 8 August 2017, implemented VAT incentives for investments in the generation of electricity from renewable sources.</p>
+               <p>Accordingly, taxable persons investing in new equipment for the generation of electricity from renewable sources or in connected infrastructure projects have the option of using the related input VAT for the settlement of other federal taxes or, in the absence of such liabilities, for refund purposes.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_1.7.6." label="1.7.6.">
+               <taxtopics>
+                  <taxtopic tc="1_1_2" score="3">Incentives</taxtopic>
+                  <taxtopic tc="1_1_23_2" score="3">Investment Tax Credits</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_2" score="3">Incentives</taxtopic>
+                  <taxtopic tc="1_1_23_2" score="3">Investment Tax Credits</taxtopic>
+               </taxtopics>
+               <title>Domestic production of car parts</title>
+               <p>Law 27,263, published in the Official Gazette of 1 August 2016 and in force from the following day, established an incentive regime to promote the domestic production of car parts.</p>
+               <p>Beneficiaries of the regime are legal entities:</p>
+               <list>
+                  <item label="-">
+                     <p>that manufacture cars, trucks, equipment for agriculture and for road building, gearboxes and other sub-components of the aforementioned vehicles; and</p>
+                  </item>
+                  <item label="-">
+                     <p>that have manufacturing facilities in the national territory.</p>
+                  </item>
+               </list>
+               <p>The Secretariat of Industry and Services within the Ministry of Production is the competent authority for the application of the incentive.</p>
+               <p>Beneficiaries will receive a transferable tax credit bond which can offset federal taxes, the amount of which will be related to the value of car parts added to the products by applying a polynomial formula.</p>
+               <p>The period for application will be open for 10 years from the date of publication of the implementing decree of the Law. Beneficiaries will receive benefits for the full duration of approved projects.</p>
+               <p>The Law establishes a wide range of penalties, from the filing of incorrect information by applicants to the failure to comply with agreed obligations by beneficiaries.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_1.7.7." label="1.7.7.">
+               <taxtopics>
+                  <taxtopic tc="1_1_2" score="3">Incentives</taxtopic>
+                  <taxtopic tc="1_1_21_15" score="3">Exemptions</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_2" score="3">Incentives</taxtopic>
+                  <taxtopic tc="1_1_21_15" score="3">Exemptions</taxtopic>
+               </taxtopics>
+               <title>Housing financing</title>
+               <p>On 15 September 2016, Law 27,271 introduced a framework for financing the acquisition and construction of housing.</p>
+               <p>The framework comprises savings accounts, fixed-term deposits, mortgages and treasuries as means of using both private and public savings to increase the availability of housing and financing ownership. These instruments are subject to special terms, such as a minimum duration, and are denominated in living units (<emph type="i">Unidades de Vivienda</emph>, UVIs). A UVI is a mechanism used for indexing the capital invested in ARS, one UVI being equivalent to one square metre of construction. The use of financial trusts as regulated by the Civil and Commercial Code is also an option within the framework.</p>
+               <p>Article 9 of the Law provides for tax exemptions. Savings accounts, fixed-term deposits and treasuries are exempt from personal assets tax. The adjustment of capital resulting from the adjustment in value of the UVIs and any interest accruing to the investments are exempt from income tax, provided that the investor is an individual. Financial trusts created within the framework of Law 27,271 are exempt from tax on debits and credits in banking accounts, while the mortgages underlying the assets are exempt from VAT.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_1.7.8." label="1.7.8.">
+               <taxtopics>
+                  <taxtopic tc="1_1_2" score="3">Incentives</taxtopic>
+                  <taxtopic tc="1_1_21_11_1" score="3">Deductible</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_2" score="3">Incentives</taxtopic>
+                  <taxtopic tc="1_1_21_11_1" score="3">Deductible</taxtopic>
+               </taxtopics>
+               <title>Venture capital</title>
+               <p>Law 27,349, published in the Official Gazette of 12 April 2017, established measures to promote venture capital, including tax incentives. The Law has the aim of promoting entrepreneurial activity within the country and also the international expansion of such activity. To such end, it defines a “venture” (<emph type="i">emprendimiento</emph>) as any productive activity with or without profit aim, performed in Argentina by a new legal entity or a legal entity incorporated in the previous 7 years.</p>
+               <p>Law 27,349 defines as a “venture capital entity” the legal entity (whether privately owned, state owned or with a mix of private and state ownership) incorporated in Argentina with the purpose of applying its own resources and those contributed by third parties to a number of entrepreneurial activities.</p>
+               <p>Investors in venture capital (as defined by Law 27,349) may deduct up to 75% of the capital contribution from their income tax taxable base. The deduction increases up to 85% when the entrepreneurial activities take place in areas less developed or without access to debt financing.</p>
+               <p>The deduction, however, cannot exceed 10% of the investor´s taxable net profit in any given tax year. In case of excess, the non-deducted balance may be carried forward for the subsequent 5 years.</p>
+               <p>Eligible capital contributions must be made in ARS or liquid financial assets convertible to ARS.</p>
+               <p>The legal entity or trust receiving the capital contribution must issue a certificate to the registry of entities engaged in venture capital (registry created by Law 27,349) providing information about the capital contribution and the investor.</p>
+               <p>In order to benefit from the investment, the capital participation should be maintained for at least 2 years.</p>
+               <p>Law 27,349 establishes a joint responsibility between the investor and the entity receiving the capital contribution in the case of fraud or non-compliance with the conditions to access the tax benefits.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_1.7.9." label="1.7.9.">
+               <title>Generation of distributive renewable energy</title>
+               <p>On 27 December 2017, Law 27,424 established a framework to promote the generation of distributive renewable energy by consumers connected to the distribution network and to allow those consumers to inject to the network the renewable energy generated in excess of their own consumption needs.</p>
+               <p>The tax incentives of the regime are the following:</p>
+               <list>
+                  <item label="-">
+                     <p>Incentives for generators/consumers:</p>
+                     <list>
+                        <item label="-">
+                           <p>tax credit bond with the ability to cancel federal tax obligations;</p>
+                        </item>
+                        <item label="-">
+                           <p>other incentives for the acquisition of generation equipment to be determined by the competent authority;</p>
+                        </item>
+                        <item label="-">
+                           <p>tax incentives will be available for 12 years from the enactment of the implementing measures.</p>
+                        </item>
+                     </list>
+                  </item>
+                  <item label="-">
+                     <p>Incentives for domestic manufacturers of equipment: tax credit bonds, accelerated depreciation for income tax purposes and anticipated reimbursement of VAT.</p>
+                  </item>
+               </list>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_1.7.10." label="1.7.10.">
+               <title>Creation and expansion of forests</title>
+               <p>Law 25,080 establishes an incentive regime including tax measures to promote investment in new forests or the extension of existing forests. In particular, it promotes the planting of forests, maintenance and its sustainable management, and may comprise the use of wood for manufacturing purposes when the forests are integrated into a manufacturing undertaking.</p>
+               <p>Tax incentives comprise:</p>
+               <list>
+                  <item label="-">
+                     <p>fiscal stability: once the application is approved, beneficiaries are guaranteed that the applicable tax burden will not increase through the life of the project (that could be extended up to 50 years);</p>
+                  </item>
+                  <item label="-">
+                     <p>reimbursement of excess input VAT;</p>
+                  </item>
+                  <item label="-">
+                     <p>accelerated depreciation for income tax purposes; and</p>
+                  </item>
+                  <item label="-">
+                     <p>exemption on any present or future tax on capital or net worth.</p>
+                  </item>
+               </list>
+               <p>In addition, beneficiaries may receive a subsidy related to the plantation costs that varies in accordance with the cultivated area.</p>
+               <p>Beneficiaries are the investors in the approved project, comprising both individuals and companies. Foreign investors are eligible for the incentives regime promoting investment in forests if they establish a domicile in Argentina and comply with the applicable rules for registering their business as provided by Decree 776/2021.</p>
+               <p>The regime was due to come to an end on 15 January 2019. Law 27487, published in the Official Gazette of 4 January 2019, extends the period of validity of the regime for 10 years.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_1.7.11." label="1.7.11.">
+               <title>“Knowledge-related” economic activities</title>
+               <p>Law 27,506, as amended by Law 27,570, and implemented by Executive Branch Decree 1034/2020 have established a regime for the promotion of “knowledge-related” economic activities.</p>
+               <p>The regime covers the development, design, creation, production, implementation and adaptation of a wide range of products and services in “knowledge-related” economic areas (e.g. software, digital and IT services, audio-visual, biotechnology, biology, biochemistry, microbiology, genetic engineering, geological services related to electronics and communications, nanotechnology, automated solutions for industrial manufacturing and export of certain professional services).</p>
+               <p>Eligible beneficiaries are corporations set up in Argentina and permanent establishments of non-resident companies registered to do business in the country that are in good standing regarding their tax, social security and labour law obligations, and carry out any of the promoted activities as their main activity. In that regard, beneficiaries must derive at least 70% of their total revenues from the promoted activities. However, the regime may also apply to companies that have not yet generated any revenues, provided that they prove that they carry on promoted activities in accordance with the conditions established by implementing measures.</p>
+               <p>The regime establishes other eligibility requirements which apply according to the size of the undertaking (i.e. micro, small, medium-sized or large companies). </p>
+               <p>Companies qualifying for the regime enjoy the following tax benefits:</p>
+               <list>
+                  <item label="-">
+                     <p>a reduction of the income tax liability that corresponds to the promoted activities. Such reduction will be determined according to the information contained in the annual tax returns filed by the beneficiaries and is scaled as follows: </p>
+                     <list>
+                        <item label="-">
+                           <p>60% for micro and small enterprises; </p>
+                        </item>
+                        <item label="-">
+                           <p>40% for medium-sized enterprises; and</p>
+                        </item>
+                        <item label="-">
+                           <p>20% for large companies;</p>
+                        </item>
+                     </list>
+                  </item>
+                  <item label="-">
+                     <p>beneficiaries of the regime may receive a non-transferable credit certificate of up to 70% of the social contributions effectively paid by the employer in connection with the salaries of employees engaged in the promoted activities. The credit certificate may be offset against VAT and other federal taxes (except income tax) within a 24-month time frame. However, beneficiaries carrying on exports related to the promoted activities may offset the credit certificate against their income tax liability;</p>
+                  </item>
+                  <item label="-">
+                     <p>beneficiaries of the regime that are exporters will not be subject to VAT withholdings or surcharges. The tax administration will provide exporters with a special certificate for such purposes, once their registration in the regime is completed; and</p>
+                  </item>
+                  <item label="-">
+                     <p>a 0% export duty rate will apply to the export of services performed in Argentina to be used or exploited abroad, as defined by article 10 of the Customs Code (as amended).</p>
+                     <p>Prospective beneficiaries of the regime must apply for registration before the Ministry of Productive Development (<emph type="i">Ministerio de Desarrollo Productivo</emph>). The Ministry is in charge of approving the applications and keeping an ad hoc registry (i.e. <emph type="i">Registro Nacional de Beneficiarios del Régimen de Promoción de la Economía del Conocimiento</emph>).</p>
+                  </item>
+               </list>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_1.7.12." label="1.7.12.">
+               <title>Development of real estate and infrastructure projects</title>
+               <p>Law 27,440 and Executive Branch’s Decree 382/2019 established tax incentives to promote infrastructure projects and the construction of dwellings for the medium and low-income population.</p>
+               <p>The main measures regarding infrastructure projects (article 205 of Law 27,440) are the following:</p>
+               <list>
+                  <item label="-">
+                     <p> <emph type="i">fideicomisos</emph> and mutual funds benefiting from the incentives regime are those that develop and/or invest directly in real estate, farming, forestry and infrastructure projects, or finance investment in any kind of undertaking through the issuance of any kind of security or debt;</p>
+                  </item>
+                  <item label="-">
+                     <p>insofar as the securities or rights issued to finance these structures (<emph type="i">títulos de deuda</emph> and <emph type="i">certificados de participación</emph> in the case of the <emph type="i">fideicomisos</emph>, and quotas in the case of mutual funds) are offered publicly and authorized for public quotation by the Argentine Securities and Exchange Commission (<emph type="i">Comisión Nacional de Valores</emph>), these structures are not subject to income tax on their profits of Argentine source;</p>
+                  </item>
+                  <item label="-">
+                     <p>resident individual investors and non-resident investors in these structures are subject to income tax on the distributions. For that purpose, in the case of individual residents, the income is considered to be outside the financial income special schedule, and thus is subject to progressive tax rates. The tax treatment for non-residents is not specified but a final withholding tax applies;</p>
+                  </item>
+                  <item label="-">
+                     <p>individuals deriving capital gains from the transfer of their investment are subject to a 15% tax rate;</p>
+                  </item>
+                  <item label="-">
+                     <p>legal entities investing in the promoted structures are subject to normal corporate taxation on the distributions and capital gains; and</p>
+                  </item>
+                  <item label="-">
+                     <p>participations in the mentioned structures are subject to the personal assets tax.</p>
+                  </item>
+               </list>
+               <p>The main measures regarding housing (article 206 of Law 27,440) are the following:</p>
+               <list>
+                  <item label="-">
+                     <p> <emph type="i">fideicomisos</emph> and mutual funds benefiting from article 206 of Law 27,440 are those of which at least 75% of the portfolio relates to real estate development of social housing (aimed at the medium and low-income sector of the population) and/or related mortgages;</p>
+                  </item>
+                  <item label="-">
+                     <p>insofar as the securities or rights issued to finance the creation of those structures (<emph type="i">títulos de deuda</emph> and <emph type="i">certificados de participación</emph> in the case of the <emph type="i">fideicomisos</emph>, and quotas in the case of mutual funds) are publicly offered and authorized for public quotation by the Argentine Securities and Exchange Commission, the structures are not subject to income tax on their profits;</p>
+                  </item>
+                  <item label="-">
+                     <p>resident individual investors are subject to income tax on the distributions made by the mentioned structures at a 15% proportional rate irrespective of the type of the income (interest, rents or capital gains). Non-residents are subject to a final withholding tax rate at the rate of 31.5% on the mentioned distributions;</p>
+                  </item>
+                  <item label="-">
+                     <p>if a <emph type="i">fideicomiso</emph> or mutual fund engaged in the promoted activities is liquidated before a 5-year lapse since its set-up, the final distribution will be subject to the general progressive tax rates in the hands of resident individuals and to a 31.5% final withholding tax in the case of non-residents. If the structure is liquidated after 10 years, the final distribution will be subject to nil taxation in all cases;</p>
+                  </item>
+                  <item label="-">
+                     <p>individuals deriving capital gains from the transfer of their investment are subject to a 15% tax rate;</p>
+                  </item>
+                  <item label="-">
+                     <p>legal entities investing in the promoted structures are subject to normal corporate taxation on the distributions and capital gains; and</p>
+                  </item>
+                  <item label="-">
+                     <p>participations in the mentioned structures are subject to the personal assets tax.</p>
+                  </item>
+               </list>
+               <p>Executive Branch’s Decree 382/2019 is in force as from 30 May 2019 and effective retroactively for fiscal years started as from 1 January 2018.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_1.7.13." label="1.7.13.">
+               <title>Manufacturers of capital goods, computer science and communications equipment</title>
+               <p>Executive Branch Decree 209/2022 established an incentive regime for manufacturers of capital goods, computer science and communications equipment to replace the equivalent regime established by Decree 379/2001 as amended, which expired on 31 December 2021.</p>
+               <p>Beneficiaries are companies incorporated in Argentina under Companies Law 19,550 or Cooperatives Law 20,337 that manufacture, within the national territory, the items listed in the Annex to Decree 209/2022, among other requirements.</p>
+               <p>The benefits comprise the granting of credit bonds, which are certificates issued by the AFIP that can be used for the payment of taxes (e.g. income tax, VAT and excise taxes). Credit bonds are nominative and transferable only once. Additionally, beneficiaries of the regime are granted a 70% reduction of social security contributions (i.e. employers’ social security contributions paid in accordance with Laws 24,241, 19,032, 24,013 and 24,714) during the validity of the incentive regime.</p>
+               <p>The incentive regime will be in force until 31 December 2027 and provides transition measures in relation to the regime established by Decree 379/2001.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_1.7.14." label="1.7.14.">
+               <title>Private building construction</title>
+               <p>Law 27,613 established a regime to promote private building construction and to facilitate the access to housing through the granting of tax incentives as well as an amnesty regime for unreported cash placed offshore or onshore, which applies provided that the cash is used for financing the promoted investments. </p>
+               <p>An eligible building project is a new private building construction (including improvements, expansions and installations, provided that the work is subject to approval by a competent authority in accordance with the applicable building code) started as from 12 March 2021. Nonetheless, works started before that date, but for which the progress is below 50% of the total project, are also included in the regime. </p>
+               <p>Investments made in building construction projects are exempt from net wealth tax on personal goods (<emph type="i">impuesto sobre los bienes personales</emph>, ISBP) until 31 December 2022. The maximum duration of the benefit is 2 tax years, which may be shorter if the project is finished or sold earlier (whichever happens first). </p>
+               <p>The regime also provides for the deferral of payment of the tax on the transfer of immovable property or income tax (generally, the transfer of immovable property is subject to income tax or to the tax on the transfer of immovable property, depending on when the property was acquired). </p>
+               <p>An amnesty regime is established for unreported cash held onshore or offshore, including cash held in bank accounts. A special tax determined in ARS applies to the regularized cash, of which the rate varies between 5% and 20% according to the celerity with which the taxpayer applies for the regularization.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_1.7.15." label="1.7.15.">
+               <title>Tierra del Fuego, Antarctica and South Atlantic Islands</title>
+               <p>The incentives regime was established by Law 19,640 of 1972 with the aim of promoting economic activity and populating the province of Tierra del Fuego. Companies therein established are exempt from, or benefit from a reduction of, most federal taxes (e.g. income tax, VAT and excise taxes) as well as customs duties. Since its introduction, the regime has been subject to a significant number of amendments and adaptations, the latest of which was the extension of the validity of the regime until 31 December 2038 (Decree 727/2021). </p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_1.7.16." label="1.7.16.">
+               <title>Promotion of investment in financial products denominated in domestic currency</title>
+               <p>An exemption from income tax and personal assets tax (<emph type="i">see</emph> <extxref publish="n" target="gthb_ar_s_4.1.">Individual Taxation section 4.1.</extxref>) applies with the aim of creating an incentive to promote investment in financial products denominated in domestic currency (ARS). Accordingly, the following are exempt from income tax (exemptions introduced to article 26 of the Income Tax Law):</p>
+               <list>
+                  <item label="-">
+                     <p>interest derived from bank deposits in ARS (e.g. fixed-time deposits) with adjustment clauses (i.e. adjustment for inflation); and</p>
+                  </item>
+                  <item label="-">
+                     <p>interest or income derived from financial instruments denominated in ARS to be created in the future by the Executive Branch with the aim of promoting productive investments, if established as such by the relevant legislation.</p>
+                  </item>
+               </list>
+               <p>In addition, the following assets are exempt from personal assets tax (<emph type="i">see</emph> <extxref publish="n" target="gthb_ar_s_4.1.">Individual Taxation section 4.1.</extxref>) (exemptions introduced to article 21 of the Personal Assets Tax Law):</p>
+               <list>
+                  <item label="-">
+                     <p>commercial paper (<emph type="i">obligaciones negociables</emph>) denominated in ARS and complying with the requirements provided by article 36 of Law 23576 (i.e. commercial paper placed by public offering, among other requirements);</p>
+                  </item>
+                  <item label="-">
+                     <p>financial instruments denominated in ARS to be created in the future by the Executive Branch with the aim of promoting productive investments, if established as such by the relevant legislation; and</p>
+                  </item>
+                  <item label="-">
+                     <p>quotas in mutual funds regulated by article 1 of Law 24083 and listed securities issued by financial trusts (<emph type="i">fideicomisos</emph>), if a minimum percentage (to be determined by an implementing measure) of the underlying assets of the mentioned structures are promoted securities or investments denominated in ARS.</p>
+                  </item>
+               </list>
+               <p>The exemptions are applicable from tax year 2021.</p>
+            </section>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_1.8." label="1.8.">
+            <taxtopics>
+               <taxtopic tc="2_17" score="3">Tax Management / Procedure / Administration</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="2_17" score="3">Tax Management / Procedure / Administration</taxtopic>
+            </taxtopics>
+            <title>Administration</title>
+            <p>The AFIP controls the application, collection and administration of national taxes, customs duties and social security contributions. The main rules are found in Law 11,683 as amended. The tax authorities fall under the jurisdiction of the Ministry of Economy. The directors of the tax authorities are administrative judges and have the power to make assessments, impose fines and decide claims for tax refunds.</p>
+            <section anchor="gtha_ar_2022-07-01_s_1.8.1." label="1.8.1.">
+               <title>Taxable period</title>
+               <p>The main rules concerning the taxable period are found in article 24 of the ITL.</p>
+               <p>The fiscal year for resident entities is the commercial year established in the by-laws. If a taxpayer is, by law, not obliged to keep accounting records, the tax year is the calendar year unless the tax authorities specify a special closing date, taking into consideration the nature of the venture or other specific circumstances.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_1.8.2." label="1.8.2.">
+               <taxtopics>
+                  <taxtopic tc="2_17_2" score="3">Filings / Returns</taxtopic>
+                  <taxtopic tc="2_17_21" score="3">Assessments</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="2_17_2" score="3">Filings / Returns</taxtopic>
+                  <taxtopic tc="2_17_21" score="3">Assessments</taxtopic>
+               </taxtopics>
+               <title>Tax returns and assessment</title>
+               <p>The main rules on tax returns and assessment are found in article 11 of Law 11,683 as amended, and General Resolution (AFIP) 4626.</p>
+               <p>Argentina has a self-assessment system. All companies and legal entities (including partnerships and sole proprietorships which maintain accounting records and prepare balance sheets) must file their tax returns within 5 months of the end of their fiscal year.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_1.8.3." label="1.8.3.">
+               <taxtopics>
+                  <taxtopic tc="2_17_31" score="3">Payments</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="2_17_31" score="3">Payments</taxtopic>
+               </taxtopics>
+               <title>Payment of tax</title>
+               <p>The main rules on payment of tax are found in article 5 of Law 11,683 as amended.</p>
+               <p>Companies (except those that only receive income subject to a final withholding tax) must make ten monthly prepayments in respect of income tax, starting in the sixth month of the fiscal year. The first payment is 25%, and the remaining payments are 8.33%, of the tax assessed for the last tax year, as reduced by non-final withholding taxes paid in respect of the same tax year. Any balance of tax due after taking prepayments into account must be paid when filing the return. The tax authorities may authorize the final tax to be paid in instalments (including interest).</p>
+               <p>Tax paid in excess of any given tax liability may be reimbursed or applied to other tax obligations as established by article 29 of Law 11,683. The procedure and applicable forms are regulated by General Resolutions 2224 and 2542.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_1.8.4." label="1.8.4.">
+               <taxtopics>
+                  <taxtopic tc="2_17_41" score="3">Rulings</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="2_17_41" score="3">Rulings</taxtopic>
+               </taxtopics>
+               <title>Rulings</title>
+               <p>The main rules on rulings are found in article 4.1. of Law 11,683 as amended, and its implementing measure General Resolution 4497.</p>
+               <p>The General Director of the tax authorities is responsible for interpreting the laws and decrees regarding taxes under its jurisdiction where the taxpayer’s general interest is involved. Such interpretations, made by means of public rulings, are published in the Official Gazette and are binding on both the tax administration and taxpayers. Taxpayers may appeal decisions of the tax authorities to the Ministry of Economy within 10 days. Such an appeal does not release the taxpayer from the obligation to pay taxes on transactions deemed to be taxable during the ruling request procedure, but if the decision of the tax authorities is revoked by the Ministry of Economy, the taxpayer will be entitled to a tax refund.</p>
+               <p>Advance rulings may be requested in respect of all national taxes, including social security contributions. However, customs duties are not covered by the advance rulings regime. The regime does not apply to questions regarding the application of income tax treaties.</p>
+               <p>According to General Resolution 4497, advance pricing agreements that are regulated by article 217 of Law 11,683 are excluded from the regime.</p>
+            </section>
+         </section>
+      </section>
+      <section anchor="gtha_ar_2022-07-01_s_2." label="2.">
+         <taxtopics>
+            <taxtopic tc="1_1_1_1_1" score="3">Resident</taxtopic>
+         </taxtopics>
+         <taxtopics version="3.0">
+            <taxtopic tc="1_1_1_1_1" score="3">Resident</taxtopic>
+         </taxtopics>
+         <title>Transactions between Resident Companies</title>
+         <section anchor="gtha_ar_2022-07-01_s_2.1." label="2.1.">
+            <taxtopics>
+               <taxtopic tc="1_1_41" score="3">Group Treatment</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_41" score="3">Group Treatment</taxtopic>
+            </taxtopics>
+            <title>Group treatment</title>
+            <p>Although company law requires consolidated accounts to be prepared, for income tax purposes there are no provisions for fiscal unity or other forms of consolidation. Consequently, the tax authorities take the position that consolidated returns are not allowed for tax purposes and that the transfer of losses from loss-making to profit-making members of the same group of companies is not permitted.</p>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_2.2." label="2.2.">
+            <taxtopics>
+               <taxtopic tc="1_1_24_2" score="3">Passive / Investment</taxtopic>
+               <taxtopic tc="1_1_21_15" score="3">Exemptions</taxtopic>
+               <taxtopic tc="1_3_1_1_1" score="3">Substantial</taxtopic>
+               <taxtopic tc="1_3_1_1_2" score="3">Portfolio</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_24_2" score="3">Passive / Investment Income</taxtopic>
+               <taxtopic tc="1_1_21_15" score="3">Exemptions</taxtopic>
+               <taxtopic tc="1_3_1_1_1" score="3">Substantial</taxtopic>
+               <taxtopic tc="1_3_1_1_2" score="3">Portfolio</taxtopic>
+            </taxtopics>
+            <title>Intercompany dividends</title>
+            <p>Dividends paid by resident companies to other resident companies are exempt from income tax.</p>
+            <p>Foreign-source dividends are taxed, <emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_6.1.1.">6.1.1.</xref> For dividends derived by non-residents, <emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_6.3.1.">6.3.1.</xref> </p>
+         </section>
+      </section>
+      <section anchor="gtha_ar_2022-07-01_s_3." label="3.">
+         <taxtopics>
+            <taxtopic tc="1_1" score="3">Corporate Taxation</taxtopic>
+         </taxtopics>
+         <taxtopics version="3.0">
+            <taxtopic tc="1_1" score="3">Corporate Taxation</taxtopic>
+         </taxtopics>
+         <title>Other Taxes on Income</title>
+         <p>There are no other federal taxes on income in addition to the normal income tax.</p>
+      </section>
+      <section anchor="gtha_ar_2022-07-01_s_4." label="4.">
+         <title>Taxes on Payroll</title>
+         <section anchor="gtha_ar_2022-07-01_s_4.1." label="4.1.">
+            <taxtopics>
+               <taxtopic tc="1_5_11" score="3">Payroll Taxes / Wage Taxes</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_10_11" score="3">Payroll Taxes / Wage Taxes</taxtopic>
+            </taxtopics>
+            <title>Payroll tax</title>
+            <p>There is no payroll tax.</p>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_4.2." label="4.2.">
+            <taxtopics>
+               <taxtopic tc="1_5_12" score="3">Social Security Contributions</taxtopic>
+               <taxtopic tc="1_5_12_1" score="3">Employer</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_10_12" score="3">Social Security Contributions</taxtopic>
+               <taxtopic tc="1_10_12_1" score="3">Employer</taxtopic>
+            </taxtopics>
+            <title>Social security contributions</title>
+            <p>The main rules on social security contributions are found in Law 27,541 and Decree 99/2019.</p>
+            <p>Both employers and employees are obliged to contribute to the social security system. In addition to paying their own contributions, employers must withhold and remit the contributions of their employees.</p>
+            <p>Contributions by the employer are determined based on the total of the employee’s salary, as follows:</p>
+            <list>
+               <item label="-">
+                  <p>rates: </p>
+                  <list>
+                     <item label="-">
+                        <p>20.4%: applicable to employers in the services and wholesale and retail sectors to the extent that annual sales exceed the limit established for qualification as “medium-sized 2” companies in accordance with the categories established by Resolution 220/2019 issued by the Secretariat of entrepreneurs and small and medium-sized enterprises. Those annual sales limits are ARS 1,438,900,000 for services and 5,495,450,000 for wholesale and retail as updated by Resolution 23/2022 of the mentioned Secretariat; and</p>
+                     </item>
+                     <item label="-">
+                        <p>18%: applicable to other employers, the state (federal, provincial and municipal) and companies and entities controlled by the state;</p>
+                     </item>
+                  </list>
+               </item>
+               <item label="-">
+                  <p>deductions from the taxable base: an amount for each employee may be deducted from the social contribution’s taxable base. The monthly amount is ARS 7,004 or 17,509, depending on the activity of the employer. An additional total amount of ARS 10,000 may be deducted by employers with a payroll not exceeding 25 employees; and</p>
+               </item>
+               <item label="-">
+                  <p>computation of social contributions as input VAT: article 21 of Law 27,541 provides that employers may compute as input VAT an amount equivalent to a percentage on the same taxable base used to calculate the social contributions. The applicable percentages are established in Annex I of Law 27,541 in accordance with the geographic region where the undertaking is located - the rates range from 0% (City of Buenos Aires) to 8.85% (for areas of the provinces of Formosa and Santiago del Estero).</p>
+               </item>
+            </list>
+            <p>Employers must also finance a labour risk insurance.</p>
+            <p> <emph type="i">See also</emph> <extxref publish="n" target="gthb_ar_s_3.">Individual Taxation section 3.</extxref> </p>
+         </section>
+      </section>
+      <section anchor="gtha_ar_2022-07-01_s_5." label="5.">
+         <taxtopics>
+            <taxtopic tc="1_5_2" score="3">Capital / Property Taxes</taxtopic>
+         </taxtopics>
+         <taxtopics version="3.0">
+            <taxtopic tc="1_10_2" score="3">Capital / Property Taxes</taxtopic>
+         </taxtopics>
+         <title>Taxes on Capital</title>
+         <section anchor="gtha_ar_2022-07-01_s_5.1." label="5.1.">
+            <taxtopics>
+               <taxtopic tc="1_5_2_1" score="3">Wealth / Worth Taxes</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_10_2_1" score="3">Wealth / Worth Taxes</taxtopic>
+            </taxtopics>
+            <title>Net worth tax</title>
+            <p anchor="gtha_ar_2022-07-01_s_5.1.1.">Law 27,486, published in the Official Gazette of 8 January 2019, established a new tax on cooperatives for a term of 4 fiscal years applicable from the tax year started as from 1 January 2019.</p>
+            <p>The tax applies to the net worth of cooperatives (<emph type="i">cooperativas y mutuales</emph>), as regulated by Laws 20,337 and 20,321, engaged in savings and loans activities, and providing insurance and reinsurance.</p>
+            <p>Such cooperatives with a taxable base not exceeding ARS 50 million are tax exempt provided that they are at the same time income tax exempt (as provided by the ITL for cooperatives that meet certain conditions).</p>
+            <p>The tax rates are:</p>
+            <list>
+               <item label="-">
+                  <p>3% on a taxable base up to ARS 100 million; and</p>
+               </item>
+               <item label="-">
+                  <p>4% on the amount in excess of that threshold.</p>
+               </item>
+            </list>
+            <p>For tax on personal assets (<emph type="i">impuesto sobre los bienes personales</emph>, ISBP), <emph type="i">see</emph> <extxref publish="n" target="gthb_ar_s_4.1.">Individual Taxation section 4.1.</extxref>
+            </p>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_5.2." label="5.2.">
+            <taxtopics>
+               <taxtopic tc="1_5_2_4" score="3">Real Estate Holding Taxes</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_10_2_4" score="3">Real Estate Holding Taxes</taxtopic>
+            </taxtopics>
+            <title>Real estate tax</title>
+            <p>Land and buildings are subject to the immovable property tax (<emph type="i">impuesto inmobiliario o contribución territorial</emph>, local tax) with some exceptions. This tax is collected by the provinces. The tax is normally levied on the cadastral value of each piece of immovable property without regard to the number of owners or to the taxpayer’s personal wealth.</p>
+            <p>The applicable rates generally range from 0.5% to 3% and apply to the cadastral value of the property, depending on the jurisdiction and in consideration of the rural, sub-rural, suburban or urban nature of the property, as provided by the 2021 Federal Fiscal Agreement.</p>
+            <p> <emph type="i">See also</emph> section <xref target="gtha_ar_2022-07-01_s_9.2.1.">9.2.1.</xref> for transfer taxes on immovable property.</p>
+         </section>
+      </section>
+      <section anchor="gtha_ar_2022-07-01_s_6." label="6.">
+         <title>International Aspects</title>
+         <section anchor="gtha_ar_2022-07-01_s_6.1." label="6.1.">
+            <taxtopics>
+               <taxtopic tc="1_1_1_1_1" score="3">Resident</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_1_1_1" score="3">Resident</taxtopic>
+            </taxtopics>
+            <title>Resident companies</title>
+            <p>For the concept of residence, <emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_1.2.1.">1.2.1.</xref> </p>
+            <section anchor="gtha_ar_2022-07-01_s_6.1.1." label="6.1.1.">
+               <taxtopics>
+                  <taxtopic tc="1_1_1_2_2" score="3">Foreign</taxtopic>
+                  <taxtopic tc="1_1_22_32" score="3">Capital Gains</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_1_2_2" score="3">Foreign</taxtopic>
+                  <taxtopic tc="1_1_22_32" score="3">Capital Gains</taxtopic>
+               </taxtopics>
+               <title>Foreign income and capital gains</title>
+               <p>The main rules on foreign income and capital gains are found in articles 1 and 2 of the ITL.</p>
+               <p>Resident companies are subject to tax on their worldwide income. Any type of foreign-sourced income derived by a resident company is subject to income tax under general rules. However, differently from the treatment of domestic dividends, dividends received from foreign companies are subject to income tax and must therefore be included in the recipient’s taxable base. A foreign tax credit is granted, <emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_6.1.4.">6.1.4.</xref> </p>
+               <p>Capital gains derived by resident companies are subject to income tax under general rules (<emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_1.4.">1.4.</xref>).</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_6.1.2." label="6.1.2.">
+               <taxtopics>
+                  <taxtopic tc="1_1_21_14" score="3">Losses</taxtopic>
+                  <taxtopic tc="1_1_21_14_1" score="3">Carry-forward</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_21_14" score="3">Losses</taxtopic>
+                  <taxtopic tc="1_1_21_14_1" score="3">Carry-Forward</taxtopic>
+               </taxtopics>
+               <title>Foreign losses</title>
+               <p>The main rules on foreign losses are found in article 25 of the ITL.</p>
+               <p>Losses from activities generating foreign-source income may only be offset against foreign-source income. These losses may be carried forward for 5 years. There is a separate limitation for foreign-source capital losses from the disposal of shares or other participations in investment funds or similar entities. Such losses may be set off only against capital gains from the same activity.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_6.1.3." label="6.1.3.">
+               <taxtopics>
+                  <taxtopic tc="1_5_2_1" score="3">Wealth / Worth Taxes</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_10_2_1" score="3">Wealth / Worth Taxes</taxtopic>
+               </taxtopics>
+               <title>Foreign capital</title>
+               <p>The main rules on foreign capital are found in Law 21,382 (Foreign Investments Law).</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_6.1.4." label="6.1.4.">
+               <taxtopics>
+                  <taxtopic tc="1_1_32" score="3">Unilateral Double Tax Relief [DTR]</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_32" score="3">Unilateral Double Tax Relief [DTR]</taxtopic>
+               </taxtopics>
+               <title>Double taxation relief</title>
+               <p>The main rules on unilateral double taxation relief are found in article 165 of the ITL.</p>
+               <p>To avoid double taxation of foreign-source income, Argentina applies the ordinary tax credit method, both unilaterally and under its income tax treaties. Tax treaties concluded by Argentina have supremacy over domestic law including the ITL. </p>
+               <p>For a list of Argentinian income tax treaties in force, <emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_6.3.5.">6.3.5.</xref> </p>
+               <p>A taxpayer that is subject to tax in Argentina on worldwide income is entitled to have the foreign tax actually paid on that income credited against its Argentinian income tax liability. The credit is limited to the increase in Argentinian tax arising from the inclusion of foreign-source income.</p>
+               <p>For dividends, the foreign tax credit includes the tax paid on the profits out of which the dividends were paid. In order to determine which foreign taxes may give rise to a credit, the law provides for a definition of “similar taxes”. Specific rules are also provided for determining the foreign tax credit for foreign permanent establishments of Argentinian residents.</p>
+            </section>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_6.2." label="6.2.">
+            <taxtopics>
+               <taxtopic tc="1_1_1_1_2" score="3">Non-Resident</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_1_1_2" score="3">Non-Resident</taxtopic>
+            </taxtopics>
+            <title>Non-resident companies</title>
+            <p>There is no definition of non-resident companies. Non-resident companies are those not qualified as resident companies. For the concept of residence, <emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_1.2.1.">1.2.1.</xref> </p>
+            <p>For the permanent establishment, <emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_6.2.1.">6.2.1.</xref> </p>
+            <section anchor="gtha_ar_2022-07-01_s_6.2.1." label="6.2.1.">
+               <taxtopics>
+                  <taxtopic tc="1_1_1_2_1" score="3">Domestic</taxtopic>
+                  <taxtopic tc="1_1_24_1" score="3">Active / Business</taxtopic>
+                  <taxtopic tc="1_1_24_3_2" score="3">Portfolio</taxtopic>
+                  <taxtopic tc="1_1_21_15" score="3">Exemptions</taxtopic>
+                  <taxtopic tc="1_1_24_2_11" score="3">Interest</taxtopic>
+                  <taxtopic tc="1_1_1_2_2" score="3">Foreign</taxtopic>
+                  <taxtopic tc="1_1_22_32" score="3">Capital Gains</taxtopic>
+                  <taxtopic tc="2_15" score="3">Permanent Establishments [PE]</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_1_2_1" score="3">Domestic</taxtopic>
+                  <taxtopic tc="1_1_24_1" score="3">Active / Business</taxtopic>
+                  <taxtopic tc="1_1_24_3_2" score="3">Portfolio</taxtopic>
+                  <taxtopic tc="1_1_21_15" score="3">Exemptions</taxtopic>
+                  <taxtopic tc="1_1_24_2_11" score="3">Interest</taxtopic>
+                  <taxtopic tc="1_1_1_2_2" score="3">Foreign</taxtopic>
+                  <taxtopic tc="1_1_22_32" score="3">Capital Gains</taxtopic>
+                  <taxtopic tc="1_1_51" score="3">Permanent Establishments [PE]</taxtopic>
+               </taxtopics>
+               <title>Taxes on income and capital gains</title>
+               <p>The main rules on taxes on income and capital gains are found in articles 95, 96, 97 and 103 of the ITL.</p>
+               <p>As a general rule, non-resident companies without a permanent establishment in Argentina are subject to income tax on their Argentinian-source income. Non-resident companies that carry out activities through a permanent establishment in Argentina are subject to the general corporate income tax on the portion of income that is attributable to such permanent establishment. The definition for permanent establishment under domestic law is aligned with the one in the OECD Model. However, the definition also has some influence from the UN Model, especially with regard to the time threshold for qualification as services permanent establishment.</p>
+               <p>Permanent establishments of foreign companies in Argentina are subject to tax on their worldwide income and under the same rules applicable to resident companies. Non-residents without a permanent establishment or agency in Argentina are subject to tax only on Argentinian-source income.</p>
+               <p>The taxation of income derived by resident subsidiaries owned by non-resident taxpayers is governed by the general rules for resident legal entities. However, there are certain specific rules for such companies, for example with respect to the calculation of the taxable base.</p>
+               <p>The profit of branches of foreign companies is subject to income tax in the same manner as the profit of local corporations. Remittances from a branch, agency or permanent establishment are subject to the same final withholding tax rate applicable to dividends (<emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_6.3.1.">6.3.1.</xref>).</p>
+               <p>Income exempt from corporate income tax for non-residents includes:</p>
+               <list>
+                  <item label="-">
+                     <p>interest on foreign credit granted to the national treasury, provinces, municipalities or the central bank, however, the exemption does apply to the central bank's short-term treasury bills (<emph type="i">Lebac</emph>);</p>
+                  </item>
+                  <item label="-">
+                     <p>interest on government bonds;</p>
+                  </item>
+                  <item label="-">
+                     <p>income derived from mutual funds regulated by article 1 of Law 24,083 quoted in domestic bourses; and</p>
+                  </item>
+                  <item label="-">
+                     <p>capital gains derived from shares listed in authorized stock exchanges in Argentina, provided the non-resident is not resident of a non-collaborative jurisdiction.</p>
+                  </item>
+               </list>
+               <p>Certain exemptions listed in section <xref target="gtha_ar_2022-07-01_s_1.3.2.">1.3.2.</xref> may apply.</p>
+               <p>Argentinian-source taxable income derived by non-residents is taxed at the general income tax rate (35%). However, due to the rules on notional income described in section <xref target="gtha_ar_2022-07-01_s_6.3.">6.3.</xref>, the effective rate (calculated on the gross payment) differs for each type of income. For the effective rates, <emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_6.3.">6.3.</xref> </p>
+               <p>Decree 279/2018 clarified the tax treatment of income of Argentine source earned by non-residents, as follows:</p>
+               <list>
+                  <item label="-">
+                     <p>income derived by non-residents from securities issued by the Central Bank (<emph type="i">Letras del Banco Central</emph>, Lebac) is subject to a 35% tax rate;</p>
+                  </item>
+                  <item label="-">
+                     <p>non-exempt capital gains derived by non-residents, e.g. transfer of non-listed shares, are subject to a 13.5% rate;</p>
+                  </item>
+                  <item label="-">
+                     <p>non-residents without a legal representative in the country are responsible for the direct payment of taxes;</p>
+                  </item>
+                  <item label="-">
+                     <p>income and capital gains derived by non-residents that are residents of non-cooperating jurisdictions are generally excluded from the exemptions available to non-residents, and therefore are taxed at a rate of 35%. A list of non-cooperating jurisdictions can be found on the tax authorities' website; and</p>
+                  </item>
+                  <item label="-">
+                     <p>income and capital gains derived from investing in mutual funds regulated by article 1 of Law 24,083 will be taxed in accordance with the tax treatment granted by the ITL to its main underlying asset. The main underlying asset is defined as that comprising of at least 75% of the investments of the fund.</p>
+                  </item>
+               </list>
+               <p> <emph type="i">See</emph> section <xref target="gtha_ar_2022-07-01_s_6.3.">6.3.</xref> for withholding taxes on payments to non-resident companies.</p>
+               <p>For the taxation of digital services provided by non-resident persons, <emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_9.6.7.">9.6.7.</xref> </p>
+               <topic>
+                  <title>OECD/G20 Inclusive Framework – Pillar One</title>
+                  <p>On 1 July 2021 and 8 October 2021, Argentina signed joint statements with other Inclusive Framework members with an agreement to implement a two-pillar solution to address the tax challenges arising from the digitalisation of the economy. The solution includes a plan to reallocate part of taxing rights over large and high profitable enterprises from their home countries to jurisdictions in which goods or services are supplied or consumers are located (market jurisdictions), regardless of whether these enterprises have a physical presence there (Pillar One). This new taxing right for market jurisdictions (the so-called Amount A) would affect multinational groups with global turnover above EUR 20 billion and profit before tax above 10%. A multilateral convention for implementation of Pillar One and with the requirement to remove all digital service taxes and other relevant similar measures (as well as not to introduce such measures in the future) is expected to be signed.</p>
+               </topic>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_6.2.2." label="6.2.2.">
+               <taxtopics>
+                  <taxtopic tc="1_5_2_1" score="3">Wealth / Worth Taxes</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_10_2_1" score="3">Wealth / Worth Taxes</taxtopic>
+               </taxtopics>
+               <title>Taxes on capital</title>
+               <p>Non-residents are subject to the net worth tax in relation to participations in Argentinian companies at the rate of 0.50% as provided by Law 23,966, calculated on the market value or net worth of the shares, depending on whether the company is quoted or not. Permanent establishments of non-resident companies are excluded from the tax in accordance with jurisprudence confirmed by the Federal Supreme Court.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_6.2.3." label="6.2.3.">
+               <taxtopics>
+                  <taxtopic tc="2_17" score="3">Tax Management / Procedure / Administration</taxtopic>
+                  <taxtopic tc="2_17_71" score="3">Disclosure / Tax Shelter Rules</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="2_17" score="3">Tax Management / Procedure / Administration</taxtopic>
+                  <taxtopic tc="2_17_71" score="3">Disclosure / Tax Shelter Rules</taxtopic>
+               </taxtopics>
+               <title>Administration</title>
+               <p>For general information regarding the administration of taxes, <emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_1.8.">1.8.</xref> </p>
+               <p>Taxes on Argentinian-source income derived by non-resident companies without a permanent establishment are generally withheld at source – <emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_6.3.">6.3.</xref> </p>
+               <p>On 13 January 2017, General Resolution 3986-E established a special tax identification number for non-resident entities.</p>
+               <p>The measure aims to facilitate investment in financial products by non-resident entities that have no economic activity in the country and thus have no standard tax identification number (<emph type="i">Clave Única de Identificación Tributaria</emph>, CUIT). The investments are to be channelled through authorized intermediaries (banks, brokers, etc.), which are the organizations that will obtain the tax identification number for foreign investors (<emph type="i">Clave de Inversores del Exterior</emph>, CIE). The CIE requires the appointment of an individual representative registered as a resident taxpayer who will normally be provided by the financial intermediary. The CIE is not valid for carrying on business beyond the limited scope mentioned above. Entities which exceed that scope must register as general taxpayers and obtain the regular CUIT.</p>
+               <p>General Resolution 4227/2018, published in the Official Gazette of 12 April 2018, establishes the procedures for the payment of taxes by non-resident persons in respect of income and capital gains from financial assets.</p>
+               <p>Through General Resolution 5135, the AFIP established an authorization system to be cleared by individuals and companies before making payments of services to foreign parties.</p>
+               <p>Individuals and companies that make payments of service fees on their behalf or on behalf of third parties to settle obligations with foreign parties (either related or not) must file an affidavit through the AFIP’s website (through the microsite called "SIMPES"), providing the required information, which will be used to assess their economic and financial good standing, following the criteria established by General Resolution 4294.</p>
+               <p>Examples of services subject to this authorization system (in accordance with the information provided on the AFIP’s website) are financial and postal services, telecommunications, IT and management services, accounting, legal and advertising services. Payments related to research and development and insurance premiums are also expressly mentioned as subject to the authorization system.</p>
+               <p>Transportation and travel services as well as payments to digital platforms made by individuals are excluded. The authorization system does not apply to entities and departments of the Federal, Provincial and Municipal states.</p>
+               <p>Information provided by payors and the authorization to proceed with the relevant payments will be shared with the Central Bank.</p>
+            </section>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_6.3." label="6.3.">
+            <taxtopics>
+               <taxtopic tc="1_3_1" score="3">Income Streams</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_3_1" score="3">Income Streams</taxtopic>
+            </taxtopics>
+            <title>Withholding taxes on payments to non-resident companies</title>
+            <p>The main rules on withholding taxes on payments to non-resident companies are found in articles 94, 102 and 104 of the ITL.</p>
+            <p>Argentinian-source taxable income derived by non-residents is taxed at the general income tax rate (35%). However, for withholding purposes, taxable income from Argentinian sources is normally presumed to be a certain specified percentage of the gross payment. Different percentages of notional income are specified, without right of rebuttal in most cases (<emph type="i">see</emph> sections <xref target="gtha_ar_2022-07-01_s_6.3.1.">6.3.1.</xref> to <xref target="gtha_ar_2022-07-01_s_6.3.4.">6.3.4.</xref>). In the case of unspecified income, Argentinian-source notional income is presumed to be 90% of the gross payment, without right of rebuttal. As a result, the effective rate differs for each type of income; for the effective rates, <emph type="i">see</emph> sections <xref target="gtha_ar_2022-07-01_s_6.3.1.">6.3.1.</xref> to <xref target="gtha_ar_2022-07-01_s_6.3.4.">6.3.4.</xref>
+            </p>
+            <section anchor="gtha_ar_2022-07-01_s_6.3.1." label="6.3.1.">
+               <taxtopics>
+                  <taxtopic tc="1_3_1_1" score="3">Dividends</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_3_1_1" score="3">Dividends</taxtopic>
+               </taxtopics>
+               <title>Dividends</title>
+               <p>Dividends paid to non-resident persons are subject to a final withholding tax at a 7% rate. </p>
+               <p>General Resolution 4478 (AFIP) establishes that withholding agents are the companies distributing dividends or the managers of investment funds when distributing profits or when redeeming participations involving dividends.</p>
+               <p>For taxes on the remittances from branches, agencies or permanent establishments, <emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_6.3.4.4.">6.3.4.4.</xref> </p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_6.3.2." label="6.3.2.">
+               <taxtopics>
+                  <taxtopic tc="1_3_1_2" score="3">Interest</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_3_1_2" score="3">Interest</taxtopic>
+               </taxtopics>
+               <title>Interest</title>
+               <p>Interest is taxed as ordinary income. However, certain interest is exempt from income tax (<emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_6.2.1.">6.2.1.</xref>).</p>
+               <p>Interest payments to non-residents are subject to a final withholding tax either at the reduced 15.05% rate (35% headline rate on a notional net income of 43% of the interest paid) or at the general 35% rate (that is, a notional net income of 100% of the interest paid). The 15.05% rate applies in the following cases:</p>
+               <list>
+                  <item label="-">
+                     <p>the borrower is an Argentinian financial institution; or the interest is for financing the importation of movable depreciable assets (other than automobiles), provided the financing is granted by the supplier of the assets; or the borrower is an entity other than a financial institution and the lender is a banking or financial entity not located in a nil or low tax jurisdiction or located in a jurisdiction that has executed an exchange of information agreement with Argentina, and the lender is supervised by the respective central bank or equivalent entity;</p>
+                  </item>
+                  <item label="-">
+                     <p>the interest is derived from one of the following deposits in financial institutions supervised by the Argentinian Central Bank: savings accounts, special savings accounts, fixed-term deposits, or other deposits as determined by the Central Bank; and</p>
+                  </item>
+                  <item label="-">
+                     <p>the interest is paid on certain bonds filed for registration in countries with which Argentina has concluded an investment protection agreement, provided that the bonds are registered according to the procedure specified in Law 23,576 (i.e. authorized for public offering) within 2 years after they were issued.</p>
+                  </item>
+               </list>
+               <p>For thin capitalization rules, <emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_7.3.">7.3.</xref>
+               </p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_6.3.3." label="6.3.3.">
+               <taxtopics>
+                  <taxtopic tc="1_3_1_3" score="3">Royalties</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_3_1_3" score="3">Royalties</taxtopic>
+               </taxtopics>
+               <title>Royalties</title>
+               <p>Argentinian-source taxable income from the assignment of rights or the licensing of patents, trademarks (only licensing between unrelated parties is admitted), industrial models, designs and know-how is presumed to be, without right of rebuttal, 80% of payments to non-residents. This percentage is increased to 90% if the requirements of the Transfer of Technology Law are not met (e.g. if the agreement giving rise to the royalty is not registered with the National Institute of Industrial Property (INPI) by the due date). As this notional taxable income is subject to withholding tax at a rate of 35%, the effective rates on gross payments are 28% and 31.5%, respectively.</p>
+               <p>Argentinian-source taxable income derived from the exploitation of copyrights in Argentina is presumed to be, without right of rebuttal, 35% of payments to non-residents, provided that: (i) the copyrights are duly registered with the National Copyright Bureau; (ii) the payment is made to the author or the author’s heirs; and (iii) certain other conditions are met. This provision has been construed by the Supreme Court as applicable only to individual beneficiaries. Payments to foreign corporate beneficiaries are taxed in accordance with the next paragraph.</p>
+               <p>If the conditions are not met, the notional taxable income is 90%. As this 35% or 90% notional income is subject to withholding tax at a rate of 35%, the effective rates are 12.25% and 31.5%, respectively.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_6.3.4." label="6.3.4.">
+               <title>Other</title>
+               <section anchor="gtha_ar_2022-07-01_s_6.3.4.1." label="6.3.4.1.">
+                  <taxtopics>
+                     <taxtopic tc="1_3_1_5_1" score="3">Shares</taxtopic>
+                     <taxtopic tc="1_3_1_5_2" score="3">Immovable(s) Properties</taxtopic>
+                     <taxtopic tc="1_3_1_5_12" score="3">Portfolio</taxtopic>
+                  </taxtopics>
+                  <taxtopics version="3.0">
+                     <taxtopic tc="1_3_1_5_1" score="3">Shares</taxtopic>
+                     <taxtopic tc="1_3_1_5_2" score="3">Immovable(s) Properties</taxtopic>
+                     <taxtopic tc="1_3_1_5_12" score="3">Portfolio</taxtopic>
+                  </taxtopics>
+                  <title>Capital gains</title>
+                  <p>Non-residents receiving the proceeds for the transfer of title of bonds, shares, quotas and any other participation in the capital of resident companies, as well as the transfer of immovable property, are, in principle, subject to a 13.5% final withholding tax on the proceeds, by application of the previously mentioned rule of notional income (<emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_6.3.">6.3.</xref>), 90% of the amount paid.</p>
+                  <p>Article 63 of Law 27,430 confirmed that non-residents have the option to determine the tax on a net basis. That is, the selling price minus the cost of the security and minus expenses incurred to buy it or sell it. The applicable rate on the net taxable base is 15%.</p>
+                  <p>Capital gains from the disposal of Argentinian government bonds (except the central bank’s short-term treasury bills (<emph type="i">Lebac</emph>)) held by non-residents are exempt from tax.</p>
+                  <p>Rules to determine how the tax is paid when both seller and buyer are non-residents are still pending.</p>
+               </section>
+               <section anchor="gtha_ar_2022-07-01_s_6.3.4.2." label="6.3.4.2.">
+                  <taxtopics>
+                     <taxtopic tc="1_3_1_4_2" score="3">Technical</taxtopic>
+                  </taxtopics>
+                  <taxtopics version="3.0">
+                     <taxtopic tc="1_3_1_4_2" score="3">Technical</taxtopic>
+                  </taxtopics>
+                  <title>Services</title>
+                  <p>Payments to non-residents in respect of technical assistance are subject to final withholding tax at a rate of 35% on notional taxable income.</p>
+                  <p>Argentinian-source taxable income is presumed to be, without right of rebuttal, 60% of the gross payment of fees for services comprised in the Transfer of Technology Law which consist of: (i) technical assistance services; (ii) engineering services; or (iii) consulting services under an agreement duly registered with the INPI, provided that the aforementioned services are not obtainable in Argentina. A certificate to that effect is issued by the INPI.</p>
+                  <p>In order to apply the 60% notional income rule, certain additional requirements must be met:</p>
+                  <list>
+                     <item label="-">
+                        <p>the payment for the services must not be based on a royalty calculated by reference to the sales price or the production volume of licensed products or services;</p>
+                     </item>
+                     <item label="-">
+                        <p>the payment must be in proportion to the duration or amount of work performed;</p>
+                     </item>
+                     <item label="-">
+                        <p>the supplier must render specific, predetermined services involving the technical knowledge (as opposed to low value recurring services); and</p>
+                     </item>
+                     <item label="-">
+                        <p>the services must not be rendered for needs that are general, unspecified or conditional upon the signing of the transfer of technology agreement.</p>
+                     </item>
+                  </list>
+                  <p>Such services include: (i) engineering services and (ii) consulting services subject to registration, but only where such services involve technical knowledge applicable to the productive activity of the local company and the transfer of such knowledge to the company or its personnel by means of training and advisory services, detail of mechanical and technical procedures, supply of plans, reports and studies.</p>
+                  <p>If the above-mentioned requirements are not met, but the technical assistance involves a transfer of technology and the relevant contract is registered with the INPI, the Argentinian-source notional income is 80% of the payments (<emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_6.3.3.">6.3.3.</xref>).</p>
+                  <p>If the agreement is not registered with the INPI, the deemed taxable income is 90% of the payments. As notional income is subject to a 35% withholding tax, the effective rates on gross payments are 21%, 28% and 31.5%, respectively.</p>
+                  <p>If the service is outside the scope of the Transfer of Technology Law, but it involves technical assistance, the notional income is 90% of the payment, so the effective tax rate is 31.5%.</p>
+               </section>
+               <section anchor="gtha_ar_2022-07-01_s_6.3.4.3." label="6.3.4.3.">
+                  <taxtopics>
+                     <taxtopic tc="1_3_1_4_1" score="3">Management</taxtopic>
+                  </taxtopics>
+                  <taxtopics version="3.0">
+                     <taxtopic tc="1_3_1_4_1" score="3">Management</taxtopic>
+                  </taxtopics>
+                  <title>Members of boards of directors</title>
+                  <p>Payments to non-resident members of the board of directors of an Argentina-based enterprise are generally subject to withholding tax on 90% notional income at an income tax rate of 35%, resulting in an effective rate of 31.5% on gross fees. However, if the director works temporarily in Argentina for a period not exceeding 6 months in the tax year, Argentinian-source taxable income is presumed to be, without right of rebuttal, 70% of wages, fees and other remuneration paid to such person. This 70% notional income is subject to final withholding tax at a rate of 35%, resulting in an effective rate of 24.5% on gross wages or fees.</p>
+               </section>
+               <section anchor="gtha_ar_2022-07-01_s_6.3.4.4." label="6.3.4.4.">
+                  <title>Branch tax</title>
+                  <p>Remittances from a branch, agency or permanent establishment are subject to a 7% withholding tax in accordance with Law 27,430.</p>
+               </section>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_6.3.5." label="6.3.5.">
+               <title>Withholding tax rates chart</title>
+               <include-item collection="wht" src="wht_ar.xml"/>
+            </section>
+         </section>
+      </section>
+      <section anchor="gtha_ar_2022-07-01_s_7." label="7.">
+         <title>Anti-Avoidance</title>
+         <section anchor="gtha_ar_2022-07-01_s_7.1." label="7.1.">
+            <taxtopics>
+               <taxtopic tc="1_1_31_1" score="3">General</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_31_1" score="3">General</taxtopic>
+            </taxtopics>
+            <title>General</title>
+            <p>The main rules on general anti-avoidance are found in Law 11,683.</p>
+            <p>Argentinian domestic tax law establishes the rule of “economic reality” which may be considered a general anti-avoidance rule. Under that rule the tax authorities may challenge transactions where the legal form (e.g. corporate structures and agreements) does not appear consistent with the intended economic purpose or objective of the parties entering into the transaction.</p>
+            <topic>
+               <title>OECD/G20 Inclusive Framework – Pillar Two</title>
+               <p>On 1 July 2021 and 8 October 2021, Argentina signed joint statements with other Inclusive Framework members with an agreement to implement a two-pillar solution to address the tax challenges arising from the digitalisation of the economy. The solution includes a plan to ensure that large multinational enterprises (with revenues above EUR 750 million) pay a minimum level of tax on the income arising in each of the jurisdictions where they operate (Pillar Two). A key component of this plan is the Global Anti-Base Erosion (GloBE) rules, which provide for a co-ordinated system of taxation that imposes a top-up tax on profits arising in a jurisdiction whenever the effective tax rate is below the minimum rate of 15%. </p>
+            </topic>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_7.2." label="7.2.">
+            <taxtopics>
+               <taxtopic tc="2_16" score="3">Transfer Pricing</taxtopic>
+               <taxtopic tc="2_16_11" score="3">Arm's Length</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_6" score="3">Transfer Pricing</taxtopic>
+               <taxtopic tc="1_6_11" score="3">Arm's Length</taxtopic>
+            </taxtopics>
+            <title>Transfer pricing</title>
+            <p>The main rules on transfer pricing are found in article 17 of the Income Tax Law.</p>
+            <p>Argentina had adopted the arm’s length principle and other OECD transfer pricing principles. The Argentinian transfer pricing provisions establish five methods for transactions between related parties, namely the comparable uncontrolled price method, cost-plus method, resale price method, profit split method and transactional profit margin method. It is anticipated that forthcoming regulations may introduce additional methods. One of particular issue is that Argentinian rules include the “most appropriate method” principle.</p>
+            <p>The domestic legislation also adds an additional method, the “sixth method”, applicable to the export of commodities entered with traders that are deemed to be related to the exporter in accordance with certain objective criteria described in the law. When this method applies, the export price for tax purposes is set in accordance with the relevant market (there is always at least one public market because that is one of the requirements for the application of this method) on the day the goods are loaded on to the means of transport used to ship the goods from Argentina. The price agreed by the parties only applies if it is higher than the market price.</p>
+            <p>Law 27,430 introduced an amendment to article 17 of the ITL to refine the application of the so-called sixth method. International intermediaries and traders must file a transfer pricing study when the intermediary is considered a related party to the domestic taxpayer. Further, when the international intermediary is resident of a non-collaborative jurisdiction or low-tax country, and is engaged in the export of commodities, the contract must be registered with a special registry that will be carried by the federal tax authorities. Failure to comply with these requirements will result in the export price being determined in accordance with the value of the commodity in the relevant public market at the day of loading of the vessel, and disregarding the actual contractual terms between the parties.</p>
+            <p>Transfer pricing rules apply to cross-border transactions between related parties and to transactions between unrelated parties if the foreign party is located in a non-collaborative or low tax jurisdiction.</p>
+            <p>Article 19 and 20 provide a legal definition of non-collaborative and low tax jurisdictions respectively.</p>
+            <p>A transaction between related parties takes place if Argentinian residents, not being individuals, undertake transactions with non-residents and both are managed or controlled directly or indirectly by the same persons, whether individuals or legal entities, or if the individuals or legal entities have the power to decide or define the activities to be carried out by the Argentinian residents and non-residents.</p>
+            <p>The related parties test is broad and includes not only transactions between a local subsidiary and its parent company, but also other relationships (e.g. local company and foreign subsidiary; local permanent establishment and foreign head office; and local company and foreign permanent establishment).</p>
+            <p>In cases involving transactions with a party located in a non-collaborative/low-tax jurisdiction, it is presumed with right of rebuttal that the transfer prices are not at arm’s length. An arm’s length range is first established. Then, if the prices, margins or profits as determined by the taxpayer fall within the range, the transactions are deemed to comply with the arm’s length principle. Otherwise, the prices, margins or profits are deemed to be the median of the range, plus or minus 5%, depending on where the value determined by the taxpayer falls in relation to the median.</p>
+            <p>General Resolution (AFIP) 4717, as amended by General Resolution 5010 regulates the reporting rules and compliance in respect of documents that must be filed annually. Accordingly, resident taxpayers must file the Local File when total revenue derived from transactions with related parties exceeds ARS 3 million in the tax year or when dealing with parties established or resident in low-tax or non-cooperative jurisdictions provided that aggregated revenues of those transactions exceed ARS 3 million or individual transactions exceed ARS 300,000 in the tax year. A country-by-country (CbC) report and a Master File (for entities belonging to same economic group) must be filed. The latter is optional in certain cases, e.g. if the total revenue of the economic group for the year preceding the one reported does not exceed ARS 4 billion). </p>
+            <p>The Local File must be filed between the 23rd and 27th day (the exact date depending on the taxpayer's tax ID) of the 6th month following the closing of the tax year subject to report, while the Master File must be filed between the 23rd and 27th day (the exact date depending on the taxpayer's tax ID) of the 12th month following the closing of the tax year subject to report. </p>
+            <p>However, in view of the COVID-19 pandemic, the tax authorities have established special deadlines for filing the annual transfer pricing reports and forms required by General Resolution 4717/2020, related to tax years closed between 31 December 2020 and 31 December 2021.The special deadlines are between the 23rd and 27th day of the ninth month following that of closing of the fiscal year, the exact date depending on the tax ID of the taxpayer.</p>
+            <p>The country-by-country (CbC) reporting regime is regulated by General Resolution 4130, as amended, and is effective for fiscal years beginning as from 1 January 2017. The CbC rules are applicable to the ultimate parent entities with annual revenues for the preceding reporting period of EUR 750 million or more, or surrogate parent entities with a net worth of at least ARS 50 million.</p>
+            <p>Law 27,430 introduced a procedure for advance pricing agreements between the tax administration and the taxpayer for the purpose of establishing the transfer pricing methods to be used in the determination of the arm’s length price in future transactions between the taxpayer and related parties. The agreement is binding only to the taxpayer involved and the tax authority, but the results may eventually be exchanged with third countries under existing international conventions.</p>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_7.3." label="7.3.">
+            <taxtopics>
+               <taxtopic tc="1_1_31_2_2" score="3">Thin Capitalization [Thin Cap]</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_31_2_2" score="3">Thin Capitalization [Thin Cap]</taxtopic>
+            </taxtopics>
+            <title>Limitations on interest deductibility</title>
+            <p>As a rule, interest on debt attributable to an income-generating activity is deductible (<emph type="i">see also</emph> <xref target="gtha_ar_2022-07-01_s_1.3.3.1.">sections 1.3.3.1.</xref> and <xref target="gtha_ar_2022-07-01_s_1.3.3.2.">1.3.3.2.</xref>). However, under certain circumstances, interest on the capital owned by the company, member or partner is not deductible.</p>
+            <p>Article 85 of the ITL (as amended by Law 27,430) establishes limitation on interest deductibility applicable to interest accrued in fiscal years started as from 1 January 2018. Interest whose deduction is subject to limitations is that accruing from “financial debt” (debt incurred to acquire assets or services related to the operation of the company is excluded) with related parties, whether resident or not. The deduction of such interest is limited to a yearly fixed amount of ARS 1 million (as provided by Decree 1170/2018) or 30% of EBITDA, whichever limit is higher.</p>
+            <p>The regime provides for a carry-back of 3 years and a carry-forward of 5 years in respect of interest that was not deductible when accrued, applying the FIFO method. Additionally, the regime does not apply to financial entities, certain financial trusts (<emph type="i">fideicomisos</emph>) and certain companies providing operational leasing. Alternatively, a company may avoid the limitation of the deduction of interest if it can demonstrate that the annual charge of interest related to financial debt as compared to its taxable income is within or below the ratio determined by the economic group to which the company in question belongs. </p>
+            <p>Further, interest may be deducted without limitations if the company incurring the debt can demonstrate that the beneficiary of the interest paid the corresponding income tax on that interest. This alternative is subject to the following regulation as provided by Decree 1170/2018;</p>
+            <list>
+               <item label="-">
+                  <p>if the beneficiary is a resident, the interest must be included in the respective annual tax return and taxed accordingly, and</p>
+               </item>
+               <item label="-">
+                  <p>if the beneficiary is not resident, the interest must be effectively paid and subject to withholding tax. </p>
+               </item>
+            </list>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_7.4." label="7.4.">
+            <taxtopics>
+               <taxtopic tc="1_1_31_2_1" score="3">Controlled Foreign Corporations / Anti-Tax Havens [CFCs]</taxtopic>
+               <taxtopic tc="2_14_12" score="3">Controlled Foreign Corporations / Anti-Tax Haven [CFCs]</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_31_2_1" score="3">Controlled Foreign Corporations / Anti-Tax Havens [CFCs]</taxtopic>
+               <taxtopic tc="1_1_42_12" score="3">Controlled Foreign Corporations / Anti-Tax Haven [CFCs]</taxtopic>
+            </taxtopics>
+            <title>Controlled foreign company</title>
+            <p>The main rules on controlled foreign company are found in article 130 of the ITL, as amended by Law 27,430.</p>
+            <p>Shareholders resident in Argentina must include in their taxable income the profits derived by a subsidiary resident of a foreign jurisdiction when the Controlled Foreign Company (CFC) regime applies.</p>
+            <p>A foreign subsidiary is considered CFC when: (i) the entity is controlled by resident shareholders, (ii) at least 50% of the earnings of the foreign entity are passive income, and (iii) the effective corporate taxation in the country of residence of that entity is below 75% of the tax that would be applicable in accordance with the Argentine corporate taxation regime.</p>
+            <p>Resident shareholders of CFC that become transparent, as provided by article 130 of the ITL, will have the foreign income treated as if it had been earned directly by the those shareholders for purposes of income tax. Consequently, the foreign income will be characterized in accordance to its original nature (e.g. interest, rent) instead of being characterized as anticipated dividend derived from the CFC.</p>
+            <p>Otherwise, the profits of the foreign entity are taxable in the hands of the shareholders when receiving the dividends.</p>
+            <p>Correspondingly, if Argentinian residents are shareholders in a CFC which has a direct or indirect participation in an Argentinian company, the dividends distributed by the CFC are not taxable in Argentina in so far as the Argentinian income tax has been paid by the original distributing company.</p>
+            <p>This exemption applies only if the CFC is located in a country not considered to be a non-collaborative or low-tax jurisdiction.</p>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_7.5." label="7.5.">
+            <taxtopics>
+               <taxtopic tc="1_1_31_2_1" score="3">Controlled Foreign Corporations / Anti-Tax Havens [CFCs]</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_1_31_2_1" score="3">Controlled Foreign Corporations / Anti-Tax Havens [CFCs]</taxtopic>
+            </taxtopics>
+            <title>Other anti-avoidance rules</title>
+            <section anchor="gtha_ar_2022-07-01_s_7.5.1." label="7.5.1.">
+               <title>Tax havens</title>
+               <p>Articles 19 and 20 of the ITL, as amended by Law 27,430, provide a legal definition of non-collaborative and low-tax jurisdictions, respectively.</p>
+               <p>A non-collaborative jurisdiction is one that:</p>
+               <list>
+                  <item label="-">
+                     <p>does not have an agreement with Argentina to exchange tax information or a double tax convention with an updated clause to exchange tax information; or</p>
+                  </item>
+                  <item label="-">
+                     <p>does have in place instruments like those mentioned above, but is not compliant in the effective exchange of information. </p>
+                  </item>
+               </list>
+               <p>The tax authority provides a list of collaborative and non-collaborative jurisdictions at the following link: <url target="https://www.afip.gob.ar/jurisdiccionesCooperantes/default.asp">https://www.afip.gob.ar/jurisdiccionesCooperantes/default.asp</url>.</p>
+               <p>A low-tax jurisdiction is the one where the applicable rate of corporation tax is below 15%. In this case, however, the threshold may be applicable not only to the entire country or jurisdiction, but also to the preferential regime. </p>
+               <p>Non-collaborative and low-tax jurisdictions are relevant for transfer pricing purposes, but also in connection with the deduction of expenses and other anti-avoidance measures.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_7.5.2." label="7.5.2.">
+               <title>Taxation of indirect transfers of assets located in Argentina</title>
+               <p>Article 15 of the ITL, as amended by Law 27,430, taxes non-residents on the transfer of shares or other participation in the capital of non-resident entities provided those entities own directly or indirectly assets located in Argentina.</p>
+               <p>To such end, the following conditions must be met:</p>
+               <list>
+                  <item label="-">
+                     <p>at least 30% of the market value of the participation in the foreign entity is determined by Argentinian assets; and</p>
+                  </item>
+                  <item label="-">
+                     <p>the participation transferred amounts of at least 10% of the net worth of the non-resident entity.</p>
+                  </item>
+               </list>
+               <p>The transfer of shares or participation within the same economic group is excluded from this anti-avoidance measure. “Same economic group” is defined as a transaction between entities that are at least 80% owned (directly or indirectly) by the same party.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_7.5.3." label="7.5.3.">
+               <title>Disclosure of tax planning schemes</title>
+               <p>General Resolution 4838 introduced a disclosure regime regarding tax planning schemes. </p>
+               <p>The disclosure regime applies in respect of tax planning schemes with a domestic or international scope, i.e. any plan, scheme, agreement or any other action from which the taxpayer derives a fiscal advantage or benefit. An advantage or benefit is defined as any reduction of the taxable base of the taxpayer or its related parties.</p>
+               <p>Domestic tax planning schemes refer to events taking place in Argentina relating to federal taxes and domestic information regimes. International tax planning schemes refer to cross-border situations (e.g. abuse of tax treaties, avoidance of permanent establishment status). </p>
+               <p>Taxpayers participating in the relevant plan or scheme and tax advisers that assist, promote or provide advice in connection to the reportable transactions (by themselves or through third parties) are obliged to report tax planning schemes through the tax authorities’ website within the following deadlines:</p>
+               <list>
+                  <item label="-">
+                     <p>regarding domestic schemes, until the last working day of the month following that of the close of the taxpayer's fiscal year; and</p>
+                  </item>
+                  <item label="-">
+                     <p>regarding cross-border schemes, within 10 days following the date of beginning of their implementation.</p>
+                  </item>
+               </list>
+               <p>Aggravated sanctions apply in case of failure to comply with the disclosure regime. </p>
+            </section>
+         </section>
+      </section>
+      <section anchor="gtha_ar_2022-07-01_s_8." label="8.">
+         <taxtopics>
+            <taxtopic tc="1_4" score="3">VAT</taxtopic>
+         </taxtopics>
+         <taxtopics version="3.0">
+            <taxtopic tc="1_7" score="3">VAT</taxtopic>
+         </taxtopics>
+         <title>Value Added Tax</title>
+         <section anchor="gtha_ar_2022-07-01_s_8.1." label="8.1.">
+            <title>General</title>
+            <p>The main rules on VAT are found in Law 20,631.</p>
+            <p>Argentinian VAT is a general value added tax levied on taxable supplies of goods and services, as well as on final imports of taxable goods and services into Argentina. Exports of goods and services are zero-rated. Some specified transactions are exempt.</p>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_8.2." label="8.2.">
+            <taxtopics>
+               <taxtopic tc="1_4_2" score="3">Taxable Persons</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_7_2" score="3">Taxable Persons</taxtopic>
+            </taxtopics>
+            <title>Taxable persons</title>
+            <p>The main rules on taxable persons are found in article 4 of Law 20,631.</p>
+            <p>Taxable persons are individuals and legal entities making taxable supplies of goods or services. With regard to imports, the taxable person is any person carrying out the importation. A special regime applies for certain small taxpayers.</p>
+            <p>The concept of taxable persons specifically includes temporary joint ventures, consortia, associations not considered to be legal entities, groups not forming a company and any other entity engaging in taxable transactions.</p>
+            <p>Law 27,430, by amending Law 20,631, added as taxable persons non-resident who are suppliers of digital services to final consumers resident in Argentina.</p>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_8.3." label="8.3.">
+            <taxtopics>
+               <taxtopic tc="1_4_3" score="3">Taxable Events</taxtopic>
+               <taxtopic tc="1_4_3_1" score="3">Concept of Goods</taxtopic>
+               <taxtopic tc="1_4_3_2" score="3">Concept of Services</taxtopic>
+               <taxtopic tc="1_4_3_11" score="3">Imports</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_7_3" score="3">Taxable Events</taxtopic>
+               <taxtopic tc="1_7_3_1" score="3">Concept of Goods</taxtopic>
+               <taxtopic tc="1_7_3_2" score="3">Concept of Services</taxtopic>
+               <taxtopic tc="1_7_3_11" score="3">Imports</taxtopic>
+            </taxtopics>
+            <title>Taxable events</title>
+            <p>The main rules on taxable events are found in article 3 of Law 20,631.</p>
+            <p>VAT is levied on: the sale of movable property located in Argentina by taxable persons; work, leasing and services specified in the law, provided that they are performed in Argentina; the final importation of movable property; and the use or exploitation in Argentina of services which are supplied abroad by non-residents to Argentinian taxpayers, provided that they are related to taxable transactions (i.e. the importation of services).</p>
+            <p>Law 27,430, by amending Law 20,631, added as a taxable event the supply of digital services by non-resident parties.</p>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_8.4." label="8.4.">
+            <taxtopics>
+               <taxtopic tc="1_4_6" score="3">Taxable Amount</taxtopic>
+               <taxtopic tc="1_4_6_1_1" score="3">Elements to be Included</taxtopic>
+               <taxtopic tc="1_4_6_1_2" score="3">Elements to be Excluded</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_7_6" score="3">Taxable Amount</taxtopic>
+               <taxtopic tc="1_7_6_1_1" score="3">Elements to be Included</taxtopic>
+               <taxtopic tc="1_7_6_1_2" score="3">Elements to be Excluded</taxtopic>
+            </taxtopics>
+            <title>Taxable amount</title>
+            <p>The main rules on taxable amount are found in article 10 of Law 20,631.</p>
+            <p>VAT is levied on the net price of the taxable transaction, i.e. the invoice price less any discounts allowed under commercial practice. VAT and excise taxes are not included in the taxable amount. The value of services rendered together with the taxable transaction or as a consequence thereof, such as transportation, cleaning, packing, insurance, guarantees, installation and maintenance; financing expenses charged by the taxpayer, such as interest and commissions for deferred payments or payments in arrears; and the price of goods included in taxable services must be included in the taxable amount.</p>
+            <p>For imports, the taxable amount is equal to the customs value plus customs duties.</p>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_8.5." label="8.5.">
+            <taxtopics>
+               <taxtopic tc="1_4_7" score="3">Rates</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_7_7" score="3">Rates</taxtopic>
+            </taxtopics>
+            <title>Rates</title>
+            <p>The main rules on rates are found in article 28 of Law 20,631.</p>
+            <p>The standard VAT rate is 21%. Reduced rates apply, such as, for example, the rate of 10.5% on supplies of certain food, dwellings, interest and medical services, and the rates of 5%, 10.5% and 21% for advertisements in digital newspapers (depending on the total sales amount).</p>
+            <p>An increased rate of 27% applies to supplies of telecommunication services, gas and electrical power and running water and sewage services. Immovable property is subject to VAT only in specific cases, depending on who has constructed the property.</p>
+            <p>Exports of goods and services are zero rated.</p>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_8.6." label="8.6.">
+            <taxtopics>
+               <taxtopic tc="1_4_8" score="3">Exemptions</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_7_8" score="3">Exemptions</taxtopic>
+            </taxtopics>
+            <title>Exemptions</title>
+            <p>The main rules on exemptions are found in article 7 of Law 20,631.</p>
+            <p>There are two types of exemptions, namely:</p>
+            <list>
+               <item label="-">
+                  <p>exemption without the right to deduct input VAT; and</p>
+               </item>
+               <item label="-">
+                  <p>exemption with the right to deduct input VAT. Such exemptions are commonly referred to as zero rating.</p>
+               </item>
+            </list>
+            <p>Exempt supplies (without the right to deduct input VAT) include, inter alia: books (including electronic formats); retail distribution of newspapers and periodicals; shares, bonds and securities; gold coins, gold bars and other coins; medical services in specified cases; and transportation of persons and freight.</p>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_8.7." label="8.7.">
+            <taxtopics>
+               <taxtopic tc="1_4_2_31" score="3">Non-Residents</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_7_2_31" score="3">Non-Residents</taxtopic>
+            </taxtopics>
+            <title>Non-residents</title>
+            <p>As a general rule, non-residents must register if they perform taxable transactions in Argentina. Law 27,346 amended the VAT Law in respect of services performed and works of construction done within the Argentine territory by non-resident persons. From 1 January 2017, the concept of taxable person was extended to include substitute taxable persons (i.e. the customer or the beneficiary of services performed and work of construction done within the Argentine territory, as well as agents or intermediaries, who are residents in Argentina, including the national government, the provinces, the city of Buenos Aires, and entities exempted by the Income Tax Law). Substitute taxable persons have to calculate and remit the VAT on the services received, and therefore they have to be registered as taxable persons at the AFIP. Substitute taxable person can deduct the VAT on those services as input VAT in their VAT return.</p>
+            <p>The reverse charge mechanism is compulsory in cases of supplies of services performed abroad and used or exploited within the country by a taxable person whose status is derived from other taxable events. “Performed abroad” means that the service could be rendered without the supplier performing activities within the country (some ancillary activities taking place within the country such as meetings with customers would not alter this situation).</p>
+            <p>Decree 813/2018 established, with particular reference to the supply of services by non-residents, that their status (as non-resident) will be defined according to the amendment of the ITL (Law 27,430), which introduced a full definition of permanent establishment. Foreign suppliers will be considered residents for VAT purposes if (i) they are residents for income tax purposes or (i) they have a permanent establishment. Otherwise, they will be considered as non-residents. However, foreign suppliers may be considered as established for VAT purposes but not established for tax purposes if they operate from a fixed base within the country that does not qualify for permanent establishment.</p>
+            <p>A special situation is that of digital services provided by non-residents to final consumers (B2C transactions). For the digital service to be taxable in Argentina, article 1(e) of the VAT Law requires that the digital service is (i) supplied by a non-resident and (ii) used or effectively exploited within the Argentine territory by a final consumer or non-taxable person. The VAT is charged at the time that the supply is completed, or the consideration has been paid partially or in full, whichever occurs first. Article 27.1 of the VAT Law provides that the acquirer of digital services should remit the VAT or, when the service is paid through an intermediary (e.g. a credit card company, or a bank), the intermediary should act as withholding agent and remit the VAT to the tax authority.</p>
+         </section>
+      </section>
+      <section anchor="gtha_ar_2022-07-01_s_9." label="9.">
+         <taxtopics>
+            <taxtopic tc="1_5" score="3">Other Taxes</taxtopic>
+         </taxtopics>
+         <taxtopics version="3.0">
+            <taxtopic tc="1_10" score="3">Other Taxes</taxtopic>
+         </taxtopics>
+         <title>Miscellaneous Taxes</title>
+         <section anchor="gtha_ar_2022-07-01_s_9.1." label="9.1.">
+            <taxtopics>
+               <taxtopic tc="1_5_2" score="3">Capital / Property Taxes</taxtopic>
+               <taxtopic tc="1_5_3" score="3">Capital Contribution</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_10_2" score="3">Capital / Property Taxes</taxtopic>
+               <taxtopic tc="1_10_3" score="3">Capital Contribution</taxtopic>
+            </taxtopics>
+            <title>Capital duty</title>
+            <p>There is no capital duty.</p>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_9.2." label="9.2.">
+            <taxtopics>
+               <taxtopic tc="1_5_1" score="3">Transfer Taxes</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_10_1" score="3">Transfer Taxes</taxtopic>
+            </taxtopics>
+            <title>Transfer tax</title>
+            <section anchor="gtha_ar_2022-07-01_s_9.2.1." label="9.2.1.">
+               <taxtopics>
+                  <taxtopic tc="1_5_1_13" score="3">Immovable Property Transfer Taxes</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_10_1_13" score="3">Immovable Property Transfer Taxes</taxtopic>
+               </taxtopics>
+               <title>Immovable property</title>
+               <p>The main rules on immovable property transfer tax are found in Law 23,905. The transfer of immovable property by resident corporate taxpayers is not subject to transfer tax; the tax applies only to individuals and non-resident persons, provided that the transaction is not subject to income tax (<emph type="i">see</emph> <extxref publish="n" target="gthb_ar_s_1.6.">Individual Taxation 1.6.</extxref>). The transfer tax is levied on the transfer (for consideration) of title to Argentinian-situs immovable property, provided that the proceeds of the transaction are not subject to income tax. The tax is calculated on the transfer price at the rate of 1.5%.</p>
+               <p>The transfer of immovable property located in Argentina by non-residents is subject to a final withholding tax of 13.5% on the transfer price of the property.</p>
+               <p> <emph type="i">See also</emph> section <xref target="gtha_ar_2022-07-01_s_9.3.1.">9.3.1.</xref> </p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_9.2.2." label="9.2.2.">
+               <taxtopics>
+                  <taxtopic tc="1_5_1_11" score="3">Share Transfer Taxes</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_10_1_11" score="3">Share Transfer Taxes</taxtopic>
+               </taxtopics>
+               <title>Shares, bonds and other securities</title>
+               <p>A stamp duty applies – <emph type="i">see</emph> section <xref target="gtha_ar_2022-07-01_s_9.3.2.">9.3.2.</xref> </p>
+            </section>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_9.3." label="9.3.">
+            <taxtopics>
+               <taxtopic tc="1_5_1_2" score="3">Stamp Duties / Documentary Taxes</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_10_1_2" score="3">Stamp Duties / Documentary Taxes</taxtopic>
+            </taxtopics>
+            <title>Stamp duty</title>
+            <section anchor="gtha_ar_2022-07-01_s_9.3.1." label="9.3.1.">
+               <taxtopics>
+                  <taxtopic tc="1_5_1_2" score="3">Stamp Duties / Documentary Taxes</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_10_1_2" score="3">Stamp Duties / Documentary Taxes</taxtopic>
+               </taxtopics>
+               <title>Immovable property</title>
+               <p>Transfers of immovable property are subject to stamp duty (levied by the federal capital and the provinces) on the value of the property stated in the sales contract, or the cadastral value, whichever is greater. The stamp duty paid on a previous promise to sell immovable property may be credited against the liability for the stamp duty on the final transfer of that property. In accordance with the 2021 Federal Fiscal Agreement, the tax rate may not exceed 3.5%.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_9.3.2." label="9.3.2.">
+               <taxtopics>
+                  <taxtopic tc="1_5_1_11" score="3">Share Transfer Taxes</taxtopic>
+                  <taxtopic tc="1_5_1_2" score="3">Stamp Duties / Documentary Taxes</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_10_1_11" score="3">Share Transfer Taxes</taxtopic>
+                  <taxtopic tc="1_10_1_2" score="3">Stamp Duties / Documentary Taxes</taxtopic>
+               </taxtopics>
+               <title>Shares, bonds and other securities</title>
+               <p>Transfers of shares are subject to stamp duty provided generally that the transfer is made by a written agreement. In accordance with the 2021 Federal Fiscal Agreement, the tax rate may not exceed 2% for this type of transactions. In addition, jurisdictions may exempt certain transactions (e.g. transfer of listed shares).</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_9.3.3." label="9.3.3.">
+               <taxtopics>
+                  <taxtopic tc="1_5_1_2" score="3">Stamp Duties / Documentary Taxes</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_10_1_2" score="3">Stamp Duties / Documentary Taxes</taxtopic>
+               </taxtopics>
+               <title>Other transactions</title>
+               <p>Stamp duty applies to contracts and written agreements (e.g. procurement agreements and distribution agreements provided they are written agreements). Tax rates vary in accordance with the tax jurisdiction and the nature of the transaction. In general, the tax rate may not exceed 2% of the economic value of the agreement in accordance with the 2021 Federal Fiscal Agreement.</p>
+            </section>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_9.4." label="9.4.">
+            <taxtopics>
+               <taxtopic tc="1_5_21" score="3">Customs Duties</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_10_21" score="3">Customs Duties</taxtopic>
+            </taxtopics>
+            <title>Customs duty</title>
+            <section anchor="gtha_ar_2022-07-01_s_9.4.1." label="9.4.1.">
+               <taxtopics>
+                  <taxtopic tc="1_5_21_1" score="3">Import</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_10_21_1" score="3">Import Duties</taxtopic>
+               </taxtopics>
+               <title>Import duties</title>
+               <p>The main rules on import duties are found in Law 22,405.</p>
+               <p>Import duties are levied at different rates depending on the type of imported good, e.g. for new capital assets, generally 0%; for raw materials, parts and pieces generally from 0% to 35%; and for consumable goods, generally from 0% to 35%. Duties are set by identifying goods by way of their harmonized code in the MERCOSUR Common Code (<emph type="i">Nomenclatura Común del Mercosur</emph>, NCM), based on the Harmonized Commodity Description and Coding System (HS) for classifying goods and assigning tariffs.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_9.4.2." label="9.4.2.">
+               <taxtopics>
+                  <taxtopic tc="1_5_21_2" score="3">Export</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_10_21_2" score="3">Export Duties</taxtopic>
+               </taxtopics>
+               <title>Export duties</title>
+               <p>The main rules on export duties are found in Law 27,541, applicable as from 1 January 2020.</p>
+               <p>In general, the tax on exports may not exceed 33% of the taxable base or 33% of the free-on-board (FOB) price of the relevant goods. However, a 15% limit applies for goods that were not subject to export taxes on 2 September 2018. Additionally, the applicable rate may not exceed 5% for industrial goods or 8% for hydrocarbons and goods derived from mining. </p>
+            </section>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_9.5." label="9.5.">
+            <taxtopics>
+               <taxtopic tc="1_5_21" score="3">Customs Duties</taxtopic>
+               <taxtopic tc="1_5_22" score="3">Excise Duties</taxtopic>
+            </taxtopics>
+            <taxtopics version="3.0">
+               <taxtopic tc="1_10_21" score="3">Customs Duties</taxtopic>
+               <taxtopic tc="1_10_22" score="3">Excise Duties</taxtopic>
+            </taxtopics>
+            <title>Excise duty</title>
+            <p>Excise duty is levied (in only one stage) on the transfer and importation of goods specified by the excise duties law, and on the rendering of specified services. Taxable persons include producers, importers and merchants with respect to taxes on tobacco, alcoholic beverages, wine, non-alcoholic beverages, syrup, extracts, cellular and satellite phone services, vehicles and motors, luxury objects, recreation and sports craft and spaceships.</p>
+            <p>Excise duty is normally calculated on the sales price including the excise tax itself and any other tax levied on the chargeable product except VAT. It is levied at ad valorem rates based on the price of goods or services, at rates which vary and range from 0.1% to 60%.</p>
+         </section>
+         <section anchor="gtha_ar_2022-07-01_s_9.6." label="9.6.">
+            <title>Other taxes</title>
+            <section anchor="gtha_ar_2022-07-01_s_9.6.1." label="9.6.1.">
+               <taxtopics>
+                  <taxtopic tc="1_1_21_2" score="3">Local / Municipal / Cantonal</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_1_21_2" score="3">Local / Municipal / Cantonal</taxtopic>
+               </taxtopics>
+               <title>Tax on gross receipts</title>
+               <p>The Argentinian provinces, the City of Buenos Aires and all other jurisdictions levy local taxes on the habitual exercise of economic activities, known as the tax on gross receipts (<emph type="i">impuesto a los ingresos brutos</emph>). The tax is levied on: receipts derived from the exercise of civil or commercial activities for the purpose of earning profits; professions; occupations; brokerage; and any habitual activities. Certain transactions are exempt from this tax, for example development of dependent work; discharge of a public office; liberal professions in certain jurisdictions; and exportation. The jurisdictions are currently expanding situations that would qualify as digital presence or domicile in order to levy a tax on digital commerce – note that, as described in section <xref target="gtha_ar_2022-07-01_s_6.2.1.">6.2.1.</xref>, Argentina is a signatory of an agreement to implement a two-pillar solution, which includes key elements on the allocation of taxing rights to market jurisdictions; as a result, a multilateral convention with the requirement for parties to remove all digital service taxes and other relevant similar measures is expected to be signed (a detailed definition of what constitutes relevant similar measures will be included in the convention).</p>
+               <p>Internal double taxation of activities developed by one taxpayer in several jurisdictions is avoided under a multilateral agreement which provides for the allocation of the taxable base among the jurisdictions concerned.</p>
+               <p>As a general rule, the tax is levied on gross receipts accrued during the tax period (i.e. the calendar year) and derived from the development of the activity taxed by the applicable law. In certain cases, special provisions provide for taxation on a cash basis (e.g. taxpayers for whom bookkeeping is not compulsory). There are also instances in which the tax is calculated on the difference between the purchase and sales prices (e.g. certain fuel and tobacco products). Special rules are also established for the computation of the taxable base in certain cases such as banks, insurance companies, foreign exchange and news agencies.</p>
+               <p>Certain items are excluded or deducted from the taxable base, for example output VAT and excise duty.</p>
+               <p>Rates vary by province and activity. However, under the 2021 Federal Fiscal Agreement signed between the provinces and the federal state, the rates must not exceed certain percentages ranging from 0.75% (for farming and fishing) to 9% (for financial services). </p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_9.6.2." label="9.6.2.">
+               <taxtopics>
+                  <taxtopic tc="1_5_45_1" score="3">Financial Transaction Taxes</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_10_45" score="3">Financial Transaction Taxes</taxtopic>
+               </taxtopics>
+               <title>Tax on debits and credits on bank accounts</title>
+               <p>Law 25,413, established a tax on credits to and debits from (i.e. deposits in and withdrawals) bank current accounts. The tax is assessed and collected by the financial entities with which such accounts are registered. The individuals or entities holding such accounts bear the tax.</p>
+               <p>In general, the base for the tax is the gross amount of credits and debits, excluding additional expenses relating to these transactions. The general tax rate is 0.6%. The application of special rates of 1.2%, 0.5%, 0.25%, 0.075%, 0.05% and 0.01% depends on the subject and/or the transaction. For example, a 1.2% rate applies in the case of debits on bank accounts resulting from cash withdrawals. The increase does not apply to bank accounts owned by individuals and by businesses that qualify as micro or small enterprises as provided in article 2 of Law 24,467, as amended.</p>
+               <p>Another example of special rates was introduced by the Budget Law for year 2021, which reduced the rate of the tax from 0.6% to 0.25% for companies in which the federal state holds at least 80% of the capital. The reduction is effective for taxable events taking place as from 14 December 2020.</p>
+               <p>Certain transactions are exempt from this tax, for example transfers of funds to checking accounts (excluding transfers made by cheque) in respect of the same entity or individual effecting the transfer, debits and credits related to the transfer of title of immovable property and debits in respect of the payment of this tax, among others. Other exemptions may apply (e.g. accounts used exclusively by airline companies to deposit amounts collected from passengers in connection with charges for the use of airports, security and the tax on airline tickets). However, under Decree 796/2021, the Executive Branch established that exemptions will not apply in cases where the movement of funds relates to the acquisition, sale, trade, intermediation or any other similar transaction related to crypto assets, cryptocurrencies, digital currency or similar instruments. </p>
+               <p>In order to provide equal tax treatment for payments made through electronic wallets and payments made using bank current accounts, the Executive Branch through Decrees 301 and 796 of 2021 has amended the taxable events to include the so-called electronic wallets, as defined by Communiqués A 6885 and A 6859, and payment services provided by companies falling within the framework established by Communiqué A 7153 of the Central Bank, respectively. Applicable tax rates are the same as those applied to bank accounts (i.e. 0.6% on debits and 0.6% on credits) and reduced rates also apply accordingly.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_9.6.3." label="9.6.3.">
+               <taxtopics>
+                  <taxtopic tc="1_5_44" score="3">Betting Duties / Gaming Taxes</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_10_44" score="3">Betting Duties / Gaming Taxes</taxtopic>
+               </taxtopics>
+               <title>Tax on the exploitation of betting machines</title>
+               <p>On 27 December 2016, Law 27,346 established a new tax on the exploitation of betting machines or terminals.</p>
+               <p>The tax applies on bets made in the Argentine territory through electromechanical terminals in authorized places (e.g. casinos, bingos).</p>
+               <p>Taxpayers are enterprises (irrespective of their legal form) exploiting those devices. The tax must be paid on a cumulative basis every 2 weeks, in accordance with regulations established by Decree 179/2017 and the AFIP’s General Resolution 4036-E. The tax is effective from 1 January 2017 and is levied at the rate of 0.95% on the amount of each bet.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_9.6.4." label="9.6.4.">
+               <taxtopics>
+                  <taxtopic tc="1_5_44" score="3">Betting Duties / Gaming Taxes</taxtopic>
+               </taxtopics>
+               <taxtopics version="3.0">
+                  <taxtopic tc="1_10_44" score="3">Betting Duties / Gaming Taxes</taxtopic>
+               </taxtopics>
+               <title>Tax on online gambling</title>
+               <p>On 27 December 2016, Law 27,346 established a new federal tax on gambling on the Internet, effective from 1 January 2017.</p>
+               <p>The tax applies on gambling and bets made from the Argentine territory through any digital platform available on the internet irrespective of the place where the servers are located or the system is operated.</p>
+               <p>Taxpayers are individuals engaged in gambling. However, the tax is to be collected and paid to the tax authorities by any intermediary facilitating the payment of the activity (e.g. credit card issuers) on a cumulative basis every 2 weeks, in accordance with regulations to be established by the federal tax authorities.</p>
+               <p>The Budget Law for year 2021 introduced amendments to the tax by establishing that, in order to identify the location of the person gambling, the bet will be considered to have been made in Argentina if the mobile phone, invoicing address of the customer, bank account or credit card used to make the relevant payments, or the client associated with them, is located in Argentina.</p>
+               <p>The tax rates are established by Decree 293/2022 are as follows:</p>
+               <list>
+                  <item label="-">
+                     <p>5% when the tax is collected by operators of the gambling system or platform resident in Argentina that are registered in an ad hoc registry kept by the AFIP; </p>
+                  </item>
+                  <item label="-">
+                     <p>7.5% when the tax is collected by a resident operator that is not registered before the AFIP; </p>
+                  </item>
+                  <item label="-">
+                     <p>10% when, in the absence of a resident operator, the tax must be collected by the resident intermediary that facilitates the payment of the bets made by the gambler, provided that the non-resident operator of the platform is registered before the AFIP (or is not required to be registered) and that such operator is not a resident of a non-cooperative or low-tax jurisdiction; and</p>
+                  </item>
+                  <item label="-">
+                     <p>15% in all other cases when the tax is collected by the resident intermediary that facilitates the payment of the bets made by the gambler.</p>
+                  </item>
+               </list>
+               <p>Exceptionally, a 2.5% rate applies when the tax is collected by a resident operator making an investment of ARS 200 million as from fiscal 2021 if it has a minimum number of employees and meets other requirements established by article 5 of Law 27,346.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_9.6.5." label="9.6.5.">
+               <title>Liquid fuel and carbon dioxide tax</title>
+               <p>The tax is levied on importers and companies producing or refining fuels and any other type of combustibles derived from hydrocarbons directly or through third parties, as well as those producing mineral coal. The tax is established as a fixed amount per litre or kilogram depending on the nature of the taxable product.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_9.6.6." label="9.6.6.">
+               <title>Tax on purchase of foreign currency</title>
+               <p>Law 27,541, implemented by Executive Branch’s Decree 99/2019, established a tax on the purchase of foreign currency applicable for 5 years as from 23 December 2019.</p>
+               <p>The taxable events are: (i) the acquisition of foreign currency for the purpose of savings; (ii) the payment of travel expenses; (iii) the payment of services rendered by foreign parties (typically streaming services); and (iv) the payment of goods acquired abroad with credit and debit cards and other equivalent payment systems.</p>
+               <p>Taxable persons are resident individuals and resident legal entities. However, the tax is collected by intermediaries (credit and debit card issuers, or financial entities selling the foreign currency or making the payments), as implemented by General Resolution (AFIP) 4815 as amended by General Resolution 5232.</p>
+               <p>The applicable tax rate is 35% when the acquisition of foreign currency is for savings purposes and 45% for travel expenses and any other outlay in foreign currency; however, the payment of streaming services is subject to a reduced rate of 8%. The taxable base is the amount of foreign currency converted to ARS.</p>
+               <p>The purchase of foreign currency is exempt if the purchase is made for the payment of (i) medical services, medicines and books; (ii) expenses related to research projects carried out within the state (federal, provincial or municipal) or by universities; and (iii) expenses of travel by land to bordering countries.</p>
+               <p>The surcharge will be considered a payment on account of the income tax or the personal assets tax of the tax year where the surcharge is withheld by the intermediary. Companies and individuals that are not taxpayers of income tax or personal assets tax, or that are not required to file tax returns of the relevant taxes may apply for a reimbursement at the end of the relevant tax year.</p>
+            </section>
+            <section anchor="gtha_ar_2022-07-01_s_9.6.7." label="9.6.7.">
+               <title>Tax on digital services</title>
+               <p>The City of Buenos Aires applies a 2% tax on digital services provided by non-residents through internet or any adaptation of internet technology. In order to deem the activity performed in the City of Buenos Aires, the service should produce economic effects in the territory or establish a connection with individuals, entities or assets located or placed in the City. </p>
+               <p>The taxable base is the price charged for the service without VAT. </p>
+               <p>The tax is generally paid through financial intermediaries (credit card companies and other payment services) that add the tax (<emph type="i">percepción</emph>) to the price charged by the supplier.</p>
+               <p>However, on 1 July 2021 and 8 October 2021, Argentina signed joint statements with other Inclusive Framework members as part of an agreement on a new framework for international tax reform. This includes key elements of Pillar One (taxation of digitalized economy) and the statement that a multilateral instrument for its implementation would be opened for signature in 2022 and be effective in 2023.</p>
+            </section>
+         </section>
+      </section>
+   </chapbody>
+</country-chap>

@@ -25,7 +25,10 @@ public class OtccExamplesController {
         List<String> links = Arrays.asList(
                 "http://localhost:8080/otcc/archive/cta/printversion/cta_ar_2022-04-15.xml",
                 "http://localhost:8080/otcc/archive/cta/printversion/cta_br_2022-07-01.xml",
-                "http://localhost:8080/otcc/archive/cta/printversion/cta_fi_2022-07-28.xml"
+                "http://localhost:8080/otcc/archive/cta/printversion/cta_fi_2022-07-28.xml",
+                "http://localhost:8080/otcc/archive/gtha/printversion/gtha_ar_2022-07-01.xml",
+                "http://localhost:8080/otcc/archive/gtha/printversion/gtha_br_2020-11-01.xml",
+                "http://localhost:8080/otcc/archive/gtha/printversion/gtha_ca_2021-04-26.xml"
         );
         String body = "<h3>OTCC Example Links</h3><hr>" + links.stream()
                 .map(l -> "<a href=\"%s\">%s</a>".formatted(l, l))
