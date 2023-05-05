@@ -20,7 +20,7 @@ netty:
       max-order: 3
 app-config:
   session-cookie-name: DEV_IBFD_SESSION
-  publication-base-path: D:\Workshop\java-project\otcc\.idea\publications
+  publication-base-path: D:\Workshop\poc\micronaut-otcc-poc\publications
   test-url: https://dog.ceo
   session-manager-url: http://development7.ibfd.org:9000/sm.fpl
   limaserver-base-url: http://development7.ibfd.org:9080
