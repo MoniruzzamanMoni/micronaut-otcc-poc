@@ -14,7 +14,7 @@ public final class PdfRenderer extends BaseRenderer {
     }
 
     @Override
-    protected void configureTransformer(RenderData renderData) {
+    protected void configureTransformer() {
 
     }
 

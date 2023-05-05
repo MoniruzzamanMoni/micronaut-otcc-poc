@@ -24,7 +24,7 @@ public class OtccHandler {
         this.rendererFactory = rendererFactory;
     }
 
-    public String handle(RenderRequest request) throws IOException {
+    public String handle(RenderRequest request) throws Exception {
         SessionData sessionData = externalGateway.getSessionData(request.getAuthKey());
         LinkResolverRequest linkResolverRequest = new LinkResolverRequest(request, sessionData);
         LinkResolverData linkResolverData = externalGateway.getLinkResolverData(request, linkResolverRequest);

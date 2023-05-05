@@ -19,6 +19,7 @@ public class RenderData {
     private final String username;
     private final String userCompanyName;
     private final boolean userLoggedIn;
+    private final String limaServerBaseUrl;
 
     public RenderData(AppConfig appConfig, RenderRequest request, SessionData sessionData, LinkResolverData linkResolverData) {
         this.srcXml = "file:///%s/%s/%s/%s/%s.%s".formatted(
@@ -37,6 +38,7 @@ public class RenderData {
         this.username = sessionData.getUsername();
         this.userCompanyName = sessionData.getGreet();
         this.userLoggedIn = StringUtils.isNotEmpty(this.username);
+        this.limaServerBaseUrl = appConfig.getLimaserverBaseUrl();
 
         logger.debug("RenderData is constructed: %s".formatted(this));
     }
@@ -81,6 +83,10 @@ public class RenderData {
         return userLoggedIn;
     }
 
+    public String getLimaServerBaseUrl() {
+        return limaServerBaseUrl;
+    }
+
     @Override
     public String toString() {
         return "RenderData{" +
@@ -93,7 +99,8 @@ public class RenderData {
                 ", authKey='" + authKey + '\'' +
                 ", username='" + username + '\'' +
                 ", userCompanyName='" + userCompanyName + '\'' +
-                ", userLoggedIn=" + userLoggedIn +
+                ", userLoggedIn=" + userLoggedIn + '\'' +
+                ", limaServerBaseUrl=" + limaServerBaseUrl +
                 '}';
     }
 }

@@ -1,7 +1,8 @@
 package example.poc.renderer;
 
-import example.poc.model.RenderData;
 import jakarta.inject.Singleton;
+import org.ibfd.regionalxml.GenerateOption;
+import org.ibfd.regionalxml.GenerateParam;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,12 +15,21 @@ public final class PrintVersionRenderer extends BaseRenderer {
     }
 
     @Override
-    protected void configureTransformer(RenderData renderData) {
-
+    protected void configureTransformer() {
+        getTransformer().setGenerateOption(new GenerateOption(GenerateParam.FULL_CHAPTER, ""));
+        getTransformer().setOmitToc(false);
+        getTransformer().setPrintVersion(true);
+        getTransformer().setDocidErrNoExit(true);
+        getTransformer().setXmlFileName(getRenderData().getSrcXmlFileName());
+        getTransformer().setLimaserver(getRenderData().getLimaServerBaseUrl());
+        String csvUids = (getRenderData().getUids() == null)
+                            ? "" : String.join(",", getRenderData().getUids());
+        getTransformer().setCsvUids(csvUids);
     }
 
     @Override
     protected void writeHtmlBytes() {
-
+//        this.response.setContentType("text/html; charset=UTF-8");
+//        this.response.setContentLength(bytes.length);
     }
 }
