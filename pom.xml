@@ -115,6 +115,11 @@
       <artifactId>reactor-core</artifactId>
       <version>3.5.5</version>
     </dependency>
+    <dependency>
+      <groupId>io.micronaut.cache</groupId>
+      <artifactId>micronaut-cache-ehcache</artifactId>
+      <scope>compile</scope>
+    </dependency>
   </dependencies>
 
   <build>
@@ -123,7 +128,7 @@
         <groupId>io.micronaut.build</groupId>
         <artifactId>micronaut-maven-plugin</artifactId>
       </plugin>
-      
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>

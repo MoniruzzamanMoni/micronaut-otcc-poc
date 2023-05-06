@@ -1,5 +1,7 @@
 package example.poc;
 
+import example.poc.cache.RendererCacheKeyGenerator;
+import io.micronaut.cache.annotation.Cacheable;
 import io.micronaut.http.HttpResponse;
 import jakarta.inject.Singleton;
 import example.poc.model.*;
@@ -23,6 +25,7 @@ public class OtccHandler {
         this.rendererFactory = rendererFactory;
     }
 
+    @Cacheable(keyGenerator = RendererCacheKeyGenerator.class, cacheNames = "renderer")
     public String handle(RenderRequest request) throws Exception {
         SessionData sessionData = externalGateway.getSessionData(request.getAuthKey());
         LinkResolverRequest linkResolverRequest = new LinkResolverRequest(request, sessionData);
