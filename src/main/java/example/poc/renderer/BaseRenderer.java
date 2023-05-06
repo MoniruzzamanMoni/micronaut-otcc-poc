@@ -35,6 +35,8 @@ public abstract sealed class BaseRenderer permits PdfRenderer, PrintVersionRende
         return renderData;
     }
 
+    public abstract String getFormatName();
+
     public final HttpResponse<String> render(RenderData renderData) throws Exception {
         this.renderData = renderData;
         logger.info("BaseRenderer render");

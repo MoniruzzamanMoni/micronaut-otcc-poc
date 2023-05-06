@@ -1,17 +1,22 @@
 package example.poc.renderer;
 
-import io.micronaut.context.annotation.Factory;
 import jakarta.inject.Singleton;
 
-@Factory
+import java.util.List;
+
+@Singleton
 public class RendererFactory {
 
-    @Singleton
+    private final List<BaseRenderer> renderers;
+
+    public RendererFactory(List<BaseRenderer> renderers) {
+        this.renderers = renderers;
+    }
+
     public BaseRenderer getRenderer(String format) {
-        return switch (format) {
-            case "printversion" -> new PrintVersionRenderer();
-            case "pdf" -> new PdfRenderer();
-            default -> throw new IllegalArgumentException("Unsupported format");
-        };
+        return renderers.stream()
+                .filter(renderer -> format.equalsIgnoreCase(renderer.getFormatName()))
+                .findFirst()
+                .orElseThrow(() -> new IllegalArgumentException("Unsupported format"));
     }
 }

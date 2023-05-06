@@ -13,11 +13,17 @@ import java.io.IOException;
 @Singleton
 public final class PrintVersionRenderer extends BaseRenderer {
     private static final Logger logger = LoggerFactory.getLogger(PrintVersionRenderer.class);
+    private static final String FORMAT_NAME = "printversion";
     private static final String CONTENT_TYPE = "text/html; charset=UTF-8";
     private static final GenerateOption GENERATE_OPTION = new GenerateOption(GenerateParam.FULL_CHAPTER, "");
 
     public PrintVersionRenderer() {
         logger.info("PrintVersionRenderer construct");
+    }
+
+    @Override
+    public String getFormatName() {
+        return FORMAT_NAME;
     }
 
     @Override
