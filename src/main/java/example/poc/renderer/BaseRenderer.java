@@ -37,7 +37,7 @@ public abstract sealed class BaseRenderer permits PdfRenderer, PrintVersionRende
 
     public abstract String getFormatName();
 
-    public final HttpResponse<String> render(RenderData renderData) throws Exception {
+    public final String render(RenderData renderData) throws Exception {
         this.renderData = renderData;
         logger.info("BaseRenderer render");
         logger.debug("initializing transformer ...");
@@ -45,12 +45,12 @@ public abstract sealed class BaseRenderer permits PdfRenderer, PrintVersionRende
         configureTransformer();
         logger.debug("transformer initialization finished.");
         transform();
-        return buildResponse();
+        String result = getTransformedResult().toString();
+        IOUtils.closeQuietly(getTransformedResult());
+        return result;
     }
 
     protected abstract void configureTransformer();
-
-    protected abstract HttpResponse<String> buildResponse() throws IOException;
 
     private void transform() throws Exception {
         InputStream srcXmlInputStream = null;

@@ -39,12 +39,4 @@ public final class PrintVersionRenderer extends BaseRenderer {
         getTransformer().setCsvUids(csvUids);
     }
 
-    @Override
-    protected HttpResponse<String> buildResponse() throws IOException {
-        MutableHttpResponse<String> response = HttpResponse.ok(getTransformedResult().toString())
-                .contentLength(getTransformedResult().toByteArray().length)
-                .contentType(CONTENT_TYPE);
-        getTransformedResult().close();
-        return response;
-    }
 }

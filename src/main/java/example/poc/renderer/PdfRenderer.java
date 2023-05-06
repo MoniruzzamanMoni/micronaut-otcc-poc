@@ -24,8 +24,4 @@ public final class PdfRenderer extends BaseRenderer {
 
     }
 
-    @Override
-    protected HttpResponse<String> buildResponse() {
-        return HttpResponse.ok();
-    }
 }

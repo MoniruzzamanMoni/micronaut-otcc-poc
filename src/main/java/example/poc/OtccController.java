@@ -1,5 +1,6 @@
 package example.poc;
 
+import example.poc.responsebuilder.ResponseBuilderFactory;
 import io.micronaut.http.HttpResponse;
 import io.micronaut.http.MediaType;
 import io.micronaut.http.annotation.Controller;
@@ -13,13 +14,17 @@ import javax.validation.Valid;
 public class OtccController {
 
     private final OtccHandler otccHandler;
+    private final ResponseBuilderFactory responseBuilderFactory;
 
-    public OtccController(OtccHandler otccHandler) {
+    public OtccController(OtccHandler otccHandler, ResponseBuilderFactory responseBuilderFactory) {
         this.otccHandler = otccHandler;
+        this.responseBuilderFactory = responseBuilderFactory;
     }
 
     @Get(uri="/{urlType}/{collection}/{format}/{fileName}.{ext}", produces = MediaType.ALL)
     public HttpResponse<String> render(@Valid @RequestBean RenderRequest request) throws Exception{
-        return otccHandler.handle(request);
+        String output = otccHandler.handle(request);
+        return responseBuilderFactory.getResponseBuilder(request.getFormat())
+                .buildResponse(output, request);
     }
 }
