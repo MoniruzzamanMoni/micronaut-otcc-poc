@@ -26,12 +26,6 @@ public final class PdfRenderer extends BaseRenderer {
         getTransformer().setGenerateOption(GENERATE_OPTION);
         getTransformer().setOmitToc(true);
         getTransformer().setPrintVersion(false);
-        getTransformer().setDocidErrNoExit(true);
-        getTransformer().setXmlFileName(getRenderData().getSrcXmlFileName());
-        getTransformer().setLimaserver(getRenderData().getLimaServerBaseUrl());
-        String csvUids = (getRenderData().getUids() == null)
-                ? "" : String.join(",", getRenderData().getUids());
-        getTransformer().setCsvUids(csvUids);
     }
 
 }

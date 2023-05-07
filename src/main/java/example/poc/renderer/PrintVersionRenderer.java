@@ -26,12 +26,6 @@ public final class PrintVersionRenderer extends BaseRenderer {
         getTransformer().setGenerateOption(GENERATE_OPTION);
         getTransformer().setOmitToc(false);
         getTransformer().setPrintVersion(true);
-        getTransformer().setDocidErrNoExit(true);
-        getTransformer().setXmlFileName(getRenderData().getSrcXmlFileName());
-        getTransformer().setLimaserver(getRenderData().getLimaServerBaseUrl());
-        String csvUids = (getRenderData().getUids() == null)
-                            ? "" : String.join(",", getRenderData().getUids());
-        getTransformer().setCsvUids(csvUids);
     }
 
 }

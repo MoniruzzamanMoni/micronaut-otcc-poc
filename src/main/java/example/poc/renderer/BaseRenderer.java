@@ -1,7 +1,6 @@
 package example.poc.renderer;
 
 import example.poc.model.RenderData;
-import io.micronaut.http.HttpResponse;
 import org.apache.commons.io.IOUtils;
 import org.ibfd.regionalxml.RegionalXmlTransformer;
 import org.slf4j.Logger;
@@ -71,6 +70,12 @@ public abstract sealed class BaseRenderer permits PdfRenderer, PrintVersionRende
         transformer.setResultDocumentOutput(false);
         transformer.setExcelVersionPrefix("");
         transformer.setOutputProperty(OutputKeys.METHOD, "html");
+        transformer.setDocidErrNoExit(true);
+        transformer.setXmlFileName(getRenderData().getSrcXmlFileName());
+        transformer.setLimaserver(getRenderData().getLimaServerBaseUrl());
+        String csvUids = (getRenderData().getUids() == null)
+                ? "" : String.join(",", getRenderData().getUids());
+        getTransformer().setCsvUids(csvUids);
     }
 
     private InputStream getSrcXmlInputStream() throws IOException, TransformerException {
