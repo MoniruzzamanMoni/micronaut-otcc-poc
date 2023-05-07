@@ -3,7 +3,9 @@ package example.poc.responsebuilder;
 import example.poc.model.RenderRequest;
 import io.micronaut.http.HttpResponse;
 
+import java.nio.charset.StandardCharsets;
 import java.util.Map;
+import java.util.Optional;
 
 /**
  * @author: Md. Moniruzzaman <moni.return@gmail.com>
@@ -16,9 +18,12 @@ public interface ResponseBuilder {
 
     Map<CharSequence, CharSequence> getHeaders(RenderRequest request);
 
-    default HttpResponse<String> buildResponse(String body, RenderRequest request) {
-        return HttpResponse.ok(body)
-                .contentLength(body.length())
+    Optional<byte[]> convertToFormat(String body, RenderRequest request);
+
+    default HttpResponse<byte[]> buildResponse(String body, RenderRequest request) {
+        byte[] convertedOutput = convertToFormat(body, request).orElse(body.getBytes(StandardCharsets.UTF_8));
+        return HttpResponse.ok(convertedOutput)
+                .contentLength(convertedOutput.length)
                 .contentType(getContentType())
                 .headers(getHeaders(request));
     }

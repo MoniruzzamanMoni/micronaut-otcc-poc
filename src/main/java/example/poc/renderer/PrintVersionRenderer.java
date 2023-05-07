@@ -1,20 +1,15 @@
 package example.poc.renderer;
 
-import io.micronaut.http.HttpResponse;
-import io.micronaut.http.MutableHttpResponse;
 import jakarta.inject.Singleton;
 import org.ibfd.regionalxml.GenerateOption;
 import org.ibfd.regionalxml.GenerateParam;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.IOException;
-
 @Singleton
 public final class PrintVersionRenderer extends BaseRenderer {
     private static final Logger logger = LoggerFactory.getLogger(PrintVersionRenderer.class);
     private static final String FORMAT_NAME = "printversion";
-    private static final String CONTENT_TYPE = "text/html; charset=UTF-8";
     private static final GenerateOption GENERATE_OPTION = new GenerateOption(GenerateParam.FULL_CHAPTER, "");
 
     public PrintVersionRenderer() {

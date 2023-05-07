@@ -1,7 +1,8 @@
 package example.poc.renderer;
 
-import io.micronaut.http.HttpResponse;
 import jakarta.inject.Singleton;
+import org.ibfd.regionalxml.GenerateOption;
+import org.ibfd.regionalxml.GenerateParam;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -9,6 +10,7 @@ import org.slf4j.LoggerFactory;
 public final class PdfRenderer extends BaseRenderer {
     private static final Logger logger = LoggerFactory.getLogger(PdfRenderer.class);
     private static final String FORMAT_NAME = "pdf";
+    private static final GenerateOption GENERATE_OPTION = new GenerateOption(GenerateParam.FULL_CHAPTER, "");
 
     public PdfRenderer() {
         logger.info("PdfRenderer construct");
@@ -21,7 +23,15 @@ public final class PdfRenderer extends BaseRenderer {
 
     @Override
     protected void configureTransformer() {
-
+        getTransformer().setGenerateOption(GENERATE_OPTION);
+        getTransformer().setOmitToc(true);
+        getTransformer().setPrintVersion(false);
+        getTransformer().setDocidErrNoExit(true);
+        getTransformer().setXmlFileName(getRenderData().getSrcXmlFileName());
+        getTransformer().setLimaserver(getRenderData().getLimaServerBaseUrl());
+        String csvUids = (getRenderData().getUids() == null)
+                ? "" : String.join(",", getRenderData().getUids());
+        getTransformer().setCsvUids(csvUids);
     }
 
 }

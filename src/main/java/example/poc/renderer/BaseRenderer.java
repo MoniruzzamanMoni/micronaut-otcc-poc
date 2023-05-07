@@ -15,6 +15,7 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
+import java.nio.charset.StandardCharsets;
 
 public abstract sealed class BaseRenderer permits PdfRenderer, PrintVersionRenderer {
     private static final Logger logger = LoggerFactory.getLogger(BaseRenderer.class);
@@ -45,7 +46,7 @@ public abstract sealed class BaseRenderer permits PdfRenderer, PrintVersionRende
         configureTransformer();
         logger.debug("transformer initialization finished.");
         transform();
-        String result = getTransformedResult().toString();
+        String result = getTransformedResult().toString(StandardCharsets.UTF_8);
         IOUtils.closeQuietly(getTransformedResult());
         return result;
     }
