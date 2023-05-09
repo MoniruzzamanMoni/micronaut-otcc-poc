@@ -7,13 +7,13 @@ import java.util.List;
 @Singleton
 public class RendererFactory {
 
-    private final List<BaseRenderer> renderers;
+    private final List<Renderer> renderers;
 
-    public RendererFactory(List<BaseRenderer> renderers) {
+    public RendererFactory(List<Renderer> renderers) {
         this.renderers = renderers;
     }
 
-    public BaseRenderer getRenderer(String format) {
+    public Renderer getRenderer(String format) {
         return renderers.stream()
                 .filter(renderer -> format.equalsIgnoreCase(renderer.getFormatName()))
                 .findFirst()

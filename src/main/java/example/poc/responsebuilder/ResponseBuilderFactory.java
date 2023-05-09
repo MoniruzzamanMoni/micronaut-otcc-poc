@@ -1,6 +1,5 @@
 package example.poc.responsebuilder;
 
-import example.poc.renderer.BaseRenderer;
 import jakarta.inject.Singleton;
 
 import java.util.List;

@@ -1,11 +1,10 @@
 package example.poc;
 
 import example.poc.cache.RendererCacheKeyGenerator;
+import example.poc.renderer.Renderer;
 import io.micronaut.cache.annotation.Cacheable;
-import io.micronaut.http.HttpResponse;
 import jakarta.inject.Singleton;
 import example.poc.model.*;
-import example.poc.renderer.BaseRenderer;
 import example.poc.renderer.RendererFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -31,7 +30,7 @@ public class OtccHandler {
         LinkResolverRequest linkResolverRequest = new LinkResolverRequest(request, sessionData);
         LinkResolverData linkResolverData = externalGateway.getLinkResolverData(request, linkResolverRequest);
         RenderData renderData = new RenderData(appConfig, request, sessionData, linkResolverData);
-        BaseRenderer renderer = rendererFactory.getRenderer(request.getFormat());
+        Renderer renderer = rendererFactory.getRenderer(request.getFormat());
         return renderer.render(renderData);
     }
 }
