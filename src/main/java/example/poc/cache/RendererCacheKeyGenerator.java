@@ -7,8 +7,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * @author: Md. Moniruzzaman <moni.return@gmail.com>
- * @since: 5/7/2023
+ * author: Md. Moniruzzaman <moni.return@gmail.com>
+ * since: 5/7/2023
  */
 public class RendererCacheKeyGenerator implements CacheKeyGenerator {
 
@@ -26,11 +26,9 @@ public class RendererCacheKeyGenerator implements CacheKeyGenerator {
     }
 
     private String buildKey(RenderRequest request) {
-        return "%s/%s/%s/%s/%s.%s".formatted(
-                request.getAuthKey().hashCode(),
+        return "%s/%s/%s.%s".formatted(
                 request.getUrlType(),
                 request.getCollection(),
-                request.getFormat(),
                 request.getFileName(),
                 request.getExt());
     }
