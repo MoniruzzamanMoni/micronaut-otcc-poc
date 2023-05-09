@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 import org.xhtmlrenderer.layout.SharedContext;
 import org.xhtmlrenderer.pdf.ITextRenderer;
 
-import java.io.*;
+import java.io.ByteArrayOutputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
@@ -25,7 +25,7 @@ import java.util.Optional;
 public class PdfResponseBuilder implements ResponseBuilder {
     private static final Logger logger = LoggerFactory.getLogger(PdfResponseBuilder.class);
 
-    private AppConfig appConfig;
+    private final AppConfig appConfig;
 
     public PdfResponseBuilder(AppConfig appConfig) {
         this.appConfig = appConfig;
@@ -45,38 +45,21 @@ public class PdfResponseBuilder implements ResponseBuilder {
     public Map<CharSequence, CharSequence> getHeaders(RenderRequest request) {
         Map<CharSequence, CharSequence> map = new HashMap<>();
         map.put("content-disposition", "inline; filename=\"%s.pdf\"".formatted(request.getFileName()));
-        map.put("Expires", "0");
-        map.put("Cache-Control", "must-revalidate, post-check=0, pre-check=0");
-        map.put("Pragma", "public");
         return map;
     }
 
     @Override
     public Optional<byte[]> convertToFormat(String htmlContent, RenderRequest request) {
-        FileOutputStream outputStream = null;
-        FileInputStream fileInputStream = null;
-        String path = "%s/%s/%s/%s/%s.%s".formatted(
-                appConfig.getPublicationBasePath(),
-                request.getUrlType(),
-                request.getCollection(),
-                "pdf",
-                request.getFileName(),
-                "pdf");
-        File outputPdfFile = new File(path);
+        ByteArrayOutputStream outputStream = null;
         try {
             String documentHtml = getXhtml(htmlContent);
             ITextRenderer renderer = getRenderer(documentHtml);
-            outputStream = new FileOutputStream(outputPdfFile);
+            outputStream = new ByteArrayOutputStream();
             renderer.createPDF(outputStream);
-            fileInputStream = new FileInputStream(outputPdfFile);
-            return Optional.of(fileInputStream.readAllBytes());
-        } catch (IOException e) {
-            e.printStackTrace();
+            return Optional.of(outputStream.toByteArray());
         } finally {
             IOUtils.closeQuietly(outputStream);
-            IOUtils.closeQuietly(fileInputStream);
         }
-        return Optional.empty();
     }
 
     private ITextRenderer getRenderer(String documentHtml) {
@@ -98,7 +81,7 @@ public class PdfResponseBuilder implements ResponseBuilder {
                 .replaceFirst("<!DOCTYPE html>",
                         "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" " +
                                 "\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">");
-        logger.debug("###  document html: %s".formatted(documentHtml.lines().findFirst().orElse("")));
+        logger.debug("###  document html first line: %s".formatted(documentHtml.lines().findFirst().orElse("")));
         return documentHtml;
     }
 
