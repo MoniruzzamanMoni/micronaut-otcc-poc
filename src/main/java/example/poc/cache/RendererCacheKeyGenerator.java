@@ -17,7 +17,7 @@ public class RendererCacheKeyGenerator implements CacheKeyGenerator {
     @Override
     public Object generateKey(AnnotationMetadata annotationMetadata, Object... params) {
         if (params[0] instanceof RenderRequest req) {
-            String key = buildKey(req);
+            var key = buildKey(req);
             logger.debug("Generated cache key: %s".formatted(key));
             return key;
         } else {

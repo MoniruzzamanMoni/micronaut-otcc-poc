@@ -6,8 +6,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * @author: Md. Moniruzzaman <moni.return@gmail.com>
- * @since: 5/3/2023
+ * author: Md. Moniruzzaman <moni.return@gmail.com>
+ * since: 5/3/2023
  */
 @Serdeable
 public class LinkResolverRequest {
@@ -37,9 +37,9 @@ public class LinkResolverRequest {
     }
 
     private String getSearch(RenderRequest request, SessionData sessionData) {
-        String recordFilter = String.join(",", sessionData.getSubscriptions().stream()
+        var recordFilter = String.join(",", sessionData.getSubscriptions().stream()
                 .map(subscription -> "lcf:" + subscription).toList());
-        String filename = "%s.%s".formatted(request.getFileName(), request.getExt());
+        var filename = "%s.%s".formatted(request.getFileName(), request.getExt());
         return StringUtils.isEmpty(recordFilter) ?
                 "N=0&Nr=xml_source_file:%s".formatted(filename) :
                 "N=0&Nr=AND(xml_source_file:%s,OR(%s))".formatted(filename, recordFilter);

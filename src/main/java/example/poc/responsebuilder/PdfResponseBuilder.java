@@ -6,7 +6,6 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.xhtmlrenderer.layout.SharedContext;
 import org.xhtmlrenderer.pdf.ITextRenderer;
 
 import java.io.ByteArrayOutputStream;
@@ -36,24 +35,24 @@ public final class PdfResponseBuilder implements ResponseBuilder {
 
     @Override
     public Map<CharSequence, CharSequence> getHeaders(RenderRequest request) {
-        Map<CharSequence, CharSequence> map = new HashMap<>();
+        var map = new HashMap<CharSequence, CharSequence>();
         map.put("content-disposition", "inline; filename=\"%s.pdf\"".formatted(request.getFileName()));
         return map;
     }
 
     @Override
     public Optional<byte[]> convertToFormat(String htmlContent, RenderRequest request) throws IOException {
-        try (ByteArrayOutputStream outputStream = new ByteArrayOutputStream()) {
-            String documentHtml = getXhtml(htmlContent);
-            ITextRenderer renderer = getRenderer(documentHtml);
+        try (var outputStream = new ByteArrayOutputStream()) {
+            var documentHtml = getXhtml(htmlContent);
+            var renderer = getRenderer(documentHtml);
             renderer.createPDF(outputStream);
             return Optional.of(outputStream.toByteArray());
         }
     }
 
     private ITextRenderer getRenderer(String documentHtml) {
-        ITextRenderer renderer = new ITextRenderer();
-        SharedContext sharedContext = renderer.getSharedContext();
+        var renderer = new ITextRenderer();
+        var sharedContext = renderer.getSharedContext();
         sharedContext.setPrint(true);
         sharedContext.setInteractive(false);
         renderer.setDocumentFromString(documentHtml);
@@ -62,11 +61,11 @@ public final class PdfResponseBuilder implements ResponseBuilder {
     }
 
     private String getXhtml(String htmlContent) {
-        Document document = Jsoup.parse(htmlContent);
+        var document = Jsoup.parse(htmlContent);
         document.outputSettings().syntax(Document.OutputSettings.Syntax.xml);
         document.charset(StandardCharsets.UTF_8);
         logger.debug("###  htmlContent first line: %s".formatted(htmlContent.lines().findFirst().orElse("")));
-        String documentHtml = document.html()
+        var documentHtml = document.html()
                 .replaceFirst("<!DOCTYPE html>",
                         "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" " +
                                 "\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">");

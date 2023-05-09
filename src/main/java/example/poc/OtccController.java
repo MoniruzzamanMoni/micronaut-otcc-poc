@@ -23,7 +23,7 @@ public class OtccController {
 
     @Get(uri="/{urlType}/{collection}/{format}/{fileName}.{ext}", produces = MediaType.ALL)
     public HttpResponse<byte[]> render(@Valid @RequestBean RenderRequest request) throws Exception{
-        String output = otccHandler.handle(request);
+        var output = otccHandler.handle(request);
         return responseBuilderFactory.getResponseBuilder(request.getFormat())
                 .buildResponse(output, request);
     }

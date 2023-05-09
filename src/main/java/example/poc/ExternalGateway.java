@@ -31,8 +31,8 @@ public class ExternalGateway {
     }
 
     public SessionData getSessionData(String authKey) throws MalformedURLException {
-        URL url = new URL(appConfig.getSessionManagerUrl());
-        String body = "key=%s&action=read".formatted(authKey);
+        var url = new URL(appConfig.getSessionManagerUrl());
+        var body = "key=%s&action=read".formatted(authKey);
         HttpRequest<?> request = HttpRequest.POST(url.getPath(), body)
                 .header(HttpHeaders.ACCEPT, "*/*")
                 .header(HttpHeaders.HOST, url.getHost())
@@ -45,8 +45,8 @@ public class ExternalGateway {
 
     public LinkResolverData getLinkResolverData(RenderRequest request, LinkResolverRequest linkResolverRequest)
             throws IOException {
-        URL url = new URL(appConfig.getLinkresolverBaseUrl());
-        String cookie = "%s=%s".formatted(appConfig.getSessionCookieName(), request.getAuthKey());
+        var url = new URL(appConfig.getLinkresolverBaseUrl());
+        var cookie = "%s=%s".formatted(appConfig.getSessionCookieName(), request.getAuthKey());
         HttpRequest<?> httpRequest = HttpRequest.POST(url.getPath(), linkResolverRequest)
                 .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON)
                 .header(HttpHeaders.COOKIE, cookie);

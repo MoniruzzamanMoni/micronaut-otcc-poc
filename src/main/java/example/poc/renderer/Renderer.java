@@ -23,25 +23,25 @@ public sealed interface Renderer permits PrintVersionRenderer, PdfRenderer {
     void configureTransformer(RegionalXmlTransformer transformer);
 
     default String render(RenderData renderData) throws Exception {
-        Logger logger = getLogger();
-        logger.info("BaseRenderer render");
-        logger.debug("initializing transformer ...");
-        RegionalXmlTransformer transformer = initializeTransformer(renderData);
+        var log = getLogger();
+        log.info("BaseRenderer render");
+        log.debug("initializing transformer ...");
+        var transformer = initializeTransformer(renderData);
         configureTransformer(transformer);
-        try(ByteArrayOutputStream resultOutputStream = transform(transformer, renderData)) {
-            logger.debug("transformer initialization finished.");
+        try(var resultOutputStream = transform(transformer, renderData)) {
+            log.debug("transformer initialization finished.");
             return resultOutputStream.toString(StandardCharsets.UTF_8);
         }
     }
 
     private ByteArrayOutputStream transform(RegionalXmlTransformer transformer, RenderData renderData) throws Exception {
-        try (InputStream srcXmlInputStream = getSrcXmlInputStream(renderData)) {
+        try (var srcXmlInputStream = getSrcXmlInputStream(renderData)) {
             return (ByteArrayOutputStream) transformer.transform(srcXmlInputStream);
         }
     }
 
     private RegionalXmlTransformer initializeTransformer(RenderData renderData) throws Exception {
-        RegionalXmlTransformer transformer = new RegionalXmlTransformer();
+        var transformer = new RegionalXmlTransformer();
         transformer.setResultDocumentOutput(false);
         transformer.setExcelVersionPrefix("");
         transformer.setOutputProperty(OutputKeys.METHOD, "html");
@@ -55,14 +55,14 @@ public sealed interface Renderer permits PrintVersionRenderer, PdfRenderer {
     }
 
     private InputStream getSrcXmlInputStream(RenderData renderData) throws IOException, TransformerException {
-        Logger logger = getLogger();
-        URLConnection connection = getSrcXmlUrlConnection(renderData);
+        var log = getLogger();
+        var connection = getSrcXmlUrlConnection(renderData);
         connection.connect();
         if (connection instanceof HttpURLConnection httpURLConnection) {
             if (httpURLConnection.getResponseCode() == 403) {
-                String message = "Fobbiden document - href: %s, with authKey: %s trying to access."
+                var message = "Fobbiden document - href: %s, with authKey: %s trying to access."
                         .formatted(renderData.getSrcXml(), renderData.getAuthKey());
-                logger.error(message);
+                log.error(message);
                 throw new TransformerException(message);
             }
         }
@@ -70,8 +70,8 @@ public sealed interface Renderer permits PrintVersionRenderer, PdfRenderer {
     }
 
     private URLConnection getSrcXmlUrlConnection(RenderData renderData) throws IOException {
-        URL url = new URL(renderData.getSrcXml());
-        URLConnection connection = url.openConnection();
+        var url = new URL(renderData.getSrcXml());
+        var connection = url.openConnection();
         connection.addRequestProperty("Cookie", renderData.getAuthKey());
         return connection;
     }

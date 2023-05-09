@@ -21,7 +21,7 @@ public class SessionData {
     private final List<String> subscriptions;
 
     public SessionData(String sessionDataRaw) {
-        List<String> parts = sessionDataRaw.lines()
+        var parts = sessionDataRaw.lines()
                 .map(line -> line.split(";"))
                 .flatMap(linePart -> Arrays.stream(linePart).sequential()).toList();
         this.username = parseUsername(parts);

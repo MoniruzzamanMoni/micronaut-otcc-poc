@@ -25,7 +25,6 @@ public final class PrintVersionRenderer implements Renderer {
 
     @Override
     public void configureTransformer(RegionalXmlTransformer transformer) {
-
         transformer.setGenerateOption(GENERATE_OPTION);
         transformer.setOmitToc(false);
         transformer.setPrintVersion(true);
