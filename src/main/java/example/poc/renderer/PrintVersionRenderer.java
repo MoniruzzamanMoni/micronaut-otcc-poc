@@ -13,7 +13,7 @@ public final class PrintVersionRenderer extends BaseRenderer {
     private static final GenerateOption GENERATE_OPTION = new GenerateOption(GenerateParam.FULL_CHAPTER, "");
 
     public PrintVersionRenderer() {
-        logger.info("PrintVersionRenderer construct");
+        logger.info("PrintVersionRenderer is construct");
     }
 
     @Override

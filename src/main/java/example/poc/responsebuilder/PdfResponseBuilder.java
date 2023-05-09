@@ -1,9 +1,7 @@
 package example.poc.responsebuilder;
 
-import example.poc.AppConfig;
 import example.poc.model.RenderRequest;
 import jakarta.inject.Singleton;
-import org.apache.commons.io.IOUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.slf4j.Logger;
@@ -12,14 +10,15 @@ import org.xhtmlrenderer.layout.SharedContext;
 import org.xhtmlrenderer.pdf.ITextRenderer;
 
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
 /**
- * @author: Md. Moniruzzaman <moni.return@gmail.com>
- * @since: 5/7/2023
+ * author: Md. Moniruzzaman <moni.return@gmail.com>
+ * since: 5/7/2023
  */
 @Singleton
 public class PdfResponseBuilder implements ResponseBuilder {
@@ -43,16 +42,12 @@ public class PdfResponseBuilder implements ResponseBuilder {
     }
 
     @Override
-    public Optional<byte[]> convertToFormat(String htmlContent, RenderRequest request) {
-        ByteArrayOutputStream outputStream = null;
-        try {
+    public Optional<byte[]> convertToFormat(String htmlContent, RenderRequest request) throws IOException {
+        try (ByteArrayOutputStream outputStream = new ByteArrayOutputStream()) {
             String documentHtml = getXhtml(htmlContent);
             ITextRenderer renderer = getRenderer(documentHtml);
-            outputStream = new ByteArrayOutputStream();
             renderer.createPDF(outputStream);
             return Optional.of(outputStream.toByteArray());
-        } finally {
-            IOUtils.closeQuietly(outputStream);
         }
     }
 

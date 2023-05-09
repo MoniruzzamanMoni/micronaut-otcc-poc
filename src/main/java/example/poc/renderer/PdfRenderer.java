@@ -13,7 +13,7 @@ public final class PdfRenderer extends BaseRenderer {
     private static final GenerateOption GENERATE_OPTION = new GenerateOption(GenerateParam.FULL_CHAPTER, "");
 
     public PdfRenderer() {
-        logger.info("PdfRenderer construct");
+        logger.info("PdfRenderer is constructed");
     }
 
     @Override

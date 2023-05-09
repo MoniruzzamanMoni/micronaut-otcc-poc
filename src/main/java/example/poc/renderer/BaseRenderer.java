@@ -53,15 +53,11 @@ public abstract sealed class BaseRenderer permits PdfRenderer, PrintVersionRende
     protected abstract void configureTransformer();
 
     private void transform() throws Exception {
-        InputStream srcXmlInputStream = null;
-        try {
-            srcXmlInputStream = getSrcXmlInputStream();
+        try (InputStream srcXmlInputStream = getSrcXmlInputStream()) {
             this.transformedResult = (ByteArrayOutputStream) transformer.transform(srcXmlInputStream);
         } catch (Exception e) {
             e.printStackTrace();
             throw new Exception(e);
-        } finally {
-            IOUtils.closeQuietly(srcXmlInputStream);
         }
     }
 
