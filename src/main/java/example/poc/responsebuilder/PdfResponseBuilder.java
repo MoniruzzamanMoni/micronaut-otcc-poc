@@ -21,7 +21,7 @@ import java.util.Optional;
  * since: 5/7/2023
  */
 @Singleton
-public class PdfResponseBuilder implements ResponseBuilder {
+public final class PdfResponseBuilder implements ResponseBuilder {
     private static final Logger logger = LoggerFactory.getLogger(PdfResponseBuilder.class);
 
     @Override

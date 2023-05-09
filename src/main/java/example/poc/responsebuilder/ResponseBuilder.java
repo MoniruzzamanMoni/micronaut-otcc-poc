@@ -12,7 +12,7 @@ import java.util.Optional;
  * author: Md. Moniruzzaman <moni.return@gmail.com>
  * since: 5/7/2023
  */
-public interface ResponseBuilder {
+public sealed interface ResponseBuilder permits PdfResponseBuilder, PrintVersionResponseBuilder {
     String getFormatName();
 
     String getContentType();

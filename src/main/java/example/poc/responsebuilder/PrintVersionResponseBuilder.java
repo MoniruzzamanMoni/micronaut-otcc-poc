@@ -8,11 +8,11 @@ import java.util.Map;
 import java.util.Optional;
 
 /**
- * @author: Md. Moniruzzaman <moni.return@gmail.com>
- * @since: 5/7/2023
+ * author: Md. Moniruzzaman <moni.return@gmail.com>
+ * since: 5/7/2023
  */
 @Singleton
-public class PrintVersionResponseBuilder implements ResponseBuilder {
+public final class PrintVersionResponseBuilder implements ResponseBuilder {
 
     @Override
     public String getFormatName() {
