@@ -25,12 +25,6 @@ import java.util.Optional;
 public class PdfResponseBuilder implements ResponseBuilder {
     private static final Logger logger = LoggerFactory.getLogger(PdfResponseBuilder.class);
 
-    private final AppConfig appConfig;
-
-    public PdfResponseBuilder(AppConfig appConfig) {
-        this.appConfig = appConfig;
-    }
-
     @Override
     public String getFormatName() {
         return "pdf";
@@ -81,7 +75,7 @@ public class PdfResponseBuilder implements ResponseBuilder {
                 .replaceFirst("<!DOCTYPE html>",
                         "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" " +
                                 "\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">");
-        logger.debug("###  document html first line: %s".formatted(documentHtml.lines().findFirst().orElse("")));
+        logger.debug("###  document html: %s".formatted(documentHtml.lines().findFirst().orElse("")));
         return documentHtml;
     }
 
