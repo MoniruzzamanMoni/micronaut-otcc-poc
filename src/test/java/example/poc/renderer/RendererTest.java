@@ -6,8 +6,4 @@ import org.junit.jupiter.api.Test;
 @MicronautTest
 public class RendererTest {
 
-    @Test
-    void beanTest() {
-
-    }
 }

@@ -13,13 +13,8 @@ import java.util.stream.Collectors;
 @Controller
 public class OtccExamplesController {
     private static final String CONTENT_TYPE = "text/html; charset=UTF-8";
-    private final AppConfig appConfig;
 
-    public OtccExamplesController(AppConfig appConfig) {
-        this.appConfig = appConfig;
-    }
-
-    List<String> links = Arrays.asList(
+    final List<String> links = Arrays.asList(
             "http://localhost:8080/otcc/archive/cta/printversion/cta_ar_2022-04-15.xml",
             "http://localhost:8080/otcc/archive/cta/printversion/cta_br_2022-07-01.xml",
             "http://localhost:8080/otcc/archive/cta/printversion/cta_fi_2022-07-28.xml",
@@ -31,7 +26,7 @@ public class OtccExamplesController {
             .map(l -> "<a href=\"%s\">%s</a>".formatted(l, l))
             .collect(Collectors.joining("<br>"));
 
-    @Get(uri="/", produces = MediaType.ALL)
+    @Get(produces = MediaType.ALL)
     public HttpResponse<String> getExampleLinks() {
         return HttpResponse.ok(body)
                 .contentLength(body.length())

@@ -34,19 +34,4 @@ public class OtccControllerTest {
         ctx.close();
     }
 
-//    @Test
-//    void testWriteReadBook(ObjectMapper objectMapper) throws IOException {
-//        String result = objectMapper.writeValueAsString(new LinkResolverRequest(
-//                new RenderRequestBean("sdfffffsd",null, null, null, null, null)),
-//                new SessionData(ge)
-//                );
-//
-//
-//        Book book = objectMapper.readValue(result, Book.class);
-//        assertNotNull(book);
-//        assertEquals(
-//                "The Stand", book.getTitle()
-//        );
-//        assertEquals(50, book.getQuantity());
-//    }
 }

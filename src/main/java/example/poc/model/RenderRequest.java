@@ -15,22 +15,22 @@ public class RenderRequest {
     private static final Logger logger = LoggerFactory.getLogger(RenderRequest.class);
 
     @CookieValue("DEV_IBFD_SESSION")
-    private String authKey;
+    private final String authKey;
 
     @PathVariable("urlType")
-    private String urlType;
+    private final String urlType;
 
     @PathVariable("collection")
-    private String collection;
+    private final String collection;
 
     @PathVariable("format")
-    private String format;
+    private final String format;
 
     @PathVariable("fileName")
-    private String fileName;
+    private final String fileName;
 
     @PathVariable("ext")
-    private String ext;
+    private final String ext;
 
     public RenderRequest(String authKey,
                          String urlType,

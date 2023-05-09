@@ -12,7 +12,7 @@ micronaut:
         logger-name: linkResolverClientLogger
         url: ${app-config.linkresolver-base-url}
 ehcache:
-  storage-path: F:\Workshop\KAZ\java-projects\micronaut-otcc-poc\teststorage\caches
+  storage-path: D:\Workshop\poc\micronaut-otcc-poc\teststorage\caches
   caches:
     renderer:
       disk:
@@ -28,7 +28,7 @@ netty:
       max-order: 3
 app-config:
   session-cookie-name: DEV_IBFD_SESSION
-  publication-base-path: F:\Workshop\KAZ\java-projects\micronaut-otcc-poc\teststorage\publications
+  publication-base-path: D:\Workshop\poc\micronaut-otcc-poc\teststorage\publications
   test-url: https://dog.ceo
   session-manager-url: http://development7.ibfd.org:9000/sm.fpl
   limaserver-base-url: http://development7.ibfd.org:9080

@@ -20,7 +20,6 @@ public class LinkResolverDataTest {
 
     private String getContent() {
         return """
-                This XML file does not appear to have any style information associated with it. The document tree is shown below.
                 <documents>
                 <document path="/archive/cta/html/cta_ar_2022-04-15_s_013.html">
                 <property name="p_relative_path">/archive/cta/html/cta_ar_2022-04-15_s_013.html</property>
