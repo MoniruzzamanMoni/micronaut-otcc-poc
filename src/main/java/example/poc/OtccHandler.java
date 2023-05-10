@@ -1,11 +1,13 @@
 package example.poc;
 
 import example.poc.cache.RendererCacheKeyGenerator;
-import example.poc.renderer.Renderer;
+import example.poc.model.LinkResolverRequest;
+import example.poc.model.RenderData;
+import example.poc.model.RenderRequest;
+import example.poc.model.SearchQuery;
+import example.poc.renderer.RendererFactory;
 import io.micronaut.cache.annotation.Cacheable;
 import jakarta.inject.Singleton;
-import example.poc.model.*;
-import example.poc.renderer.RendererFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,7 +29,8 @@ public class OtccHandler {
     @Cacheable(keyGenerator = RendererCacheKeyGenerator.class, cacheNames = "renderer")
     public String handle(RenderRequest request) throws Exception {
         var sessionData = externalGateway.getSessionData(request.getAuthKey());
-        var linkResolverRequest = new LinkResolverRequest(request, sessionData);
+        var searchQuery = new SearchQuery(request.getFileName(), request.getExt(), sessionData.getSubscriptions());
+        var linkResolverRequest = new LinkResolverRequest(searchQuery.getSearchQuery(), "uid", "50");
         var linkResolverData = externalGateway.getLinkResolverData(request, linkResolverRequest);
         var renderData = new RenderData(appConfig, request, sessionData, linkResolverData);
         var renderer = rendererFactory.getRenderer(request.getFormat());

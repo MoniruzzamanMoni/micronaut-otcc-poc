@@ -2,28 +2,17 @@ package example.poc.model;
 
 import io.micronaut.core.util.StringUtils;
 import io.micronaut.serde.annotation.Serdeable;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.List;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 @Serdeable
-public class LinkResolverData {
-    private static final Logger logger = LoggerFactory.getLogger(LinkResolverData.class);
+public record LinkResolverData(String content) {
     private static final String PATTERN = "<property name=\"uid\">([a-zA-Z0-9\\._\\-]+)</property>";
 
-    private final List<String> uids;
-
-    public LinkResolverData(String content) {
-        this.uids = parseUids(content);
-
-        logger.debug("LinkResolverData is constructed: %s".formatted(this));
-    }
-
     public List<String> getUids() {
-        return uids;
+        return parseUids(content);
     }
 
     private List<String> parseUids(String content) {
@@ -36,7 +25,7 @@ public class LinkResolverData {
     @Override
     public String toString() {
         return "LinkResolverData{" +
-                "uids=" + uids +
+                "uids=" + getUids() +
                 '}';
     }
 }
