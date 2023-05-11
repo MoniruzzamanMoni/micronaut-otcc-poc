@@ -21,7 +21,7 @@ public class RenderData {
     private final boolean userLoggedIn;
     private final String limaServerBaseUrl;
 
-    public RenderData(AppConfig appConfig, RenderRequest request, SessionData sessionData, LinkResolverData linkResolverData) {
+    public RenderData(AppConfig appConfig, RenderRequest request, SessionManagerResponse sessionManagerResponse, LinkResolverData linkResolverData) {
         this.srcXml = getSrcXml(appConfig, request);
         this.serverHost = getHost(this.srcXml);
         this.assetHost = this.serverHost;
@@ -29,8 +29,8 @@ public class RenderData {
         this.srcXmlBaseName = request.getFileName();
         this.srcXmlFileName = getFileName(request, this.srcXmlBaseName);
         this.authKey = request.getAuthKey();
-        this.username = sessionData.getUsername();
-        this.userCompanyName = sessionData.getGreet();
+        this.username = sessionManagerResponse.getUsername();
+        this.userCompanyName = sessionManagerResponse.getGreet();
         this.userLoggedIn = StringUtils.isNotEmpty(this.username);
         this.limaServerBaseUrl = appConfig.getLimaserverBaseUrl();
 

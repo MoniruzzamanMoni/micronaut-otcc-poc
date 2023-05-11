@@ -9,7 +9,7 @@ import jakarta.inject.Singleton;
 import example.poc.model.LinkResolverData;
 import example.poc.model.LinkResolverRequest;
 import example.poc.model.RenderRequest;
-import example.poc.model.SessionData;
+import example.poc.model.SessionManagerResponse;
 import reactor.core.publisher.Mono;
 
 import java.io.IOException;
@@ -30,7 +30,7 @@ public class ExternalGateway {
         this.linkResolverClient = linkResolverClient;
     }
 
-    public SessionData getSessionData(String authKey) throws MalformedURLException {
+    public SessionManagerResponse getSessionManagerResponse(String authKey) throws MalformedURLException {
         var url = new URL(appConfig.getSessionManagerUrl());
         var body = "key=%s&action=read".formatted(authKey);
         HttpRequest<?> request = HttpRequest.POST(url.getPath(), body)
@@ -40,7 +40,7 @@ public class ExternalGateway {
                 .header(HttpHeaders.CONTENT_LENGTH, String.valueOf(body.length()));
 
         Mono<String> responseBody = Mono.from(sessionMangerClient.retrieve(request, String.class));
-        return new SessionData(responseBody.blockOptional().orElse(""));
+        return new SessionManagerResponse(responseBody.blockOptional().orElse(""));
     }
 
     public LinkResolverData getLinkResolverData(RenderRequest request, LinkResolverRequest linkResolverRequest)

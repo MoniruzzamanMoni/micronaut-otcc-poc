@@ -12,19 +12,34 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * @since: 5/2/2023
  */
 @MicronautTest
+<<<<<<< Updated upstream
 public class SessionDataTest {
 
     private static final Logger logger = LoggerFactory.getLogger(SessionDataTest.class);
+=======
+public class SessionManagerResponseTest {
+
+    private static final Logger logger = LoggerFactory.getLogger(SessionManagerResponseTest.class);
+>>>>>>> Stashed changes
 
     @Test
     void testSessionData() {
         String sessionDataRaw = getSessionDataRaw();
+<<<<<<< Updated upstream
         SessionData sessionData = new SessionData(sessionDataRaw);
 
         assertEquals("test002@ibfd.org", sessionData.getUsername());
         assertEquals("IBFD", sessionData.getGreet());
         assertEquals("kbase", sessionData.getSubscriptions().get(0));
         assertEquals(365, sessionData.getSubscriptions().size());
+=======
+        SessionManagerResponse sessionManagerResponse = new SessionManagerResponse(sessionDataRaw);
+
+        assertEquals("test002@ibfd.org", sessionManagerResponse.getUsername());
+        assertEquals("IBFD", sessionManagerResponse.getGreet());
+        assertEquals("kbase", sessionManagerResponse.getSubscriptions().get(0));
+        assertEquals(365, sessionManagerResponse.getSubscriptions().size());
+>>>>>>> Stashed changes
 
     }
 
