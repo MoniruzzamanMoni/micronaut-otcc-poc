@@ -29,7 +29,7 @@ public class OtccHandler {
     @Cacheable(keyGenerator = RendererCacheKeyGenerator.class, cacheNames = "renderer")
     public String handle(RenderRequest request) throws Exception {
         var sessionData = externalGateway.getSessionData(request.getAuthKey());
-        var searchQuery = new SearchQuery(request.getFileName(), request.getExt(), sessionData.getSubscriptions());
+        var searchQuery = new SearchQuery(request, sessionData);
         var linkResolverRequest = new LinkResolverRequest(searchQuery.getSearchQuery(), "uid", "50");
         var linkResolverData = externalGateway.getLinkResolverData(request, linkResolverRequest);
         var renderData = new RenderData(appConfig, request, sessionData, linkResolverData);

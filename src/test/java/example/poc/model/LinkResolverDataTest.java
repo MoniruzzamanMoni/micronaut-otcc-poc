@@ -15,6 +15,7 @@ public class LinkResolverDataTest {
         LinkResolverData linkResolverData = new LinkResolverData(getContent());
         List<String> uids = linkResolverData.getUids();
         assertEquals("cta_ar_2022-04-15_s_13.", uids.get(0));
+        assertEquals("cta_ar_2022-04-15_s_13.10.1.", uids.get(2));
         assertEquals(455, uids.size());
     }
 

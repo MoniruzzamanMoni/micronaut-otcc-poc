@@ -2,14 +2,26 @@ package example.poc.model;
 
 import io.micronaut.core.util.StringUtils;
 
-import java.util.List;
+import java.util.Collection;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
-public record SearchQuery(String fileName, String ext, List<String> subscriptions) {
+public record SearchQuery(RenderRequest request, SessionData sessionData) {
+
     public String getSearchQuery() {
-        var recordFilter = String.join(",", subscriptions.stream()
-                .map(subscription -> "lcf:" + subscription).toList());
+        var recordFilter =
+                Stream.of(sessionData.getSubSubscriptions()
+                    .stream()
+                    .map(subscription -> "lcf:" + subscription)
+                    .toList(),
+                    sessionData.getPsubSubscriptions(),
+                    sessionData.getVsubSubscriptions()
+                )
+                .flatMap(Collection::stream)
+                .collect(Collectors.joining(","));
+
         return StringUtils.isEmpty(recordFilter) ?
-                "N=0&Nr=xml_source_file:%s.%s".formatted(fileName, ext) :
-                "N=0&Nr=AND(xml_source_file:%s,OR(%s))".formatted(fileName, recordFilter);
+                "N=0&Nr=xml_source_file:%s.%s".formatted(request.getFileName(), request.getExt()) :
+                "N=0&Nr=AND(xml_source_file:%s.%s,OR(%s))".formatted(request.getFileName(), request.getExt(), recordFilter);
     }
 }
