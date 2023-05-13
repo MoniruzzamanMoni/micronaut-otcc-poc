@@ -25,6 +25,10 @@ public class SessionDataTest {
         assertEquals("IBFD", sessionData.getGreet());
         assertEquals("kbase", sessionData.getSubSubscriptions().get(0));
         assertEquals(365, sessionData.getSubSubscriptions().size());
+        assertEquals("ab", sessionData.getPsubSubscriptions().get(0));
+        assertEquals("acc", sessionData.getPsubSubscriptions().get(1));
+        assertEquals("acec", sessionData.getVsubSubscriptions().get(0));
+        assertEquals("ald", sessionData.getVsubSubscriptions().get(1));
 
     }
 
@@ -39,6 +43,10 @@ public class SessionDataTest {
                 SUB:aar;test002@ibfd.org;IBFD/IBFD-InternalIP;ip;1000000
                 SUB:ab;test002@ibfd.org;IBFD/IBFD-InternalIP;ip;1000000
                 SUB:acc;test002@ibfd.org;IBFD/IBFD-InternalIP;ip;1000000
+                PSUB:ab/test1;test002@ibfd.org;IBFD/IBFD-InternalIP;ip;1000000
+                PSUB:acc/test2;test002@ibfd.org;IBFD/IBFD-InternalIP;ip;1000000
+                VSUB:acec/test1;test002@ibfd.org;IBFD/IBFD-InternalIP;ip;1000000
+                VSUB:ald/test2;test002@ibfd.org;IBFD/IBFD-InternalIP;ip;1000000
                 SUB:acec;test002@ibfd.org;IBFD/IBFD-InternalIP;ip;1000000
                 SUB:ald;test002@ibfd.org;IBFD/IBFD-InternalIP;ip;1000000
                 SUB:alts;test002@ibfd.org;IBFD/IBFD-InternalIP;ip;1000000
