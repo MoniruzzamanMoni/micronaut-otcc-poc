@@ -14,3 +14,5 @@ out/
 .classpath
 .factorypath
 teststorage/caches/
+teststorage/caches/file/**/**/
+logs/

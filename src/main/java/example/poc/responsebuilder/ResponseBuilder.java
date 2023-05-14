@@ -26,6 +26,7 @@ public sealed interface ResponseBuilder permits PdfResponseBuilder, PrintVersion
         return HttpResponse.ok(convertedOutput)
                 .contentLength(convertedOutput.length)
                 .contentType(getContentType())
+                .header("Set-Cookie", "DEV_IBFD_SESSION="+request.getAuthKey()) // temporary header, not for production
                 .headers(getHeaders(request));
     }
 }

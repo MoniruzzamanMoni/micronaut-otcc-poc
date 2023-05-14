@@ -1,5 +1,6 @@
 package example.poc.cache;
 
+import example.poc.model.RenderData;
 import example.poc.model.RenderRequest;
 import io.micronaut.cache.interceptor.CacheKeyGenerator;
 import io.micronaut.core.annotation.AnnotationMetadata;
@@ -16,8 +17,8 @@ public class RendererCacheKeyGenerator implements CacheKeyGenerator {
 
     @Override
     public Object generateKey(AnnotationMetadata annotationMetadata, Object... params) {
-        if (params[0] instanceof RenderRequest req) {
-            var key = buildKey(req);
+        if (params[0] instanceof RenderData renderData) {
+            var key = buildKey(renderData);
             logger.debug("Generated cache key: %s".formatted(key));
             return key;
         } else {
@@ -25,11 +26,7 @@ public class RendererCacheKeyGenerator implements CacheKeyGenerator {
         }
     }
 
-    private String buildKey(RenderRequest request) {
-        return "%s/%s/%s.%s".formatted(
-                request.getUrlType(),
-                request.getCollection(),
-                request.getFileName(),
-                request.getExt());
+    private String buildKey(RenderData renderData) {
+        return renderData.getSrcXml();
     }
 }
