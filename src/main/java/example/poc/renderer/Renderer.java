@@ -1,15 +1,18 @@
 package example.poc.renderer;
 
+import example.poc.exception.RegionalXmlTransformerException;
+import example.poc.exception.RenderDataRequestException;
+import example.poc.exception.RendererException;
 import example.poc.model.RenderData;
 import org.ibfd.regionalxml.RegionalXmlTransformer;
 import org.slf4j.Logger;
 
 import javax.xml.transform.OutputKeys;
-import javax.xml.transform.TransformerException;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.nio.charset.StandardCharsets;
@@ -36,12 +39,12 @@ public sealed interface Renderer permits PrintVersionRenderer, PdfRenderer {
 
     private ByteArrayOutputStream transform(RegionalXmlTransformer transformer, RenderData renderData) throws Exception {
         try (var srcXmlInputStream = getSrcXmlInputStream(renderData)) {
-            return (ByteArrayOutputStream) transformer.transform(srcXmlInputStream);
+            return getOutput(transformer, srcXmlInputStream);
         }
     }
 
     private RegionalXmlTransformer initializeTransformer(RenderData renderData) throws Exception {
-        var transformer = new RegionalXmlTransformer();
+        RegionalXmlTransformer transformer = getRegionalXmlTransformer();
         transformer.setResultDocumentOutput(false);
         transformer.setExcelVersionPrefix("");
         transformer.setOutputProperty(OutputKeys.METHOD, "html");
@@ -54,25 +57,79 @@ public sealed interface Renderer permits PrintVersionRenderer, PdfRenderer {
         return transformer;
     }
 
-    private InputStream getSrcXmlInputStream(RenderData renderData) throws IOException, TransformerException {
+    private InputStream getSrcXmlInputStream(RenderData renderData) throws Exception {
         var log = getLogger();
         var connection = getSrcXmlUrlConnection(renderData);
-        connection.connect();
+        openConnection(connection);
         if (connection instanceof HttpURLConnection httpURLConnection) {
             if (httpURLConnection.getResponseCode() == 403) {
                 var message = "Fobbiden document - href: %s, with authKey: %s trying to access."
                         .formatted(renderData.getSrcXml(), renderData.getAuthKey());
                 log.error(message);
-                throw new TransformerException(message);
+                throw new RendererException(message);
             }
         }
-        return connection.getInputStream();
+        return getInputStream(connection);
     }
 
-    private URLConnection getSrcXmlUrlConnection(RenderData renderData) throws IOException {
-        var url = new URL(renderData.getSrcXml());
-        var connection = url.openConnection();
+    private URLConnection getSrcXmlUrlConnection(RenderData renderData) throws Exception {
+        URL url = getSrcXmlUrl(renderData);
+        URLConnection connection = getUrlConnection(url);
         connection.addRequestProperty("Cookie", renderData.getAuthKey());
         return connection;
+    }
+
+    private ByteArrayOutputStream getOutput(RegionalXmlTransformer transformer, InputStream srcXmlInputStream) throws RegionalXmlTransformerException {
+        try {
+            return (ByteArrayOutputStream) transformer.transform(srcXmlInputStream);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new RegionalXmlTransformerException("Can not transform.");
+        }
+    }
+
+    private RegionalXmlTransformer getRegionalXmlTransformer() throws Exception {
+        try {
+            return new RegionalXmlTransformer();
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new RegionalXmlTransformerException("Regional XML Transformer is not created.");
+        }
+    }
+
+    private void openConnection(URLConnection connection) throws RendererException {
+        try {
+            connection.connect();
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new RendererException("SrcXml url connection is not connected.", e);
+        }
+    }
+
+    private InputStream getInputStream(URLConnection connection) throws RendererException {
+        try {
+            return connection.getInputStream();
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new RendererException("Can not get input stream from source xml connection.", e);
+        }
+    }
+
+    private URLConnection getUrlConnection(URL url) throws RendererException {
+        try {
+            return url.openConnection();
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new RendererException("SrcXml url connection is not open.", e);
+        }
+    }
+
+    private URL getSrcXmlUrl(RenderData renderData) throws RenderDataRequestException {
+        try {
+            return new URL(renderData.getSrcXml());
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+            throw new RenderDataRequestException("Source xml url is not in good form.", e);
+        }
     }
 }

@@ -1,6 +1,7 @@
 package example.poc;
 
 import example.poc.exception.ConfigurationException;
+import example.poc.exception.ExternalGatewayException;
 import io.micronaut.http.HttpHeaders;
 import io.micronaut.http.HttpRequest;
 import io.micronaut.http.MediaType;
@@ -38,23 +39,34 @@ public class ExternalGateway {
                 .header(HttpHeaders.HOST, url.getHost())
                 .header(HttpHeaders.CONTENT_TYPE, "application/x-www-form-urlencoded")
                 .header(HttpHeaders.CONTENT_LENGTH, String.valueOf(body.length()));
-
-        Mono<String> responseBody = Mono.from(sessionMangerClient.retrieve(request, String.class));
-        return new SessionData(responseBody.blockOptional().orElse(""));
+        String responseBody = getSessionaManagerResponse(request);
+        return new SessionData(responseBody);
     }
 
-
-    public LinkResolverData getLinkResolverData(RenderRequest request, LinkResolverRequest linkResolverRequest) throws Exception {
+    public LinkResolverData getLinkResolverData(RenderRequest renderRequest, LinkResolverRequest linkResolverRequest) throws Exception {
         URL url = getLinkResolverBaseUrl();
-        var cookie = "%s=%s".formatted(appConfig.getSessionCookieName(), request.getAuthKey());
+        var cookie = "%s=%s".formatted(appConfig.getSessionCookieName(), renderRequest.getAuthKey());
         HttpRequest<?> httpRequest = HttpRequest.POST(url.getPath(), linkResolverRequest)
                 .header(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON)
                 .header(HttpHeaders.COOKIE, cookie);
-
-        Mono<String> responseBody = Mono.from(linkResolverClient.retrieve(httpRequest, String.class));
-        String content = responseBody.blockOptional().orElse("");
-
+        String content = getLinkResolverResponse(httpRequest);
         return new LinkResolverData(content);
+    }
+
+    private String getLinkResolverResponse(HttpRequest<?> request) throws Exception {
+        try {
+            return linkResolverClient.toBlocking().retrieve(request, String.class);
+        } catch (Exception e) {
+            throw new ExternalGatewayException(e.getMessage());
+        }
+    }
+
+    private String getSessionaManagerResponse(HttpRequest<?> request) throws Exception {
+        try {
+            return sessionMangerClient.toBlocking().retrieve(request, String.class);
+        } catch (Exception e) {
+            throw new ExternalGatewayException(e.getMessage());
+        }
     }
 
     private URL getLinkResolverBaseUrl() throws ConfigurationException {
