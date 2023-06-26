@@ -1,12 +1,10 @@
 package example.poc;
 
-import example.poc.cache.RendererCacheKeyGenerator;
 import example.poc.model.LinkResolverRequest;
 import example.poc.model.RenderData;
 import example.poc.model.RenderRequest;
 import example.poc.model.SearchQuery;
-import example.poc.renderer.RendererFactory;
-import io.micronaut.cache.annotation.Cacheable;
+import example.poc.renderer.RendererOutputHandler;
 import jakarta.inject.Singleton;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,12 +16,12 @@ public class OtccHandler {
 
     private final AppConfig appConfig;
     private final ExternalGateway externalGateway;
-    private final RendererFactory rendererFactory;
+    private final RendererOutputHandler rendererOutputHandler;
 
-    public OtccHandler(AppConfig appConfig, ExternalGateway externalGateway, RendererFactory rendererFactory) {
+    public OtccHandler(AppConfig appConfig, ExternalGateway externalGateway, RendererOutputHandler rendererOutputHandler) {
         this.appConfig = appConfig;
         this.externalGateway = externalGateway;
-        this.rendererFactory = rendererFactory;
+        this.rendererOutputHandler = rendererOutputHandler;
     }
 
     public String handle(RenderRequest request) throws Exception {
@@ -32,13 +30,6 @@ public class OtccHandler {
         var linkResolverRequest = new LinkResolverRequest(searchQuery.getSearchQuery(), "uid", "50");
         var linkResolverData = externalGateway.getLinkResolverData(request, linkResolverRequest);
         var renderData = new RenderData(appConfig, request, sessionData, linkResolverData);
-        return getRenderedOutput(renderData, request.getFormat());
-    }
-
-    @Cacheable(keyGenerator = RendererCacheKeyGenerator.class, cacheNames = "renderer")
-    public String getRenderedOutput(RenderData renderData, String format) throws Exception {
-        logger.info("### RENDERING...");
-        var renderer = rendererFactory.getRenderer(format);
-        return renderer.render(renderData);
+        return rendererOutputHandler.getRenderedOutput(renderData, request.getFormat());
     }
 }
