@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class LinkResolverDataTest {
 
     @ParameterizedTest
-    @CsvFileSource(resources = "/test-case.csv")
+    @CsvFileSource(resources = "/link-resolver-test-case.csv")
     void linkResolverDataTest(String input, String output, Integer uIdSize) {
         LinkResolverData linkResolverData = new LinkResolverData(input);
         List<String> uids = linkResolverData.getUids();
