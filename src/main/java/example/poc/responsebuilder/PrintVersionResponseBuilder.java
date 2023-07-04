@@ -7,10 +7,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
-/**
- * author: Md. Moniruzzaman <moni.return@gmail.com>
- * since: 5/7/2023
- */
 @Singleton
 public final class PrintVersionResponseBuilder implements ResponseBuilder {
 

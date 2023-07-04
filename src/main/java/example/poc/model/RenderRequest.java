@@ -6,10 +6,6 @@ import io.micronaut.http.annotation.PathVariable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * @author: Md. Moniruzzaman <moni.return@gmail.com>
- * @since: 4/30/2023
- */
 @Introspected
 public class RenderRequest {
     private static final Logger logger = LoggerFactory.getLogger(RenderRequest.class);

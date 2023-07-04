@@ -9,8 +9,6 @@ public class AppConfig {
     private String sessionManagerUrl;
     private String limaserverBaseUrl;
     private String linkresolverBaseUrl;
-    private boolean linkresolverUsePost;
-    private String regionalPdfXslUrl;
 
     public AppConfig() {
     }
@@ -55,19 +53,4 @@ public class AppConfig {
         this.linkresolverBaseUrl = linkresolverBaseUrl;
     }
 
-    public boolean getLinkresolverUsePost() {
-        return linkresolverUsePost;
-    }
-
-    public void setLinkresolverUsePost(boolean linkresolverUsePost) {
-        this.linkresolverUsePost = linkresolverUsePost;
-    }
-
-    public String getRegionalPdfXslUrl() {
-        return regionalPdfXslUrl;
-    }
-
-    public void setRegionalPdfXslUrl(String regionalPdfXslUrl) {
-        this.regionalPdfXslUrl = regionalPdfXslUrl;
-    }
 }

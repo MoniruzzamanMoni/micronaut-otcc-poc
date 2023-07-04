@@ -7,10 +7,6 @@ import io.micronaut.core.annotation.AnnotationMetadata;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * author: Md. Moniruzzaman <moni.return@gmail.com>
- * since: 5/7/2023
- */
 public class RendererCacheKeyGenerator implements CacheKeyGenerator {
 
     private static final Logger logger = LoggerFactory.getLogger(RendererCacheKeyGenerator.class);

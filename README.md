@@ -30,8 +30,6 @@
     session-manager-url: http://development7.ibfd.org:9000/sm.fpl
     limaserver-base-url: http://development7.ibfd.org:9080
     linkresolver-base-url: https://dev-research.ibfd.org/linkresolver/resolve
-    linkresolver-use-post: true
-    regional-pdf-xsl-url: jar:https://nexus3.ibfd.org/repository/ibfd-releases/org/ibfd/common-fop-pdf/1.0.54/common-fop-pdf-1.0.54.jar!/otcc-pdf-converter.xsl
   ``` 
   - An example configuration of `ehcache`:
   ```yaml
@@ -44,9 +42,9 @@
   ```
   - Note: a `teststorage` folder which already resides within this repository
 - Run project from terminal using command: `mvn mn:run`
-- Now open `localhost:8080` on browser. You will get some test links for testing purpose.
+- Now open the location whereas the server run, for example`localhost:8080` on browser. There are some example links for testing purpose.
 - Add `DEV_IBFD_SESSION` cookie before you hit any of the link listed.
   You can get the cookie value from `dev-research.ibfd.org`.
-- You will get the output html or pdf result.
+- You will get the output html or pdf result after click one of the links.
 
 

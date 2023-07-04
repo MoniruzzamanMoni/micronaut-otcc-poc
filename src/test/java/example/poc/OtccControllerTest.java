@@ -8,7 +8,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @MicronautTest
 public class OtccControllerTest {
@@ -20,13 +19,11 @@ public class OtccControllerTest {
         items.put("app-config.publication-base-path", "D:\\Workshop\\java-project\\otcc\\.idea\\publications");
         items.put("app-config.limaserver-base-url", "http://development7.test.org:9080");
         items.put("app-config.linkresolver-base-url", "https://dev-research.test.org/linkresolver");
-        items.put("app-config.linkresolver-use-pos", "true");
 
         ApplicationContext ctx = ApplicationContext.run(items);
         AppConfig appConfig = ctx.getBean(AppConfig.class);
 
         assertEquals("DEV_IBFD_SESSION", appConfig.getSessionCookieName());
-        assertTrue(appConfig.getLinkresolverUsePost());
         assertEquals("D:\\Workshop\\java-project\\otcc\\.idea\\publications", appConfig.getPublicationBasePath());
         assertEquals("https://dev-research.test.org/linkresolver", appConfig.getLinkresolverBaseUrl());
         assertEquals("http://development7.test.org:9080", appConfig.getLimaserverBaseUrl());
