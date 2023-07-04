@@ -1,6 +1,6 @@
 micronaut:
   application:
-    name: micronautOtccPoc
+    name: OTCC
   http:
     client:
       logger-name: externalGatewayLogger
@@ -19,8 +19,8 @@ ehcache:
         max-size: 1Gb
 logger:
   levels:
-    example.poc: DEBUG
-    example.poc.cache: INFO
+    org.ibfd.otcc': DEBUG
+    org.ibfd.otcc.cache: INFO
     io.micronaut: INFO
 netty:
   default:

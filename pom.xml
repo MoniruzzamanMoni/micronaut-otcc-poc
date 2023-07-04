@@ -2,8 +2,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>moni.poc</groupId>
-  <artifactId>micronaut-otcc-poc</artifactId>
+  <groupId>org.ibfd</groupId>
+  <artifactId>OTCC</artifactId>
   <version>0.1</version>
   <packaging>${packaging}</packaging>
 
@@ -19,7 +19,7 @@
     <release.version>17</release.version>
     <micronaut.version>3.8.8</micronaut.version>
     <micronaut.runtime>netty</micronaut.runtime>
-    <exec.mainClass>example.poc.Application</exec.mainClass>
+    <exec.mainClass>org.ibfd.otcc.Application</exec.mainClass>
   </properties>
 
   <repositories>
@@ -164,8 +164,8 @@
             </path>
           </annotationProcessorPaths>
           <compilerArgs>
-            <arg>-Amicronaut.processing.group=example.poc</arg>
-            <arg>-Amicronaut.processing.module=micronaut-otcc-poc</arg>
+            <arg>-Amicronaut.processing.group=org.ibfd.otcc</arg>
+            <arg>-Amicronaut.processing.module=otcc</arg>
           </compilerArgs>
         </configuration>
       </plugin>

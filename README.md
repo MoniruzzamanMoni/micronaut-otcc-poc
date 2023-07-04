@@ -41,6 +41,7 @@
           max-size: 1Gb
   ```
   - Note: a `teststorage` folder which already resides within this repository
+  - Connect to the vpn if needed for the configured links
 - Run project from terminal using command: `mvn mn:run`
 - Now open the location whereas the server run, for example`localhost:8080` on browser. There are some example links for testing purpose.
 - Add `DEV_IBFD_SESSION` cookie before you hit any of the link listed.

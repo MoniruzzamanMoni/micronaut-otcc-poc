@@ -79,12 +79,12 @@ $ mvn test
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
-[INFO] Running example.poc.MicronautOtccPocTest
+[INFO] Running MicronautOtccPocTest
 17:37:33.850 [main] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test]
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.31 s - in example.poc.MicronautOtccPocTest
-[INFO] Running example.poc.OtccControllerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.31 s - in MicronautOtccPocTest
+[INFO] Running OtccControllerTest
 17:37:34.646 [main] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test]
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.623 s - in example.poc.OtccControllerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.623 s - in OtccControllerTest
 [INFO] 
 [INFO] Results:
 [INFO]
